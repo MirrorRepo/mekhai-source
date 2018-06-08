@@ -1,0 +1,6 @@
+<?php /** * Webkul Software * @category Webkul * @package Webkul_MpSellerProductSearch * @author Webkul * @copyright Copyright (c) 2010-2016 Webkul Software Private Limited (https://webkul.com) * @license https://store.webkul.com/license.html */ $profileUrl=$block->getProfileUrl(); $searchText=$block->getSearchText();?> <div class="wk_search"><form id="searchform" action="<?php echo $block->getUrl('marketplace/seller/collection',array("shop"=>$profileUrl)); ?>" method="POST" ><div class="form-search"><input id="storesearch" type="text" name="name" value="<?php echo $searchText;?>" class="input-text" placeholder="<?php echo __('Search Product by store'); ?>"/><button type="submit" title="<?php echo __('Search by store'); ?>" class="button"><span><span><?php echo __('Search'); ?></span></span></button></div></form></div><script type="text/x-magento-init">
+    {
+        "*": {
+            "mpSellerProductSearch": {}
+        }
+    }</script>

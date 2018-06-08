@@ -1,0 +1,11 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1528358479;s:6:"expire";i:9999999999;s:4:"tags";s:60:"97d_ROBOTS_INDEX_INDEX,97d_LAYOUT_GENERAL_CACHE_TAG,97d_MAGE";}
+<body>
+   <referenceContainer name="root">
+      <block class="Magento\Robots\Block\Data" name="robotsData"/>
+   </referenceContainer>
+</body>
+<body>
+   <referenceContainer name="root">
+      <block class="Magento\Sitemap\Block\Robots" name="sitemapRobotsLinks"/>
+   </referenceContainer>
+</body>

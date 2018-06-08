@@ -1,0 +1,20 @@
+<!-- ko if: quoteIsVirtual == 0 -->
+  <tr class="totals mpcashondelivery excl">
+        <th class="mark" scope="row">
+            <span class="label" data-bind="text: title"></span>
+            <span class="value" data-bind="text: getValue()"></span>
+        </th>
+        <td class="amount">
+            <!-- ko if: isDisplayed() -->
+
+            <span class="price"
+                  data-bind="text: getValue(), attr: {'data-th': title}">
+            </span>
+            <!-- /ko -->
+            <!-- ko ifnot: isDisplayed() -->
+            <span class="not-calculated"
+                  data-bind="text: getValue(), attr: {'data-th': title}"></span>
+            <!-- /ko -->
+        </td>
+    </tr>   
+<!-- /ko -->

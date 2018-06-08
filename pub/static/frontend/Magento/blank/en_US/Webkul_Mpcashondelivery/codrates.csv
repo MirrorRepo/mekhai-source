@@ -1,0 +1,4 @@
+"country_code","region_id","is_range","zipcode","dest_zip_from","dest_zip_to","price_type","fixed_price","percentage_price","weight_from","weight_to"
+"US","*","yes",,"90001","90100","Fixed","10",,"1","100"
+"IN","*","yes",,201300,201400,"Percentage",,15,1,100
+"CA","*","no","M5G11P5",,,"fixed",5,,1,20

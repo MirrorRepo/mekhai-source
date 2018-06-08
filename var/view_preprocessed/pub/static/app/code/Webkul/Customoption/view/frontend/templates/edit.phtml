@@ -1,0 +1,8 @@
+<?php /** * Webkul Software. * * @category Webkul * @package Webkul_Customoption * @author Webkul * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com) * @license https://store.webkul.com/license.html */ ?> <?php /** @var $block \Webkul\Customoption\Block\Options */ ?> <div class="fieldset-wrapper" id="product-custom-options-wrapper" data-block="product-custom-options"><div class="fieldset-wrapper-title"><strong class="title"><span><?php /* @escapeNotVerified */ echo __('Custom Options') ?></span></strong></div><div class="fieldset-wrapper-content" id="product-custom-options-content" data-role="product-custom-options-content"><fieldset class="fieldset"><div class="messages"><div class="message message-error" id="dynamic-price-warning" style="display: none;"><div class="message-inner"><div class="message-content"><?php /* @escapeNotVerified */ echo __('We can\'t save custom-defined options for bundles with dynamic pricing.') ?></div></div></div></div><div id="product_options_container" class="sortable-wrapper"><div id="product_options_container_top"></div><?php echo $block->getOptionsBoxHtml() ?></div><div class="actions"><button id="add_new_defined_option" title="Add New Option" type="button" class="action-default scalable add action primary" data-ui-id="admin-product-options-add-button"><span><?php echo __('Add New Option'); ?></span></button></div></fieldset></div></div><script>
+require(['jquery'], function($){
+    var priceType = $('#price_type');
+    var priceWarning = $('#dynamic-price-warning');
+    if (priceType && priceType.val() == 0 && priceWarning) {
+        priceWarning.show();
+    }
+});</script>

@@ -1,0 +1,319 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1528356489;s:6:"expire";i:9999999999;s:4:"tags";s:37:"97d_LAYOUT_GENERAL_CACHE_TAG,97d_MAGE";}
+<?xml version="1.0"?>
+<layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><layout id="1column"><update handle="empty"/>
+<referenceContainer name="page.wrapper">
+   <container name="header.container" as="header_container" label="Page Header Container" htmlTag="header" htmlClass="page-header" before="main.content"/>
+   <container name="page.top" as="page_top" label="After Page Header" after="header.container"/>
+   <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer"/>
+</referenceContainer>
+</layout><layout id="2columns-left"><update handle="1column"/>
+<referenceContainer name="columns">
+   <container name="div.sidebar.main" htmlTag="div" htmlClass="sidebar sidebar-main" after="main">
+      <container name="sidebar.main" as="sidebar_main" label="Sidebar Main"/>
+   </container>
+   <container name="div.sidebar.additional" htmlTag="div" htmlClass="sidebar sidebar-additional" after="div.sidebar.main">
+      <container name="sidebar.additional" as="sidebar_additional" label="Sidebar Additional"/>
+   </container>
+</referenceContainer>
+</layout><layout id="2columns-right"><update handle="2columns-left"/>
+</layout><layout id="3columns"><update handle="2columns-left"/>
+</layout><layout id="empty"><container name="root">
+   <container name="after.body.start" as="after.body.start" before="-" label="Page Top"/>
+   <container name="page.wrapper" as="page_wrapper" htmlTag="div" htmlClass="page-wrapper">
+      <container name="global.notices" as="global_notices" before="-"/>
+      <container name="main.content" htmlTag="main" htmlId="maincontent" htmlClass="page-main">
+         <container name="columns.top" label="Before Main Columns"/>
+         <container name="columns" htmlTag="div" htmlClass="columns">
+            <container name="main" label="Main Content Container" htmlTag="div" htmlClass="column main"/>
+         </container>
+      </container>
+      <container name="page.bottom.container" as="page_bottom_container" label="Before Page Footer Container" after="main.content" htmlTag="div" htmlClass="page-bottom"/>
+      <container name="before.body.end" as="before_body_end" after="-" label="Page Bottom"/>
+   </container>
+</container>
+</layout><layout id="checkout"><update handle="empty"/>
+<referenceContainer name="page.wrapper">
+   <container name="checkout.header.container" as="checkout_header_container" label="Checkout Page Header Container" htmlTag="header" htmlClass="page-header" before="main.content">
+      <container name="checkout.header.wrapper" label="Checkout Page Header" as="checkout_header_wrapper" htmlTag="div" htmlClass="header content"/>
+   </container>
+</referenceContainer>
+<move element="logo" destination="checkout.header.wrapper"/>
+</layout><layout id="1column"><move element="catalog.leftnav" destination="content.top" after="-"/>
+</layout><layout id="2columns-left"><move element="catalog.leftnav" destination="sidebar.main" before="-"/>
+</layout><layout id="2columns-right"><move element="catalog.leftnav" destination="sidebar.main" before="-"/>
+</layout><layout id="3columns"><move element="catalog.leftnav" destination="sidebar.main" before="-"/>
+</layout><layout id="empty"><move element="catalog.leftnav" destination="category.product.list.additional" before="-"/>
+</layout><layout id="robots"><container name="root"/>
+</layout><layout id="seller-2columns-left"><container name="root">
+   <container name="seller.menu.wrapper" before="-" htmlTag="div" htmlClass="wk-mp-menu-wrapper"/>
+   <container name="after.body.start" as="after.body.start" before="-" label="Page Top"/>
+   <container name="seller.page.wrapper" as="seller_page_wrapper" htmlTag="div" htmlClass="wk-mp-page-wrapper">
+      <container name="seller.global.notices" as="seller_global_notices" before="-"/>
+      <container name="seller.header.before.container" before="-" htmlTag="div" htmlClass="wk-mp-page-header-before page-header"/>
+      <container name="seller.header" after="seller.notifications" htmlTag="header" htmlClass="wk-mp-page-header"/>
+      <container name="seller.page.menu" as="seller.page.menu" after="header"/>
+      <container name="seller.main.content" htmlTag="main" htmlId="wk-mp-maincontent" htmlClass="wk-mp-page-main">
+         <container name="seller.columns.top" label="Before Main Columns"/>
+         <container name="seller.columns" htmlTag="div" htmlClass="wk-mp-columns">
+            <container name="seller.main" label="Main Content Container" htmlTag="div" htmlClass="wk-mp-column wk-mp-main"/>
+         </container>
+      </container>
+      <container name="seller.page.bottom.container" as="seller_page_bottom_container" label="Before Page Footer Container" after="seller.main.content" htmlTag="div" htmlClass="wk-mp-page-bottom"/>
+      <container name="before.body.end" as="before_body_end" after="-" label="Page Bottom"/>
+   </container>
+</container>
+</layout><layout id="seller-login"><container name="root" htmlTag="section" htmlClass="wk-mp-page-wrapper">
+   <container name="after.body.start" as="after.body.start" label="Page Top" before="-"/>
+   <container name="seller.login.header" htmlTag="header" htmlClass="wk-mp-login-header"/>
+   <container name="seller.login.content" htmlTag="div" htmlClass="wk-mp-login-content"/>
+   <container name="seller.login.footer" htmlTag="footer" htmlClass="wk-mp-login-footer"/>
+</container>
+</layout><layout id="1column"><update handle="empty"/>
+<referenceContainer name="page.wrapper">
+   <container name="header.container" as="header_container" label="Page Header Container" htmlTag="header" htmlClass="page-header" before="main.content"/>
+   <container name="page.top" as="page_top" label="After Page Header" after="header.container"/>
+   <container name="main.content" htmlTag="main" htmlId="maincontent" htmlClass="page-main">
+      <container name="columns" htmlTag="div" htmlClass="columns col1-layout">
+         <container name="div.container" htmlTag="div" htmlClass="container">
+            <container name="div.row" htmlTag="div" htmlClass="row">
+               <container name="div.col-main" htmlTag="div" htmlClass="col-lg-12 col-md-12">
+                  <container name="columns.top" label="Before Main Columns"/>
+                  <container name="main" label="Main Content Container" htmlTag="div" htmlClass="column main"/>
+               </container>
+            </container>
+         </container>
+      </container>
+   </container>
+   <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer"/>
+</referenceContainer>
+</layout><layout id="2columns-left"><update handle="1column"/>
+<referenceContainer name="page.wrapper">
+   <container name="main.content" htmlTag="main" htmlId="maincontent" htmlClass="page-main">
+      <container name="columns" htmlTag="div" htmlClass="columns col2-layout">
+         <container name="div.container" htmlTag="div" htmlClass="container">
+            <container name="div.row" htmlTag="div" htmlClass="row">
+               <container name="div.sidebar" htmlTag="div" htmlClass="col-lg-3 col-md-3">
+                  <container name="div.sidebar.main" htmlTag="div" htmlClass="sidebar sidebar-main" after="main">
+                     <container name="sidebar.main" as="sidebar_main" label="Sidebar Main"/>
+                  </container>
+                  <container name="div.sidebar.additional" htmlTag="div" htmlClass="sidebar sidebar-additional" after="div.sidebar.main">
+                     <container name="sidebar.additional" as="sidebar_additional" label="Sidebar Additional"/>
+                  </container>
+               </container>
+               <container name="div.col-main" htmlTag="div" htmlClass="col-lg-9 col-md-9">
+                  <container name="columns.top" label="Before Main Columns"/>
+                  <container name="main" label="Main Content Container" htmlTag="div" htmlClass="column main"/>
+               </container>
+            </container>
+         </container>
+      </container>
+   </container>
+</referenceContainer>
+</layout><layout id="2columns-right"><update handle="1column"/>
+<referenceContainer name="page.wrapper">
+   <container name="main.content" htmlTag="main" htmlId="maincontent" htmlClass="page-main">
+      <container name="columns" htmlTag="div" htmlClass="columns col2-layout">
+         <container name="div.container" htmlTag="div" htmlClass="container">
+            <container name="div.row" htmlTag="div" htmlClass="row">
+               <container name="div.col-main" htmlTag="div" htmlClass="col-lg-9 col-md-9">
+                  <container name="columns.top" label="Before Main Columns"/>
+                  <container name="main" label="Main Content Container" htmlTag="div" htmlClass="column main"/>
+               </container>
+               <container name="div.sidebar" htmlTag="div" htmlClass="col-lg-3 col-md-3">
+                  <container name="div.sidebar.main" htmlTag="div" htmlClass="sidebar sidebar-main" after="main">
+                     <container name="sidebar.main" as="sidebar_main" label="Sidebar Main"/>
+                  </container>
+                  <container name="div.sidebar.additional" htmlTag="div" htmlClass="sidebar sidebar-additional" after="div.sidebar.main">
+                     <container name="sidebar.additional" as="sidebar_additional" label="Sidebar Additional"/>
+                  </container>
+               </container>
+            </container>
+         </container>
+      </container>
+   </container>
+</referenceContainer>
+</layout><layout id="3columns"><update handle="2columns-left"/>
+<referenceContainer name="page.wrapper">
+   <container name="main.content" htmlTag="main" htmlId="maincontent" htmlClass="page-main">
+      <container name="columns" htmlTag="div" htmlClass="columns col3-layout">
+         <container name="div.container" htmlTag="div" htmlClass="container">
+            <container name="div.row" htmlTag="div" htmlClass="row">
+               <container name="div.sidebar.left" htmlTag="div" htmlClass="col-lg-3 col-md-3">
+                  <container name="div.sidebar.main" htmlTag="div" htmlClass="sidebar sidebar-main" after="main">
+                     <container name="sidebar.main" as="sidebar_main" label="Sidebar Main"/>
+                  </container>
+               </container>
+               <container name="div.col-main" htmlTag="div" htmlClass="col-lg-6 col-md-6">
+                  <container name="columns.top" label="Before Main Columns"/>
+                  <container name="main" label="Main Content Container" htmlTag="div" htmlClass="column main"/>
+               </container>
+               <container name="div.sidebar.right" htmlTag="div" htmlClass="col-lg-3 col-md-3">
+                  <container name="div.sidebar.additional" htmlTag="div" htmlClass="sidebar sidebar-additional" after="div.sidebar.main">
+                     <container name="sidebar.additional" as="sidebar_additional" label="Sidebar Additional"/>
+                  </container>
+               </container>
+            </container>
+         </container>
+      </container>
+   </container>
+</referenceContainer>
+</layout><layout id="checkout"><update handle="1column"/>
+</layout><layout id="1column"><update handle="empty"/>
+<referenceContainer name="page.wrapper">
+   <container name="header.container" as="header_container" label="Page Header Container" htmlTag="header" htmlClass="page-header" before="main.content"/>
+   <container name="page.top" as="page_top" label="After Page Header" after="header.container"/>
+   <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer"/>
+</referenceContainer>
+</layout><layout id="2columns-left"><update handle="1column"/>
+<referenceContainer name="columns">
+   <container name="div.sidebar.main" htmlTag="div" htmlClass="sidebar sidebar-main" after="main">
+      <container name="sidebar.main" as="sidebar_main" label="Sidebar Main"/>
+   </container>
+   <container name="div.sidebar.additional" htmlTag="div" htmlClass="sidebar sidebar-additional" after="div.sidebar.main">
+      <container name="sidebar.additional" as="sidebar_additional" label="Sidebar Additional"/>
+   </container>
+</referenceContainer>
+</layout><layout id="2columns-right"><update handle="2columns-left"/>
+</layout><layout id="3columns"><update handle="2columns-left"/>
+</layout><layout id="empty"><container name="root">
+   <container name="after.body.start" as="after.body.start" before="-" label="Page Top"/>
+   <container name="page.wrapper" as="page_wrapper" htmlTag="div" htmlClass="page-wrapper">
+      <container name="global.notices" as="global_notices" before="-"/>
+      <container name="main.content" htmlTag="main" htmlId="maincontent" htmlClass="page-main">
+         <container name="columns.top" label="Before Main Columns"/>
+         <container name="columns" htmlTag="div" htmlClass="columns">
+            <container name="main" label="Main Content Container" htmlTag="div" htmlClass="column main"/>
+         </container>
+      </container>
+      <container name="page.bottom.container" as="page_bottom_container" label="Before Page Footer Container" after="main.content" htmlTag="div" htmlClass="page-bottom"/>
+      <container name="before.body.end" as="before_body_end" after="-" label="Page Bottom"/>
+   </container>
+</container>
+</layout><layout id="checkout"><update handle="empty"/>
+<referenceContainer name="page.wrapper">
+   <container name="checkout.header.container" as="checkout_header_container" label="Checkout Page Header Container" htmlTag="header" htmlClass="page-header" before="main.content">
+      <container name="checkout.header.wrapper" label="Checkout Page Header" as="checkout_header_wrapper" htmlTag="div" htmlClass="header content"/>
+   </container>
+</referenceContainer>
+<move element="logo" destination="checkout.header.wrapper"/>
+</layout><layout id="1column"><move element="catalog.leftnav" destination="content.top" after="-"/>
+</layout><layout id="2columns-left"><move element="catalog.leftnav" destination="sidebar.main" before="-"/>
+</layout><layout id="2columns-right"><move element="catalog.leftnav" destination="sidebar.main" before="-"/>
+</layout><layout id="3columns"><move element="catalog.leftnav" destination="sidebar.main" before="-"/>
+</layout><layout id="empty"><move element="catalog.leftnav" destination="category.product.list.additional" before="-"/>
+</layout><layout id="robots"><container name="root"/>
+</layout><layout id="seller-2columns-left"><container name="root">
+   <container name="seller.menu.wrapper" before="-" htmlTag="div" htmlClass="wk-mp-menu-wrapper"/>
+   <container name="after.body.start" as="after.body.start" before="-" label="Page Top"/>
+   <container name="seller.page.wrapper" as="seller_page_wrapper" htmlTag="div" htmlClass="wk-mp-page-wrapper">
+      <container name="seller.global.notices" as="seller_global_notices" before="-"/>
+      <container name="seller.header.before.container" before="-" htmlTag="div" htmlClass="wk-mp-page-header-before page-header"/>
+      <container name="seller.header" after="seller.notifications" htmlTag="header" htmlClass="wk-mp-page-header"/>
+      <container name="seller.page.menu" as="seller.page.menu" after="header"/>
+      <container name="seller.main.content" htmlTag="main" htmlId="wk-mp-maincontent" htmlClass="wk-mp-page-main">
+         <container name="seller.columns.top" label="Before Main Columns"/>
+         <container name="seller.columns" htmlTag="div" htmlClass="wk-mp-columns">
+            <container name="seller.main" label="Main Content Container" htmlTag="div" htmlClass="wk-mp-column wk-mp-main"/>
+         </container>
+      </container>
+      <container name="seller.page.bottom.container" as="seller_page_bottom_container" label="Before Page Footer Container" after="seller.main.content" htmlTag="div" htmlClass="wk-mp-page-bottom"/>
+      <container name="before.body.end" as="before_body_end" after="-" label="Page Bottom"/>
+   </container>
+</container>
+</layout><layout id="seller-login"><container name="root" htmlTag="section" htmlClass="wk-mp-page-wrapper">
+   <container name="after.body.start" as="after.body.start" label="Page Top" before="-"/>
+   <container name="seller.login.header" htmlTag="header" htmlClass="wk-mp-login-header"/>
+   <container name="seller.login.content" htmlTag="div" htmlClass="wk-mp-login-content"/>
+   <container name="seller.login.footer" htmlTag="footer" htmlClass="wk-mp-login-footer"/>
+</container>
+</layout><layout id="1column"><update handle="empty"/>
+<referenceContainer name="page.wrapper">
+   <container name="header.container" as="header_container" label="Page Header Container" htmlTag="header" htmlClass="page-header" before="main.content"/>
+   <container name="page.top" as="page_top" label="After Page Header" after="header.container"/>
+   <container name="main.content" htmlTag="main" htmlId="maincontent" htmlClass="page-main">
+      <container name="columns" htmlTag="div" htmlClass="columns col1-layout">
+         <container name="div.container" htmlTag="div" htmlClass="container">
+            <container name="div.row" htmlTag="div" htmlClass="row">
+               <container name="div.col-main" htmlTag="div" htmlClass="col-lg-12 col-md-12">
+                  <container name="columns.top" label="Before Main Columns"/>
+                  <container name="main" label="Main Content Container" htmlTag="div" htmlClass="column main"/>
+               </container>
+            </container>
+         </container>
+      </container>
+   </container>
+   <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer"/>
+</referenceContainer>
+</layout><layout id="2columns-left"><update handle="1column"/>
+<referenceContainer name="page.wrapper">
+   <container name="main.content" htmlTag="main" htmlId="maincontent" htmlClass="page-main">
+      <container name="columns" htmlTag="div" htmlClass="columns col2-layout">
+         <container name="div.container" htmlTag="div" htmlClass="container">
+            <container name="div.row" htmlTag="div" htmlClass="row">
+               <container name="div.sidebar" htmlTag="div" htmlClass="col-lg-3 col-md-3">
+                  <container name="div.sidebar.main" htmlTag="div" htmlClass="sidebar sidebar-main" after="main">
+                     <container name="sidebar.main" as="sidebar_main" label="Sidebar Main"/>
+                  </container>
+                  <container name="div.sidebar.additional" htmlTag="div" htmlClass="sidebar sidebar-additional" after="div.sidebar.main">
+                     <container name="sidebar.additional" as="sidebar_additional" label="Sidebar Additional"/>
+                  </container>
+               </container>
+               <container name="div.col-main" htmlTag="div" htmlClass="col-lg-9 col-md-9">
+                  <container name="columns.top" label="Before Main Columns"/>
+                  <container name="main" label="Main Content Container" htmlTag="div" htmlClass="column main"/>
+               </container>
+            </container>
+         </container>
+      </container>
+   </container>
+</referenceContainer>
+</layout><layout id="2columns-right"><update handle="1column"/>
+<referenceContainer name="page.wrapper">
+   <container name="main.content" htmlTag="main" htmlId="maincontent" htmlClass="page-main">
+      <container name="columns" htmlTag="div" htmlClass="columns col2-layout">
+         <container name="div.container" htmlTag="div" htmlClass="container">
+            <container name="div.row" htmlTag="div" htmlClass="row">
+               <container name="div.col-main" htmlTag="div" htmlClass="col-lg-9 col-md-9">
+                  <container name="columns.top" label="Before Main Columns"/>
+                  <container name="main" label="Main Content Container" htmlTag="div" htmlClass="column main"/>
+               </container>
+               <container name="div.sidebar" htmlTag="div" htmlClass="col-lg-3 col-md-3">
+                  <container name="div.sidebar.main" htmlTag="div" htmlClass="sidebar sidebar-main" after="main">
+                     <container name="sidebar.main" as="sidebar_main" label="Sidebar Main"/>
+                  </container>
+                  <container name="div.sidebar.additional" htmlTag="div" htmlClass="sidebar sidebar-additional" after="div.sidebar.main">
+                     <container name="sidebar.additional" as="sidebar_additional" label="Sidebar Additional"/>
+                  </container>
+               </container>
+            </container>
+         </container>
+      </container>
+   </container>
+</referenceContainer>
+</layout><layout id="3columns"><update handle="2columns-left"/>
+<referenceContainer name="page.wrapper">
+   <container name="main.content" htmlTag="main" htmlId="maincontent" htmlClass="page-main">
+      <container name="columns" htmlTag="div" htmlClass="columns col3-layout">
+         <container name="div.container" htmlTag="div" htmlClass="container">
+            <container name="div.row" htmlTag="div" htmlClass="row">
+               <container name="div.sidebar.left" htmlTag="div" htmlClass="col-lg-3 col-md-3">
+                  <container name="div.sidebar.main" htmlTag="div" htmlClass="sidebar sidebar-main" after="main">
+                     <container name="sidebar.main" as="sidebar_main" label="Sidebar Main"/>
+                  </container>
+               </container>
+               <container name="div.col-main" htmlTag="div" htmlClass="col-lg-6 col-md-6">
+                  <container name="columns.top" label="Before Main Columns"/>
+                  <container name="main" label="Main Content Container" htmlTag="div" htmlClass="column main"/>
+               </container>
+               <container name="div.sidebar.right" htmlTag="div" htmlClass="col-lg-3 col-md-3">
+                  <container name="div.sidebar.additional" htmlTag="div" htmlClass="sidebar sidebar-additional" after="div.sidebar.main">
+                     <container name="sidebar.additional" as="sidebar_additional" label="Sidebar Additional"/>
+                  </container>
+               </container>
+            </container>
+         </container>
+      </container>
+   </container>
+</referenceContainer>
+</layout><layout id="checkout"><update handle="1column"/>
+</layout></layouts>

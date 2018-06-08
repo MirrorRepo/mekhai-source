@@ -1,0 +1,107 @@
+<?php /** * Webkul Software * * @category Webkul * @package Webkul_Mpcashondelivery * @author Webkul * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com) * @license https://store.webkul.com/license.html */ ?> <link rel="stylesheet" type="text/css" href="<?php /* @escapeNotVerified */echo $block->getSkinUrl('mpcashondelivery/css/mpcod.css');?>"><div class="entry-edit"><div id="seller_notify_block"><form action="<?php /* @escapeNotVerified */echo $block->getUrl('mpcashondelivery/seller/massnotify') ?>" enctype="multipart/form-data" method="post" id="form-seller-order-notify"><?php /* @escapeNotVerified */echo $block->getBlockHtml('formkey')?> <input type="hidden" name="wksellerorderids" id="wksellerorderids" value="" /><input type="hidden" name="sellerid" value="<?php /* @escapeNotVerified */echo $block->getRequest()->getParam('id')?>" /><div class="box-left" style="width: 100%;"><div class="entry-edit"><div class="entry-edit-head"><h4 class="icon-head head-account"><?php /* @escapeNotVerified */echo __('Admin Commission Information') ?></h4></div><div class="fieldset"><table cellspacing="0" class="form-list" style="width: 100%;"><tbody><tr><td class="label"><label><?php /* @escapeNotVerified */echo __('Total commission from this seller')?></label></td><td class="value"><strong><span id="wk_total_sellerprice"></span></td></tr><tr><td class="label"><label><?php /* @escapeNotVerified */echo __('Add Comment') ?></label></td><td class="value"><strong><textarea name="customnote" class="customnote" id="customnote" style="width:80%;heigth:5em;"></textarea></strong></td></tr></tbody></table></div></div></div><button title="<?php /* @escapeNotVerified */echo __('Notify Seller For Commission Payment') ?>" type="submit" id="save_butn"><span><span><span><?php /* @escapeNotVerified */echo __('Notify Seller') ?></span></span></span></button></form></div><div id="ask_data"><div class="modal_header"><h4 class="modal-title"><?php /* @escapeNotVerified */echo __('Add a Comment') ?></h4><span class="wk_close" >x</span> <span class="clear" ></span></div><form id="ask_form" method="get" enctype="multipart/form-data" action="<?php /* @escapeNotVerified */echo $block->getUrl('mpcashondelivery/seller/notify/')?>"><?php /* @escapeNotVerified */echo $block->getBlockHtml('formkey')?> <div class="modal-body"><div class="bootbox-body"><textarea class="bootbox-input bootbox-input-text form-control required-entry" name="seller_notify_reason"></textarea> <input type="hidden" name="sellerid" id="sellerid" value="<?php /* @escapeNotVerified */echo $block->getRequest()->getParam('id')?>"/><input type="hidden" name="autoorderid" id="autoorderid" value=""/></div></div><div class="modal_footer"><span class="error"></span> <input type="reset" value="<?php /* @escapeNotVerified */echo __('Reset') ?>" id="" class="wk_btn wk_btn_default"/><input title="<?php /* @escapeNotVerified */echo __('Notify Seller For Commission Payment') ?>" type="submit" value="<?php /* @escapeNotVerified */echo __('Notify Seller') ?>" id="" class="wk_btn wk_btn_primary"/><span class="clear"></span></div></form></div><div class="content-header"><table cellspacing="0"><tbody><tr><td style="width:50%;"><h3 class="icon-head head-adminhtml-order"><?php /* @escapeNotVerified */echo __('Orders Placed Using Seller Cash On Delivery Payment Method') ?></h3></td><td class="form-buttons"></td></tr></tbody></table></div></div><?php /* @escapeNotVerified */echo $block->getChildHtml('grid') ?> <script type="text/javascript">
+	require([
+	        "jquery",
+	        "mage/mage"
+	    ], function($wk_jq){
+			var totalprice = 0;
+			$wk_jq('#save_butn').attr('class','disabled');
+			$wk_jq('.customnote').focus();
+		    	$wk_jq.ajax({
+	                url: "<?php /* @escapeNotVerified */echo $block->getUrl('mpcashondelivery/seller/formatedprice/', ['_secure' => $this->getRequest()->isSecure()]);?>",
+	                type: "GET",
+	                data: {price:totalprice},
+	                dataType: 'html',
+	                success:function($data){
+	                    totalformatedprice = $data;
+	                    $wk_jq('#wk_total_sellerprice').text(totalformatedprice);
+	                }
+		    });
+		    $wk_jq('body').append($wk_jq('#ask_data'));		
+			$wk_jq('#html-body').delegate('.wk_notifyseller','click',function(){
+				$wk_jq('#autoorderid').val($wk_jq(this).attr('order-id'));
+				$wk_jq('.wrapper').css('pointer-events','none');
+				$wk_jq('.wrapper').css('opacity','0.4');
+				$wk_jq('#ask_data').show();
+				$wk_jq('.form-control').focus();
+			});
+
+			$wk_jq('body').delegate('td','click',function(){
+				if($wk_jq(this).parent().find('input[name="sellerorderids"]')){
+					if($wk_jq.trim($wk_jq(this).parents('tr').find('.wk_paidstatus').text())=='Pending' && $wk_jq.trim($wk_jq(this).parents('tr').find('.wk_sellerorderstatus').attr('wk_cpprostatus'))==1){
+						var currrowprice = $wk_jq(this).parents('tr').find('.wktotalcommision').text();
+						var actualprice = currrowprice;
+						if($wk_jq(this).parent().find('input[name="sellerorderids"]').is(':checked')){				
+							totalprice = totalprice+parseFloat(actualprice);
+						}else{
+							if(totalprice>=parseFloat(actualprice)){
+								totalprice = totalprice-parseFloat(actualprice);
+							}else{
+								totalprice = 0;
+							}
+						}
+						if (totalprice) {
+							$wk_jq('#save_butn').removeAttr('class');
+						}
+						$wk_jq.ajax({
+			                url: "<?php /* @escapeNotVerified */echo $block->getUrl('mpcashondelivery/seller/formatedprice/');?>",
+			                type: "GET",
+			                data: {price:totalprice},
+			                dataType: 'html',
+			                success:function($data){
+			                    totalformatedprice = $data;
+			                    $wk_jq('#wk_total_sellerprice').text(totalformatedprice);
+			                }
+			            });
+					}
+					$wk_jq('input[name="sellerorderids"]').removeAttr('disabled');
+				}
+			});
+			$wk_jq("body").delegate('select#reportGrid_massaction-mass-select','click',function(){
+				if($wk_jq(this).val()=='selectVisible'||$wk_jq(this).attr('onclick')=='return reportGrid_massactionJsObject.selectVisible()'){
+					totalprice = 0;
+					$wk_jq('.wktotalcommision').each(function(){
+						if($wk_jq.trim($wk_jq(this).parents('tr').find('.wk_paidstatus').text())=='Pending' && $wk_jq.trim($wk_jq(this).parents('tr').find('.wk_sellerorderstatus').attr('wk_cpprostatus'))==1){
+							var rowprice = $wk_jq(this).text();
+							var actualrowprice = rowprice;
+							totalprice = totalprice+parseFloat(actualrowprice);
+						}
+					});
+				}else if($wk_jq(this).val()=='unselectVisible'||$wk_jq(this).attr('onclick')=='return reportGrid_massactionJsObject.unselectVisible()'){
+					totalprice = 0;
+				}
+				$wk_jq.ajax({
+	                url: "<?php /* @escapeNotVerified */echo $block->getUrl('mpcashondelivery/seller/formatedprice/');?>",
+	                type: "GET",
+	                data: {price:totalprice},
+	                dataType: 'html',
+	                success:function($data){
+	                    totalformatedprice = $data;
+	                    $wk_jq('#wk_total_sellerprice').text(totalformatedprice);
+	                }
+	            });
+			});
+
+			$wk_jq('#save_butn').click(function(e){
+				var ids = '';
+				$wk_jq('input[name="sellerorderids"]').each(function(){
+					if($wk_jq(this).is(':checked')){
+						if(ids){
+							ids = ids+','+$wk_jq(this).val();
+						}else{
+							ids = $wk_jq(this).val();
+						}
+					}
+				});
+			    $wk_jq('#wksellerorderids').val(ids);
+				$wk_jq('.button').css('cursor','default');
+				$wk_jq('.button').attr('disabled','disabled');
+				$wk_jq('#form-seller-order-notify').submit();
+			});
+			
+			$wk_jq('#html-body').delegate('.wk_close','click',function(){
+				$wk_jq('.wrapper').css('pointer-events','auto');
+				$wk_jq('.wrapper').css('opacity','1');
+				$wk_jq('.wk_btn_default').trigger('click');
+				$wk_jq('#ask_data').hide();			
+			});
+		});</script>

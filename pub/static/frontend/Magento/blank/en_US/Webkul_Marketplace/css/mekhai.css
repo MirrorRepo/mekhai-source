@@ -1,0 +1,302 @@
+body{
+    font-family: Phetsarath OT!important;
+}
+
+.review-form .action.submit.primary {
+    background-color: #b11e22;
+}
+
+.action-default, .wk-mp-design button, .block-footer .action-add, .block-footer .action-add {
+    background: #b11e22 none repeat scroll 0 0!important;
+    border-color: #b11e22!important;
+    color: #ffffff!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+}
+
+.action-default:hover, .wk-mp-design button:hover, .action-default:active, .wk-mp-design button:active, .action-default:focus, .wk-mp-design button:focus, .block-footer .action-add:hover, .block-footer .action-add:active, .block-footer .action-add:focus {
+    background-color: #e80f0f!important;
+    /* color: #514943!important; */
+    text-decoration: none;
+}
+
+.action-tertiary, .downloadable-form .action-add {
+    color: #007bdb!important;
+}
+
+.action-secondary:hover, .action-secondary:active, .action-secondary:focus {
+    background-color: #e80f0f;
+    border-color: #e80f0f;
+    box-shadow: 0 0 0 1px #e80f0f;
+    color: #fff;
+    text-decoration: none;
+}
+
+.admin__data-grid-actions-wrap .admin__action-dropdown {
+    padding-bottom: 1rem !important;
+    padding-top: .9rem !important;
+    background-color: #b11e22!important;
+    line-height: 1.6rem;
+    height: inherit;
+    box-shadow: none!important;
+}
+
+.admin__action-dropdown:hover, .admin__action-dropdown:focus {
+    background-color: #e80f0f!important;
+    border: 1px solid #eee!important;
+    color: #fff!important;
+    text-decoration: none;
+}
+
+.data-grid-filters-action-wrap .action-default {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding-left: 1.7rem;
+    padding-right: 2.1rem;
+    padding-top: 0.7rem;
+    line-height: 1.6rem;
+    box-shadow: none!important;
+    border-radius: 0!important;
+    background-color: #b11e22;
+    border: 1px solid #ccc!important;
+}
+
+.data-grid-filters-action-wrap .action-default {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding-left: 1.7rem;
+    padding-right: 2.1rem;
+    padding-top: 0.7rem;
+    line-height: 1.6rem;
+    box-shadow: none!important;
+    border-radius: 0!important;
+    background-color: #b11e22;
+    border: 1px solid #ccc!important;
+}
+
+.data-grid-filters-action-wrap .action-default._active {
+    background-color: #e80f0f!important;
+    border: 1px solid #ccc!important;
+    border-bottom-color: #e80f0f!important;
+    font-weight: 600;
+    margin: -0.1rem 0 0;
+    padding-bottom: 1.6rem;
+    padding-top: 0.8rem;
+    position: relative;
+    z-index: 281;
+}
+
+.data-grid-filters-action-wrap .action-default:before {
+    color: #ffffff;
+    content: "\e605";
+    font-size: 1.8rem;
+    margin-right: 0.4rem;
+    position: relative;
+    top: -1px;
+    vertical-align: top;
+}
+
+.action-default:hover, .wk-mp-design button:hover, .action-default:active, .wk-mp-design button:active, .action-default:focus, .wk-mp-design button:focus, .block-footer .action-add:hover, .block-footer .action-add:active, .block-footer .action-add:focus {
+    background-color: #f11010!important;
+    color: #ffffff!important;
+    text-decoration: none;
+}
+
+.action-secondary {
+    background-color: #b11e22;
+    border-color: #b11e22;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+button, button:focus, .cart-container .action.continue, a.action.primary, .modal-footer .action-primary.action-accept {
+    border: none !important;
+    overflow: visible;
+    display: inline-block;
+    background: #b11e22;
+    width: auto;
+    margin: 0;
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+    white-space: nowrap;
+    font-size: 100% !important;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: relative;
+    padding: 0 20px !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.smcqp-btn, .spcqp-count, .owl-controls .owl-nav div:hover, .page-title:before, button:hover, .cart-container .action.continue:hover, a.action.primary:hover, .sambar-inner:before {
+    background-color: #e80f0f;
+}
+
+.wk-mp-collection-view-btn a {
+    padding: 7px 12px;
+    background-color: #b11e22;
+    border: 1px solid #b11e22;
+    color: #fff!important;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.wk-mp-collection-view-btn a:hover, .wk-mp-collection-view-btn a:active {
+    background-color: #e80f0f;
+    border-color: #e80f0f;
+    text-decoration: none;
+    color: #fff;
+}
+
+.wk-btn-primary {
+    color: #fff;
+    background-color: #b11e22;
+    border-color: #b11e22;
+}
+
+.wk-btn-primary:hover, .wk-btn-primary:focus, .wk-btn-primary.focus, .wk-btn-primary:active, .wk-btn-primary.active, .open > .dropdown-toggle.wk-btn-primary {
+    color: #fff;
+    background-color: #e80f0f;
+    border-color: #e80f0f;
+}
+
+.dropup, .dropdown {
+    position: relative;
+    color: #000;
+}
+
+button, button:focus, .cart-container .action.continue, a.action.primary, .modal-footer .action-primary.action-accept {
+    border: none !important;
+    overflow: visible;
+    display: inline-block;
+    background: #b11e22;
+    width: auto;
+    margin: 0;
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+    white-space: nowrap;
+    font-size: 100% !important;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: relative;
+    padding: 0 20px !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.smcqp-btn, .spcqp-count, .owl-controls .owl-nav div:hover, .page-title:before, button:hover, .cart-container .action.continue:hover, a.action.primary:hover, .sambar-inner:before {
+    background-color: #e80f0f!important;
+}
+
+.btn-primary {
+    background-color: #b11e22;
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 4px 4px 4px 4px;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #FFFFFF!important;
+    display: inline-block;
+    opacity: 0.8;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding: 6px 0px;
+    font-weight: bold;
+    font-size: 13px;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #e80f0f;
+    border-color: #e80f0f;
+}
+
+.product-info-main .product-options-bottom .box-tocart .fieldset .actions button:hover, .product-info-main .product-add-form .box-tocart .fieldset .actions button:hover {
+    background-color: #e80f0f!important;
+}
+
+.review-form .action.submit.primary {
+    background-color: #b11e22;
+}
+
+.review-form .action.submit.primary:focus, .review-form .action.submit.primary:active, .review-form .action.submit.primary:hover {
+    background-color: #e80f0f;
+}
+
+.block-minicart .block-content>.actions a {
+    cursor: pointer;
+    display: inline-block;
+    height: 34px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    background-color: #b11e22;
+    font-size: 116.67%;
+    color: #fff;
+    font-weight: 700;
+    margin-right: 10px;
+    line-height: 34px;
+}
+
+.block-minicart .block-content>.actions a:hover {
+    background-color: #e80f0f;
+}
+
+.block-minicart .minicart-items .product-item-details .price-container .price {
+    font-weight: 700;
+    background-color: #b11e22;
+    border-radius: 3px;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.block-minicart .header-minicart {
+    background: #b11e22;
+    margin: -16px -16px 0;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 116.67%;
+}
+
+.checkout-container .authentication-wrapper button {
+    text-transform: uppercase;
+    background-color: #b11e22;
+}
+
+.checkout-container:hover .authentication-wrapper button {
+    text-transform: uppercase;
+    background-color: #e80f0f;
+}
+
+.cart-container .cart.main.actions .action:hover, .cart-container .checkout-methods-items .action.primary.checkout:hover {
+    background-color: #e80f0f !important;
+}
+
+.sm-listing-tabs .ltabs-items .ltabs-loadmore .ltabs-loadmore-btn:hover {
+    background-color: #e80f0f;
+}
+.label {
+    color:#000;
+}
+
+.filter-content .filter-actions .filter-clear {
+    display: inline-block;
+    float: right;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    background-color: #b11e22;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.filter-content .filter-actions .filter-clear:hover {
+    background-color: #e80f0f;
+}

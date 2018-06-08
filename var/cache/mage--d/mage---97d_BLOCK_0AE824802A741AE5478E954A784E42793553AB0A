@@ -1,0 +1,59 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1528359289;s:6:"expire";i:1528362889;s:4:"tags";s:156:"97d_BLOCK_HTML,97d_CAT_C,97d_CAT_C_3,97d_CAT_C_4,97d_CAT_C_5,97d_CAT_C_6,97d_CAT_C_7,97d_CAT_C_8,97d_CAT_C_9,97d_CAT_C_10,97d_CAT_C_11,97d_CAT_C_12,97d_MAGE";}
+
+
+<!--COLLAPSE-->
+
+<!--SIDEBAR-->
+	<div class="nav-mobile-container sidebar-type">
+		<div class="btn-mobile">
+			<a id="sidebar-button" class="button-mobile sidebar-nav" title="ໝວດສິນຄ້າ"><i class="fa fa-bars"></i><span class="hidden">ໝວດສິນຄ້າ</span></a>
+		</div>
+
+                    <nav id="navigation-mobile" class="navigation-mobile"></nav>
+                <script type="text/javascript">
+                require([
+                    'jquery'
+                ], function ($) {
+                    $('#sidebar-button').click(function(){
+                        $('body').toggleClass('navbar-active');
+                        $(this).toggleClass('active');
+                    });
+                });
+            </script>
+        
+	</div>
+
+    <script type="text/javascript">
+        require([
+            'jquery'
+        ], function ($) {
+            $('.btn-submobile').click(function(){
+                $(this).prev().slideToggle(200);
+                $(this).toggleClass('btnsub-active');
+                $(this).parent().toggleClass('parent-active');
+            });
+
+            function cloneMegaMenu() {
+                var breakpoints = 991;
+                var doc_width = $( window ).width();
+                if(doc_width <= breakpoints){
+                    var horizontalMegamenu = $('.sm_megamenu_wrapper_horizontal_menu .horizontal-type');
+                    var verticalMegamenu = $('.sm_megamenu_wrapper_vertical_menu .vertical-type');
+                    $('#navigation-mobile').append(horizontalMegamenu);
+                    $('#navigation-mobile').append(verticalMegamenu);
+                } else {
+                    var horizontalMegamenu = $('#navigation-mobile .horizontal-type');
+                    var verticalMegamenu = $('#navigation-mobile .vertical-type');
+                    $('.sm_megamenu_wrapper_horizontal_menu .sambar-inner .mega-content').append(horizontalMegamenu);
+                    $('.sm_megamenu_wrapper_vertical_menu .sambar-inner .mega-content').append(verticalMegamenu);
+                }
+            }
+
+            cloneMegaMenu();
+
+            $( window ).resize(function() {
+                cloneMegaMenu();
+            });
+
+        });
+    </script>

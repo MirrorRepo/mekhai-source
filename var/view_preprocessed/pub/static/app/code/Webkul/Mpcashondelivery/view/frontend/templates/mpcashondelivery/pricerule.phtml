@@ -1,0 +1,86 @@
+<?php /** * Webkul Software * * @category Webkul * @package Webkul_Mpcashondelivery * @author Webkul * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com) * @license https://store.webkul.com/license.html */ $_helper = $block->getMpHelper(); $isPartner= $_helper->isSeller(); ?> <?php if($isPartner==1){ $codHelper = $block->getMpCodHelper(); $getPaymentEnable = $codHelper->getCodEnable(); if($getPaymentEnable){ ?> <form action="<?php /* @escapeNotVerified */echo $block->getUrl('mpcashondelivery/pricerules/masssave') ?>" id="uploadcodratesform" method="post" enctype="multipart/form-data" ><?php /* @escapeNotVerified */echo $block->getBlockHtml('formkey')?> <?php /* @escapeNotVerified */echo $block->getBlockHtml('seller.formkey')?> <fieldset class="fieldset"><legend class="legend"><span><?php /* @escapeNotVerified */ echo __("Upload Cash On Delivery Rates in Bulk"); ?></span> <button class="button wk-mp-btn" type="submit" id="save-btn" title="<?php /* @escapeNotVerified */echo __('Upload Rates') ?>"><span><span><?php /* @escapeNotVerified */echo __('Upload Rates') ?></span></span></button></legend><div class="field required"><a class="gray file-link" href="<?php /* @escapeNotVerified */echo $block->getViewFileUrl('Webkul_Mpcashondelivery::codrates.csv');?>"><span><?php /* @escapeNotVerified */echo __('Download sample file');?></span></a> <div class="wk_clear"></div><label for="upload-codrates-csv" class="label"><span><?php /* @escapeNotVerified */ echo __("Destination State/Region"); ?></span></label> <div class="control"><input type="file" id = "upload-codrates-csv" class="required-entry" name="codratesfile"/></div></div></fieldset></form><br><br> <form action="<?php /* @escapeNotVerified */echo $block->getUrl('mpcashondelivery/pricerules/save') ?>" method="post" enctype="multipart/form-data" id="form_mpcashondelivery_add" name="form_mpcashondelivery_add"><?php /* @escapeNotVerified */echo $block->getBlockHtml('formkey')?> <?php /* @escapeNotVerified */echo $block->getBlockHtml('seller.formkey')?> <fieldset class="fieldset"><legend class="legend"><span><?php /* @escapeNotVerified */ echo __("Add New Cash On Delivery Rate"); ?></span> <button class="button wk-mp-btn" type="submit" id="mpcashondelivery_add_rates" title="<?php /* @escapeNotVerified */echo __('Add New COD Rate')?>"><span><span><?php echo __("Add New COD Rate"); ?></span></span></button></legend><div class="field required"><label for="dest_country_id" class="label"><span><?php /* @escapeNotVerified */ echo __("Destination Country"); ?></span></label> <div class="control"><select name="dest_country_id" id="dest_country_id" class="required-entry"><?php $countryList = $block->getCountryOptionArray(); foreach($countryList as $countries) {?> <option value="<?php /* @escapeNotVerified */echo $countries['value'] ?>"><?php /* @escapeNotVerified */echo $countries['label']?></option><?php } ?></select></div></div><div class="field required"><label for="dest_region_id" class="label"><span><?php /* @escapeNotVerified */ echo __("Destination State/Region"); ?></span></label> <div class="control"><input type="text" id="dest_region_id" name="dest_region_id" title="<?php /* @escapeNotVerified */echo __('Destination State/Region') ?>" class="required-entry input-text" placeholder="<?php /* @escapeNotVerified */echo __('Enter Destination State/Region-you can also set as * to allow all') ?>"/></div></div><div class="field required"><label for="is_range" class="label"><span><?php /* @escapeNotVerified */ echo __("Zip code type"); ?></span></label> <div class="control"><select name="is_range" id="is_range" class="required-entry"><option value="0"><?php /* @escapeNotVerified */echo __('Is range')?></option><option value="1"><?php /* @escapeNotVerified */echo __('Specific')?></option></select></div></div><div class="field required"><label for="dest_zip_from" class="label"><span><?php /* @escapeNotVerified */ echo __("Zip/Post Code From"); ?></span></label> <div class="control"><input type="text" id="dest_zip_from" name="dest_zip_from" title="<?php /* @escapeNotVerified */echo __('Zip/Post Code From') ?>" class="required-entry input-text" placeholder="<?php /* @escapeNotVerified */echo __('Enter Zip/Post Code Range(low)-you can also set as * to allow all') ?>"/></div></div><div class="field required"><label for="dest_zip_to" class="label"><span><?php /* @escapeNotVerified */ echo __("Zip/Post Code To"); ?></span></label> <div class="control"><input type="text" id="dest_zip_to" name="dest_zip_to" title="<?php /* @escapeNotVerified */echo __('Zip/Post Code To') ?>" class="required-entry input-text" placeholder="<?php /* @escapeNotVerified */echo __('Enter Zip/Post Code Range(high) - you can also set as * to allow all') ?>"/></div></div><div class="field required"><label for="zipcode" class="label"><span><?php /* @escapeNotVerified */ echo __("Zip code"); ?></span></label> <div class="control"><input type="text" id="zipcode" name="zipcode" title="<?php /* @escapeNotVerified */echo __('Zip code') ?>" class="required-entry input-text" placeholder="<?php /* @escapeNotVerified */echo __('Enter Zip Code') ?>"/></div></div><div class="field required"><label for="price_type" class="label"><span><?php /* @escapeNotVerified */ echo __("Rate Type"); ?></span></label> <div class="control"><select name="price_type" id="price_type" class="required-entry"><option value="0"><?php /* @escapeNotVerified */echo __('Fixed')?></option><option value="1"><?php /* @escapeNotVerified */echo __('Percentage')?></option></select></div></div><div class="field required"><label for="fixed_price" class="label"><span><?php /* @escapeNotVerified */ echo __("Fixed Rate"); ?></span></label> <div class="control"><input type="text" id="fixed_price" name="fixed_price" title="<?php /* @escapeNotVerified */echo __('Fixed Rate') ?>" class="required-entry input-text" placeholder="<?php /* @escapeNotVerified */echo __('Enter Fixed Rate') ?>"/></div></div><div class="field required"><label for="percentage_price" class="label"><span><?php /* @escapeNotVerified */ echo __('Percentage(%) Rate'); ?></span></label> <div class="control"><input type="text" id="percentage_price" name="percentage_price" title="<?php /* @escapeNotVerified */echo __('Percentage(%) Rate') ?>" class="required-entry input-text" placeholder="<?php /* @escapeNotVerified */echo __('Enter Percentage(%) Rate') ?>"/></div></div><div class="field required"><label for="weight_from" class="label"><span><?php /* @escapeNotVerified */ echo __("Weight From"); ?></span></label> <div class="control"><input type="text" id="weight_from" name="weight_from" title="<?php /* @escapeNotVerified */echo __('Weight From') ?>" class="required-entry input-text" placeholder="<?php /* @escapeNotVerified */echo __('Enter Weight Range(low)') ?>"/></div></div><div class="field required"><label for="weight_to" class="label"><span><?php /* @escapeNotVerified */ echo __("Weight To"); ?></span></label> <div class="control"><input type="text" id="weight_to" name="weight_to" title="<?php /* @escapeNotVerified */echo __('Weight To') ?>" class="required-entry input-text" placeholder="<?php /* @escapeNotVerified */echo __('Enter Weight Range(high)') ?>"/></div></div></fieldset></form><?php $mpcashondeliverycollection=$block->getPriceruleCollection(); ?> <div class="wk_mp_design" style="padding-top:20px;"><div class="block block-account"><div class="block-title"><strong><span><h3><?php /* @escapeNotVerified */echo __('Manage Cash On Delivery Rate') ?></h3></span></strong></div></div><div class="fieldset wk_mp_fieldset"><div class="grid"><div class="hor-scroll"><?php if(count($mpcashondeliverycollection)>0){ ?> <form action="<?php /* @escapeNotVerified */echo $block->getUrl('mpcashondelivery/pricerules/massdelete') ?>" method="post" id="form_mpcashondelivery_massdelete" name="form_mpcashondelivery_massdelete"><?php /* @escapeNotVerified */echo $block->getBlockHtml('formkey')?> <?php /* @escapeNotVerified */echo $block->getBlockHtml('seller.formkey')?> <button class="button wk-mp-btn" title="<?php /* @escapeNotVerified */echo __('Delete Rates') ?>" type="submit" id="mass_delete_butn" style="margin-bottom:10px;"><span><span><?php /* @escapeNotVerified */echo __('Delete Rates') ?></span></span></button> <table cellspacing="0" class="border wk-mp-list-table"><thead><tr class="wk_content wk_mp_tr_heading" id='wk-mp-tr-heading'><th class="wk_check_first_td"><span> <input type="checkbox" name="mpselecctall" value="all" id="mpselecctall"/></span></th><th><span class="label name"><?php /* @escapeNotVerified */echo __('Destination Country');?></span></th><th><span class="label qty"><?php /* @escapeNotVerified */echo __('Destination State/Region');?></span></th><th><span class="label name"><?php /* @escapeNotVerified */echo __('Zip/Post type');?></span></th><th><span class="label"><?php /* @escapeNotVerified */echo __('Zip/Post Code Range');?></span></th><th><span class="label"><?php /* @escapeNotVerified */echo __('Rate Type');?></span></th><th><span class="label"><?php /* @escapeNotVerified */echo __('Fixed Rate');?></span></th><th><span class="label"><?php /* @escapeNotVerified */echo __('Percentage(%) Rate');?></span></th><th><span class="label"><?php /* @escapeNotVerified */echo __('Weight Range');?></span></th><th><span class="label"><?php /* @escapeNotVerified */echo __('Action')?></span></th></tr></thead><tbody><?php foreach($mpcashondeliverycollection as $mpcashondelivery): ?> <?php $id = $mpcashondelivery->getEntityId()?> <tr class="wk_content wk_row_list wk-row-view"><td class="wk_check_first_td"><span> <input type="checkbox" name="mpcashondelivery[]" class="mpcheckbox" value="<?php /* @escapeNotVerified */echo $mpcashondelivery->getEntityId(); ?>"/></span></td><td><span class="label"><?php /* @escapeNotVerified */echo $mpcashondelivery->getDestCountryId()?></span></td><td><span class="label"><?php /* @escapeNotVerified */echo $mpcashondelivery->getDestRegionId();?></span></td><td><span class="label"><?php /* @escapeNotVerified */echo ($mpcashondelivery->getIsRange())?__('Specified'):__('Range')?></span></td><?php if($mpcashondelivery->getIsRange()){ ?> <td><span class="label"><?php /* @escapeNotVerified */echo $mpcashondelivery->getZipcode();?></span></td><?php }else{ ?> <td><span class="label"><?php /* @escapeNotVerified */echo $mpcashondelivery->getDestZipFrom()." to ".$mpcashondelivery->getDestZipTo();?></span></td><?php }?> <td><span class="label"><?php if($mpcashondelivery->getPriceType()){ /* @escapeNotVerified */echo __('Percentage'); }else{ /* @escapeNotVerified */echo __('Fixed'); }?></span></td><td><span class="label"><?php /* @escapeNotVerified */echo $block->getFormattedPrice($mpcashondelivery->getFixedPrice())?></span></td><td><span class="label"><?php /* @escapeNotVerified */echo $mpcashondelivery->getPercentagePrice();?></span></td><td><span class="label"><?php /* @escapeNotVerified */echo round($mpcashondelivery->getWeightFrom(),2)." to ".round($mpcashondelivery->getWeightTo(),2);?></span></td><td><span class="label wk_action"><img src="<?php /* @escapeNotVerified */echo $block->getViewFileUrl('Webkul_Marketplace::images/icon-edit.png'); ?>" alt="edit" title="edit" class="mpcashondelivery_edit" data-href="<?php /* @escapeNotVerified */echo $block->getUrl('mpcashondelivery/pricerules/edit/',['id'=>$id]) ?>"/><img src="<?php /* @escapeNotVerified */echo $block->getViewFileUrl('Webkul_Marketplace::images/icon-trash.png'); ?>" alt="delete" title="delete" class="mpcashondelivery_delete" data-href="<?php /* @escapeNotVerified */echo $block->getUrl('mpcashondelivery/pricerules/delete/',['id'=>$id]) ?>"/></span></td></tr><?php endforeach ?></tbody></table></form><?php }else{ ?> <div class="wk_emptymsg"><?php /* @escapeNotVerified */echo __('No Rates Available') ?></div><?php } ?></div><?php /* @escapeNotVerified */echo $block->getPagerHtml(); ?></div></div><div class="buttons-set"><p class="back-link"><a href="javascript:;" onclick="javascript: window.history.back();" class="left">« Back</a></p></div></div><script type="text/javascript">
+	require([
+	        "jquery",
+	        "mage/mage"
+	    ], function($wk_jq){
+	    	hideSpecific();
+	    	var form_mpcashondelivery_add = $wk_jq('#form_mpcashondelivery_add');
+	    	var form_selleraddress_validate = $wk_jq('#form_selleraddress_validate');
+	    	var form_mpcashondelivery_massdelete = $wk_jq('#form_mpcashondelivery_massdelete');
+	    	var form_massupload = $wk_jq('#uploadcodratesform');
+
+	        form_mpcashondelivery_add.mage('validation', {});
+	        form_selleraddress_validate.mage('validation', {});
+	        form_mpcashondelivery_massdelete.mage('validation', {});
+	        form_massupload.mage('validation', {});
+	        $wk_jq('#mpcashondelivery_add_rates').click(function(){
+	        	if($wk_jq('#form_mpcashondelivery_add').valid()!== false){
+	        		$wk_jq('#mpcashondelivery_add_rates').attr('disabled','disabled');
+					$wk_jq('#form_mpcashondelivery_add').submit();
+	        	}
+	        })
+			$wk_jq('body').delegate('.mpcashondelivery_edit','click',function(){
+				var datahref=$wk_jq(this).attr('data-href');
+				var dicision=confirm('<?php /* @escapeNotVerified */echo __(" Are you sure you want to edit this price rate? ")?>');
+				if(dicision==true){	
+					window.location = datahref;
+				}
+			});
+			$wk_jq('#is_range').on('change',function(){
+				var is_range = $wk_jq(this).val();
+				if(is_range==1){
+					showSpecific();
+				}else{
+					hideSpecific();
+				}
+			});
+			$wk_jq('#mass_delete_butn').click(function(e){
+				var flag =0;
+				$wk_jq('.mpcheckbox').each(function(){
+					if (this.checked == true){
+						flag = 1;
+					}
+				});
+				if (flag == 0){
+					alert("<?php /* @escapeNotVerified */echo __(' No Checkbox is checked ') ?>");
+					return false;
+				}
+				else{
+					var dicisionapp=confirm('<?php /* @escapeNotVerified */echo __(" Are you sure you want to delete these price rate(s)? ")?>');
+					if(dicisionapp==true){
+						$wk_jq('#form_mpcashondelivery_massdelete').submit();
+					}else{
+						return false;
+					}
+				}
+			});
+
+			$wk_jq('#mpselecctall').click(function(event) {
+		        if(this.checked) {
+		            $wk_jq('.mpcheckbox').each(function() {
+		                this.checked = true;      
+		            });
+		        }else{
+		            $wk_jq('.mpcheckbox').each(function() {
+		                this.checked = false;           
+		            });         
+		        }
+		    });
+
+			$wk_jq('.mpcashondelivery_delete').click(function(){
+				var datahref=$wk_jq(this).attr('data-href');
+				var dicisionapp=confirm('<?php /* @escapeNotVerified */echo __(" Are you sure you want to delete this rate? ")?>');
+				if(dicisionapp==true)
+					window.location = datahref;
+			});
+			function showSpecific(){
+				$wk_jq("#zipcode").parent().parent().show();
+				$wk_jq("#dest_zip_from").parent().parent().hide();
+				$wk_jq("#dest_zip_to").parent().parent().hide();
+			}
+			function hideSpecific(){
+				$wk_jq("#zipcode").parent().parent().hide();
+				$wk_jq("#dest_zip_from").parent().parent().show();
+				$wk_jq("#dest_zip_to").parent().parent().show();
+			}
+		});</script><?php }else{ /* @escapeNotVerified */echo "<h2 class='wk_new_msg'>".__("Payment method is currently disabled.")."</h2>"; } }else{ /* @escapeNotVerified */echo "<h2 class='wk_new_msg'>".__("To BECOME SELLER PLEASE CONTACT TO ADMIN.")."</h2>"; }?>

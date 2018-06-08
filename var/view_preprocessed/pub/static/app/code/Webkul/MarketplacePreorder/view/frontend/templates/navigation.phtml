@@ -1,0 +1,19 @@
+<?php /** * Webkul Software. * * @category Webkul * @package Webkul_MarketplacePreorder * @author Webkul * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com) * @license https://store.webkul.com/license.html */ ?> <?php $_helper = $this->helper('Webkul\Marketplace\Helper\Data'); $isPartner = $_helper->isSeller(); $magentoCurrentUrl = $block->getCurrentUrl(); $isSellerGroup = $_helper->isSellerGroupModuleInstalled(); if ($isPartner) { ?> <?php if(($isSellerGroup && $_helper->isAllowedAction('mppreorder/seller/configuration')) || !$isSellerGroup) { ?> <li class="nav item main-menu <?php echo strpos($magentoCurrentUrl,'mppreorder') !== false ? "current":"";?>"><?php if(strpos($magentoCurrentUrl,'mppreorder/seller/configuration') !== false){ ?> <strong><?php echo __('Preorder Management') ?></strong> <?php } else{ ?> <a href="<?php echo $this->getUrl('mppreorder/seller/configuration', ['_secure' => $this->getRequest()->isSecure()]); ?>"><?php echo __('Preorder Management') ?></a> <?php } ?> <div style="" id="mppreorder_block" class="wk_mppreorder_block wk-mppreorder-block"></div><script id="preorder_submenu" type="text/x-magento-template">
+            <div class="sub-menu">
+                <li class="nav item">
+                <?php if(strpos($magentoCurrentUrl,'configuration') !== false){ ?>      
+                        <strong><?php echo __('Configuration') ?></strong>              
+                        <?php
+                    } else{ ?> <a id="mppreorder_config" title="<?php echo __('Preorder Configuration') ?>" href="<?php echo $this->getUrl('mppreorder/seller/configuration', ['_secure' => $this->getRequest()->isSecure()]); ?>"><?php echo __('Configuration') ?></a>                   
+                    <?php } ?></li>
+                <li class="nav item">
+                <?php if(strpos($magentoCurrentUrl,'orders') !== false){ ?>      
+                        <strong><?php echo __('Orders') ?></strong>              
+                        <?php
+                    } else{ ?> <a id="mppreorder_order" title="<?php echo __('Preorder Orders') ?>" href="<?php echo $this->getUrl('mppreorder/seller/orders', ['_secure' => $this->getRequest()->isSecure()]); ?>"><?php echo __('Orders') ?></a>                   
+                    <?php } ?></li></div></li></script><?php } ?> <script type="text/x-magento-init">
+{
+    "*" : {
+            "preorderLink": ""
+    }
+}</script><?php } ?>

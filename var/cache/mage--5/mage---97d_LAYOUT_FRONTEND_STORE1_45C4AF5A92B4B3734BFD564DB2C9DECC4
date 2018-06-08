@@ -1,0 +1,7 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1528359696;s:6:"expire";i:9999999999;s:4:"tags";s:54:"97d_SELLER_LOGIN,97d_LAYOUT_GENERAL_CACHE_TAG,97d_MAGE";}
+<container name="root" htmlTag="section" htmlClass="wk-mp-page-wrapper">
+   <container name="after.body.start" as="after.body.start" label="Page Top" before="-"/>
+   <container name="seller.login.header" htmlTag="header" htmlClass="wk-mp-login-header"/>
+   <container name="seller.login.content" htmlTag="div" htmlClass="wk-mp-login-content"/>
+   <container name="seller.login.footer" htmlTag="footer" htmlClass="wk-mp-login-footer"/>
+</container>

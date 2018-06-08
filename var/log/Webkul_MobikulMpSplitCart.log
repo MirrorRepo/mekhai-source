@@ -1,0 +1,3705 @@
+[2018-06-07 06:33:18] mobikulmpsplitcart.INFO: getVirtualCart customer not logged in [] []
+[2018-06-07 06:33:18] mobikulmpsplitcart.INFO: getVirtualCart customer not logged in [] []
+[2018-06-07 06:45:37] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 06:45:37] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 06:45:42] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 06:45:42] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 06:45:45] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 06:45:45] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 06:45:55] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 06:45:55] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 06:45:55] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 06:47:57] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 06:47:57] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 06:47:57] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 06:49:15] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 06:49:15] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 06:49:15] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:09:36] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:09:36] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:09:36] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:09:44] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:09:44] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:09:45] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:09:45] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:09:45] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:09:46] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:09:46] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:09:46] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:09:46] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:09:56] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:09:56] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:24:57] mobikulmpsplitcart.INFO: getVirtualCart customer not logged in [] []
+[2018-06-07 07:24:57] mobikulmpsplitcart.INFO: getVirtualCart :  [] []
+[2018-06-07 07:25:02] mobikulmpsplitcart.INFO: getVirtualCart customer not logged in [] []
+[2018-06-07 07:25:02] mobikulmpsplitcart.INFO: getVirtualCart : Array
+(
+)
+ [] []
+[2018-06-07 07:25:06] mobikulmpsplitcart.INFO: getVirtualCart customer not logged in [] []
+[2018-06-07 07:25:06] mobikulmpsplitcart.INFO: getVirtualCart : Array
+(
+    [2] => Array
+        (
+            [2] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 7
+                    [child] => {"options":[]}
+                )
+
+        )
+
+    [1] => Array
+        (
+            [3] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 8
+                    [child] => {"options":[]}
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:25:09] mobikulmpsplitcart.INFO: getVirtualCart customer not logged in [] []
+[2018-06-07 07:25:09] mobikulmpsplitcart.INFO: getVirtualCart : Array
+(
+    [2] => Array
+        (
+            [2] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 7
+                    [child] => {"options":[]}
+                )
+
+        )
+
+    [1] => Array
+        (
+            [3] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 8
+                    [child] => {"options":[]}
+                )
+
+            [4] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 9
+                    [child] => {"options":[]}
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:25:09] mobikulmpsplitcart.INFO: getVirtualCart customer not logged in [] []
+[2018-06-07 07:25:09] mobikulmpsplitcart.INFO: getVirtualCart : Array
+(
+    [2] => Array
+        (
+            [2] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 7
+                    [child] => {"options":[]}
+                )
+
+        )
+
+    [1] => Array
+        (
+            [3] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 8
+                    [child] => {"options":[]}
+                )
+
+            [4] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 9
+                    [child] => {"options":[]}
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:25:09] mobikulmpsplitcart.INFO: getVirtualCart customer not logged in [] []
+[2018-06-07 07:25:09] mobikulmpsplitcart.INFO: getVirtualCart : Array
+(
+    [2] => Array
+        (
+            [2] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 7
+                    [child] => {"options":[]}
+                )
+
+        )
+
+    [1] => Array
+        (
+            [3] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 8
+                    [child] => {"options":[]}
+                )
+
+            [4] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 9
+                    [child] => {"options":[]}
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:25:10] mobikulmpsplitcart.INFO: CartDetails aroundExecute returnArray : stdClass Object
+(
+    [items] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 10
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                    [name] => Short M
+                    [sku] => 124564324
+                    [price] => ₭ 25.000,00
+                    [qty] => 1
+                    [productId] => 2
+                    [typeId] => virtual
+                    [subTotal] => ₭ 25.000,00
+                    [id] => 7
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 10
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                    [name] => Jeans
+                    [sku] => 346448441
+                    [price] => ₭ 70.000,00
+                    [qty] => 1
+                    [productId] => 3
+                    [typeId] => virtual
+                    [subTotal] => ₭ 70.000,00
+                    [id] => 8
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 10
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                    [name] => Shirt Polo
+                    [sku] => 156484321
+                    [price] => ₭ 50.000,00
+                    [qty] => 1
+                    [productId] => 4
+                    [typeId] => virtual
+                    [subTotal] => ₭ 50.000,00
+                    [id] => 9
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+        )
+
+    [authKey] => 692d10cc46d1575b423c4226333907d8
+    [message] => 
+    [cartCount] => 3
+    [isVirtual] => 1
+    [couponCode] => 
+    [responseCode] => 1
+    [tax] => stdClass Object
+        (
+            [title] => ພາສີ
+            [value] => ₭ 20,00
+            [unformatedValue] => 20
+        )
+
+    [showThreshold] => 
+    [crossSellList] => Array
+        (
+        )
+
+    [subtotal] => stdClass Object
+        (
+            [title] => ລາຄາສຸດທິ
+            [value] => ₭ 145.000,00
+            [unformatedValue] => 145000
+        )
+
+    [discount] => stdClass Object
+        (
+            [title] => 
+            [value] => 
+            [unformatedValue] => 0
+        )
+
+    [shipping] => stdClass Object
+        (
+            [title] => ການຈັດສົ່ງ ແລະ ຈັດການ
+            [value] => ₭ 0,00
+            [unformatedValue] => 0
+        )
+
+    [grandtotal] => stdClass Object
+        (
+            [title] => ຜົນລວມທັງສິ້ນ
+            [value] => ₭ 145.000,00
+            [unformatedValue] => 145000
+        )
+
+    [allowMultipleShipping] => 1
+    [isAllowedGuestCheckout] => 1
+    [canGuestCheckoutDownloadable] => 
+    [minimumAmount] => 0
+    [minimumFormattedAmount] => ₭ 0,00
+    [splitCartData] => Array
+        (
+            [0] => Array
+                (
+                    [seller_id] => 2
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 10
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                                    [name] => Short M
+                                    [sku] => 124564324
+                                    [price] => ₭ 25.000,00
+                                    [qty] => 1
+                                    [productId] => 2
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 25.000,00
+                                    [id] => 7
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 25000.0000
+                            [formatted_total] => ₭ 25.000,00
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [seller_id] => 1
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 10
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                                    [name] => Jeans
+                                    [sku] => 346448441
+                                    [price] => ₭ 70.000,00
+                                    [qty] => 1
+                                    [productId] => 3
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 70.000,00
+                                    [id] => 8
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 10
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                                    [name] => Shirt Polo
+                                    [sku] => 156484321
+                                    [price] => ₭ 50.000,00
+                                    [qty] => 1
+                                    [productId] => 4
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 50.000,00
+                                    [id] => 9
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 120000
+                            [formatted_total] => ₭ 120.000,00
+                        )
+
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:26:23] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:26:23] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:26:23] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:26:23] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:26:23] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:26:23] mobikulmpsplitcart.INFO: CartDetails aroundExecute returnArray : stdClass Object
+(
+    [items] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 10
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                    [name] => Short M
+                    [sku] => 124564324
+                    [price] => ₭ 25.000,00
+                    [qty] => 1
+                    [productId] => 2
+                    [typeId] => virtual
+                    [subTotal] => ₭ 25.000,00
+                    [id] => 7
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 10
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                    [name] => Jeans
+                    [sku] => 346448441
+                    [price] => ₭ 70.000,00
+                    [qty] => 1
+                    [productId] => 3
+                    [typeId] => virtual
+                    [subTotal] => ₭ 70.000,00
+                    [id] => 8
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 10
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                    [name] => Shirt Polo
+                    [sku] => 156484321
+                    [price] => ₭ 50.000,00
+                    [qty] => 1
+                    [productId] => 4
+                    [typeId] => virtual
+                    [subTotal] => ₭ 50.000,00
+                    [id] => 9
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+        )
+
+    [authKey] => 8453fe8effeb11d8c100ec5c37720506
+    [message] => 
+    [cartCount] => 3
+    [isVirtual] => 1
+    [couponCode] => 
+    [responseCode] => 2
+    [tax] => stdClass Object
+        (
+            [title] => ພາສີ
+            [value] => ₭ 20,00
+            [unformatedValue] => 20
+        )
+
+    [showThreshold] => 
+    [crossSellList] => Array
+        (
+        )
+
+    [subtotal] => stdClass Object
+        (
+            [title] => ລາຄາສຸດທິ
+            [value] => ₭ 145.000,00
+            [unformatedValue] => 145000
+        )
+
+    [discount] => stdClass Object
+        (
+            [title] => 
+            [value] => 
+            [unformatedValue] => 0
+        )
+
+    [shipping] => stdClass Object
+        (
+            [title] => ການຈັດສົ່ງ ແລະ ຈັດການ
+            [value] => ₭ 0,00
+            [unformatedValue] => 0
+        )
+
+    [grandtotal] => stdClass Object
+        (
+            [title] => ຜົນລວມທັງສິ້ນ
+            [value] => ₭ 145.000,00
+            [unformatedValue] => 145000
+        )
+
+    [allowMultipleShipping] => 1
+    [isAllowedGuestCheckout] => 1
+    [canGuestCheckoutDownloadable] => 
+    [minimumAmount] => 0
+    [minimumFormattedAmount] => ₭ 0,00
+    [splitCartData] => Array
+        (
+            [0] => Array
+                (
+                    [seller_id] => 2
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 10
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                                    [name] => Short M
+                                    [sku] => 124564324
+                                    [price] => ₭ 25.000,00
+                                    [qty] => 1
+                                    [productId] => 2
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 25.000,00
+                                    [id] => 7
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 25000.0000
+                            [formatted_total] => ₭ 25.000,00
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [seller_id] => 1
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 10
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                                    [name] => Jeans
+                                    [sku] => 346448441
+                                    [price] => ₭ 70.000,00
+                                    [qty] => 1
+                                    [productId] => 3
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 70.000,00
+                                    [id] => 8
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 10
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                                    [name] => Shirt Polo
+                                    [sku] => 156484321
+                                    [price] => ₭ 50.000,00
+                                    [qty] => 1
+                                    [productId] => 4
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 50.000,00
+                                    [id] => 9
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 120000
+                            [formatted_total] => ₭ 120.000,00
+                        )
+
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:26:30] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:26:30] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:26:30] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:26:30] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:26:31] mobikulmpsplitcart.INFO: getUpdatedQuote Exception : ບໍ່ສາມາດບັນທຶກຄໍາເວົ້າ [] []
+[2018-06-07 07:26:45] mobikulmpsplitcart.INFO: getVirtualCart customer not logged in [] []
+[2018-06-07 07:26:45] mobikulmpsplitcart.INFO: getVirtualCart :  [] []
+[2018-06-07 07:26:51] mobikulmpsplitcart.INFO: getVirtualCart customer not logged in [] []
+[2018-06-07 07:26:51] mobikulmpsplitcart.INFO: getVirtualCart : Array
+(
+)
+ [] []
+[2018-06-07 07:26:57] mobikulmpsplitcart.INFO: getVirtualCart customer not logged in [] []
+[2018-06-07 07:26:57] mobikulmpsplitcart.INFO: getVirtualCart : Array
+(
+    [1] => Array
+        (
+            [3] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 10
+                    [child] => {"options":[]}
+                )
+
+        )
+
+    [2] => Array
+        (
+            [2] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 11
+                    [child] => {"options":[]}
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:27:03] mobikulmpsplitcart.INFO: getVirtualCart customer not logged in [] []
+[2018-06-07 07:27:03] mobikulmpsplitcart.INFO: getVirtualCart : Array
+(
+    [1] => Array
+        (
+            [3] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 10
+                    [child] => {"options":[]}
+                )
+
+            [4] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 12
+                    [child] => {"options":[]}
+                )
+
+        )
+
+    [2] => Array
+        (
+            [2] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 11
+                    [child] => {"options":[]}
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:27:03] mobikulmpsplitcart.INFO: getVirtualCart customer not logged in [] []
+[2018-06-07 07:27:03] mobikulmpsplitcart.INFO: getVirtualCart : Array
+(
+    [1] => Array
+        (
+            [3] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 10
+                    [child] => {"options":[]}
+                )
+
+            [4] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 12
+                    [child] => {"options":[]}
+                )
+
+        )
+
+    [2] => Array
+        (
+            [2] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 11
+                    [child] => {"options":[]}
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:27:03] mobikulmpsplitcart.INFO: getVirtualCart customer not logged in [] []
+[2018-06-07 07:27:03] mobikulmpsplitcart.INFO: getVirtualCart : Array
+(
+    [1] => Array
+        (
+            [3] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 10
+                    [child] => {"options":[]}
+                )
+
+            [4] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 12
+                    [child] => {"options":[]}
+                )
+
+        )
+
+    [2] => Array
+        (
+            [2] => Array
+                (
+                    [qty] => 1
+                    [item_id] => 11
+                    [child] => {"options":[]}
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:27:04] mobikulmpsplitcart.INFO: CartDetails aroundExecute returnArray : stdClass Object
+(
+    [items] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 10
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                    [name] => Jeans
+                    [sku] => 346448441
+                    [price] => ₭ 70.000,00
+                    [qty] => 1
+                    [productId] => 3
+                    [typeId] => virtual
+                    [subTotal] => ₭ 70.000,00
+                    [id] => 10
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 10
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                    [name] => Short M
+                    [sku] => 124564324
+                    [price] => ₭ 25.000,00
+                    [qty] => 1
+                    [productId] => 2
+                    [typeId] => virtual
+                    [subTotal] => ₭ 25.000,00
+                    [id] => 11
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 10
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                    [name] => Shirt Polo
+                    [sku] => 156484321
+                    [price] => ₭ 50.000,00
+                    [qty] => 1
+                    [productId] => 4
+                    [typeId] => virtual
+                    [subTotal] => ₭ 50.000,00
+                    [id] => 12
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+        )
+
+    [authKey] => 426c667fc014c1c3e0eb260d0d2e8ef0
+    [message] => 
+    [cartCount] => 3
+    [isVirtual] => 1
+    [couponCode] => 
+    [responseCode] => 2
+    [tax] => stdClass Object
+        (
+            [title] => ພາສີ
+            [value] => ₭ 20,00
+            [unformatedValue] => 20
+        )
+
+    [showThreshold] => 
+    [crossSellList] => Array
+        (
+        )
+
+    [subtotal] => stdClass Object
+        (
+            [title] => ລາຄາສຸດທິ
+            [value] => ₭ 145.000,00
+            [unformatedValue] => 145000
+        )
+
+    [discount] => stdClass Object
+        (
+            [title] => 
+            [value] => 
+            [unformatedValue] => 0
+        )
+
+    [shipping] => stdClass Object
+        (
+            [title] => ການຈັດສົ່ງ ແລະ ຈັດການ
+            [value] => ₭ 0,00
+            [unformatedValue] => 0
+        )
+
+    [grandtotal] => stdClass Object
+        (
+            [title] => ຜົນລວມທັງສິ້ນ
+            [value] => ₭ 145.000,00
+            [unformatedValue] => 145000
+        )
+
+    [allowMultipleShipping] => 1
+    [isAllowedGuestCheckout] => 1
+    [canGuestCheckoutDownloadable] => 
+    [minimumAmount] => 0
+    [minimumFormattedAmount] => ₭ 0,00
+    [splitCartData] => Array
+        (
+            [0] => Array
+                (
+                    [seller_id] => 1
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 10
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                                    [name] => Jeans
+                                    [sku] => 346448441
+                                    [price] => ₭ 70.000,00
+                                    [qty] => 1
+                                    [productId] => 3
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 70.000,00
+                                    [id] => 10
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 10
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                                    [name] => Shirt Polo
+                                    [sku] => 156484321
+                                    [price] => ₭ 50.000,00
+                                    [qty] => 1
+                                    [productId] => 4
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 50.000,00
+                                    [id] => 12
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 120000
+                            [formatted_total] => ₭ 120.000,00
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [seller_id] => 2
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 10
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                                    [name] => Short M
+                                    [sku] => 124564324
+                                    [price] => ₭ 25.000,00
+                                    [qty] => 1
+                                    [productId] => 2
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 25.000,00
+                                    [id] => 11
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 25000.0000
+                            [formatted_total] => ₭ 25.000,00
+                        )
+
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:27:32] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:27:32] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:27:32] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:27:32] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:27:32] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:27:32] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:27:32] mobikulmpsplitcart.INFO: SaveOrder return data : stdClass Object
+(
+    [email] => phat_speed@hotmail.com
+    [authKey] => 464664977318eaf3b00c13a2e1e55520
+    [message] => 
+    [success] => 1
+    [orderId] => 1
+    [cartCount] => 2
+    [canReorder] => 1
+    [incrementId] => 000000001
+    [responseCode] => 1
+    [showCreateAccountLink] => 
+    [quoteId] => 10
+    [customerId] => 4
+    [storeId] => 1
+)
+ [] []
+[2018-06-07 07:27:42] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:27:42] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:27:42] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:27:42] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:27:42] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:27:43] mobikulmpsplitcart.INFO: CartDetails aroundExecute returnArray : stdClass Object
+(
+    [items] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 10
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                    [name] => Jeans
+                    [sku] => 346448441
+                    [price] => ₭ 70.000,00
+                    [qty] => 1
+                    [productId] => 3
+                    [typeId] => virtual
+                    [subTotal] => ₭ 70.000,00
+                    [id] => 13
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 10
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                    [name] => Shirt Polo
+                    [sku] => 156484321
+                    [price] => ₭ 50.000,00
+                    [qty] => 1
+                    [productId] => 4
+                    [typeId] => virtual
+                    [subTotal] => ₭ 50.000,00
+                    [id] => 14
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+        )
+
+    [authKey] => 7bfcf5f1400cf099fb6cbc1abfe07e21
+    [message] => 
+    [cartCount] => 2
+    [isVirtual] => 1
+    [couponCode] => 
+    [responseCode] => 1
+    [tax] => stdClass Object
+        (
+            [title] => ພາສີ
+            [value] => ₭ 20,00
+            [unformatedValue] => 20
+        )
+
+    [showThreshold] => 
+    [crossSellList] => Array
+        (
+        )
+
+    [subtotal] => stdClass Object
+        (
+            [title] => ລາຄາສຸດທິ
+            [value] => ₭ 120.000,00
+            [unformatedValue] => 120000
+        )
+
+    [discount] => stdClass Object
+        (
+            [title] => 
+            [value] => 
+            [unformatedValue] => 0
+        )
+
+    [shipping] => stdClass Object
+        (
+            [title] => ການຈັດສົ່ງ ແລະ ຈັດການ
+            [value] => ₭ 0,00
+            [unformatedValue] => 0
+        )
+
+    [grandtotal] => stdClass Object
+        (
+            [title] => ຜົນລວມທັງສິ້ນ
+            [value] => ₭ 120.000,00
+            [unformatedValue] => 120000
+        )
+
+    [allowMultipleShipping] => 1
+    [isAllowedGuestCheckout] => 1
+    [canGuestCheckoutDownloadable] => 
+    [minimumAmount] => 0
+    [minimumFormattedAmount] => ₭ 0,00
+    [splitCartData] => Array
+        (
+            [0] => Array
+                (
+                    [seller_id] => 1
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 10
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                                    [name] => Jeans
+                                    [sku] => 346448441
+                                    [price] => ₭ 70.000,00
+                                    [qty] => 1
+                                    [productId] => 3
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 70.000,00
+                                    [id] => 13
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 10
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                                    [name] => Shirt Polo
+                                    [sku] => 156484321
+                                    [price] => ₭ 50.000,00
+                                    [qty] => 1
+                                    [productId] => 4
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 50.000,00
+                                    [id] => 14
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 120000
+                            [formatted_total] => ₭ 120.000,00
+                        )
+
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:27:47] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:27:47] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:28:01] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:28:01] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:28:01] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:28:01] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:28:01] mobikulmpsplitcart.INFO: SaveOrder return data : stdClass Object
+(
+    [email] => phat_speed@hotmail.com
+    [authKey] => 07c68b6c7366bc60a35e48582715e549
+    [message] => 
+    [success] => 1
+    [orderId] => 2
+    [cartCount] => 2
+    [canReorder] => 1
+    [incrementId] => 000000002
+    [responseCode] => 1
+    [showCreateAccountLink] => 
+    [quoteId] => 11
+    [customerId] => 4
+    [storeId] => 1
+)
+ [] []
+[2018-06-07 07:29:54] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:29:54] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:29:54] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:29:54] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:29:54] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:29:55] mobikulmpsplitcart.INFO: CartDetails aroundExecute returnArray : stdClass Object
+(
+    [items] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                    [name] => Shirt Polo
+                    [sku] => 156484321
+                    [price] => ₭ 50.000,00
+                    [qty] => 2
+                    [productId] => 4
+                    [typeId] => virtual
+                    [subTotal] => ₭ 100.000,00
+                    [id] => 4
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                    [name] => Jeans
+                    [sku] => 346448441
+                    [price] => ₭ 70.000,00
+                    [qty] => 2
+                    [productId] => 3
+                    [typeId] => virtual
+                    [subTotal] => ₭ 140.000,00
+                    [id] => 5
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                    [name] => Short M
+                    [sku] => 124564324
+                    [price] => ₭ 25.000,00
+                    [qty] => 2
+                    [productId] => 2
+                    [typeId] => virtual
+                    [subTotal] => ₭ 50.000,00
+                    [id] => 6
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+        )
+
+    [authKey] => 4cfc856861c4e3a128d2e5547a714881
+    [message] => 
+    [cartCount] => 6
+    [isVirtual] => 1
+    [couponCode] => 
+    [responseCode] => 2
+    [tax] => stdClass Object
+        (
+            [title] => ພາສີ
+            [value] => ₭ 20,00
+            [unformatedValue] => 20
+        )
+
+    [showThreshold] => 
+    [crossSellList] => Array
+        (
+        )
+
+    [subtotal] => stdClass Object
+        (
+            [title] => ລາຄາສຸດທິ
+            [value] => ₭ 290.000,00
+            [unformatedValue] => 290000
+        )
+
+    [discount] => stdClass Object
+        (
+            [title] => 
+            [value] => 
+            [unformatedValue] => 0
+        )
+
+    [shipping] => stdClass Object
+        (
+            [title] => ການຈັດສົ່ງ ແລະ ຈັດການ
+            [value] => ₭ 0,00
+            [unformatedValue] => 0
+        )
+
+    [grandtotal] => stdClass Object
+        (
+            [title] => ຜົນລວມທັງສິ້ນ
+            [value] => ₭ 290.000,00
+            [unformatedValue] => 290000
+        )
+
+    [allowMultipleShipping] => 1
+    [isAllowedGuestCheckout] => 1
+    [canGuestCheckoutDownloadable] => 
+    [minimumAmount] => 0
+    [minimumFormattedAmount] => ₭ 0,00
+    [splitCartData] => Array
+        (
+            [0] => Array
+                (
+                    [seller_id] => 1
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                                    [name] => Shirt Polo
+                                    [sku] => 156484321
+                                    [price] => ₭ 50.000,00
+                                    [qty] => 2
+                                    [productId] => 4
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 100.000,00
+                                    [id] => 4
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                                    [name] => Jeans
+                                    [sku] => 346448441
+                                    [price] => ₭ 70.000,00
+                                    [qty] => 2
+                                    [productId] => 3
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 140.000,00
+                                    [id] => 5
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 240000
+                            [formatted_total] => ₭ 240.000,00
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [seller_id] => 2
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                                    [name] => Short M
+                                    [sku] => 124564324
+                                    [price] => ₭ 25.000,00
+                                    [qty] => 2
+                                    [productId] => 2
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 50.000,00
+                                    [id] => 6
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 50000.0000
+                            [formatted_total] => ₭ 50.000,00
+                        )
+
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:30:12] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:30:12] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:30:12] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:30:12] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:30:12] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:30:12] mobikulmpsplitcart.INFO: CartDetails aroundExecute returnArray : stdClass Object
+(
+    [items] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                    [name] => Shirt Polo
+                    [sku] => 156484321
+                    [price] => ₭ 50.000,00
+                    [qty] => 2
+                    [productId] => 4
+                    [typeId] => virtual
+                    [subTotal] => ₭ 100.000,00
+                    [id] => 4
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                    [name] => Jeans
+                    [sku] => 346448441
+                    [price] => ₭ 70.000,00
+                    [qty] => 2
+                    [productId] => 3
+                    [typeId] => virtual
+                    [subTotal] => ₭ 140.000,00
+                    [id] => 5
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                    [name] => Short M
+                    [sku] => 124564324
+                    [price] => ₭ 25.000,00
+                    [qty] => 2
+                    [productId] => 2
+                    [typeId] => virtual
+                    [subTotal] => ₭ 50.000,00
+                    [id] => 6
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+        )
+
+    [authKey] => 23e8de3cdda0ec39b6173a1669dab7ba
+    [message] => 
+    [cartCount] => 6
+    [isVirtual] => 1
+    [couponCode] => 
+    [responseCode] => 2
+    [tax] => stdClass Object
+        (
+            [title] => ພາສີ
+            [value] => ₭ 20,00
+            [unformatedValue] => 20
+        )
+
+    [showThreshold] => 
+    [crossSellList] => Array
+        (
+        )
+
+    [subtotal] => stdClass Object
+        (
+            [title] => ລາຄາສຸດທິ
+            [value] => ₭ 290.000,00
+            [unformatedValue] => 290000
+        )
+
+    [discount] => stdClass Object
+        (
+            [title] => 
+            [value] => 
+            [unformatedValue] => 0
+        )
+
+    [shipping] => stdClass Object
+        (
+            [title] => ການຈັດສົ່ງ ແລະ ຈັດການ
+            [value] => ₭ 0,00
+            [unformatedValue] => 0
+        )
+
+    [grandtotal] => stdClass Object
+        (
+            [title] => ຜົນລວມທັງສິ້ນ
+            [value] => ₭ 290.000,00
+            [unformatedValue] => 290000
+        )
+
+    [allowMultipleShipping] => 1
+    [isAllowedGuestCheckout] => 1
+    [canGuestCheckoutDownloadable] => 
+    [minimumAmount] => 0
+    [minimumFormattedAmount] => ₭ 0,00
+    [splitCartData] => Array
+        (
+            [0] => Array
+                (
+                    [seller_id] => 1
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                                    [name] => Shirt Polo
+                                    [sku] => 156484321
+                                    [price] => ₭ 50.000,00
+                                    [qty] => 2
+                                    [productId] => 4
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 100.000,00
+                                    [id] => 4
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                                    [name] => Jeans
+                                    [sku] => 346448441
+                                    [price] => ₭ 70.000,00
+                                    [qty] => 2
+                                    [productId] => 3
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 140.000,00
+                                    [id] => 5
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 240000
+                            [formatted_total] => ₭ 240.000,00
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [seller_id] => 2
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                                    [name] => Short M
+                                    [sku] => 124564324
+                                    [price] => ₭ 25.000,00
+                                    [qty] => 2
+                                    [productId] => 2
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 50.000,00
+                                    [id] => 6
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 50000.0000
+                            [formatted_total] => ₭ 50.000,00
+                        )
+
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:30:32] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:30:32] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:30:34] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:30:34] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:30:34] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:30:34] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:30:34] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:30:34] mobikulmpsplitcart.INFO: CartDetails aroundExecute returnArray : stdClass Object
+(
+    [items] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                    [name] => Shirt Polo
+                    [sku] => 156484321
+                    [price] => ₭ 50.000,00
+                    [qty] => 2
+                    [productId] => 4
+                    [typeId] => virtual
+                    [subTotal] => ₭ 100.000,00
+                    [id] => 4
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                    [name] => Jeans
+                    [sku] => 346448441
+                    [price] => ₭ 70.000,00
+                    [qty] => 2
+                    [productId] => 3
+                    [typeId] => virtual
+                    [subTotal] => ₭ 140.000,00
+                    [id] => 5
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                    [name] => Short M
+                    [sku] => 124564324
+                    [price] => ₭ 25.000,00
+                    [qty] => 1
+                    [productId] => 2
+                    [typeId] => virtual
+                    [subTotal] => ₭ 25.000,00
+                    [id] => 6
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+        )
+
+    [authKey] => 37f64f9517310833117124595d4d66f1
+    [message] => 
+    [cartCount] => 5
+    [isVirtual] => 1
+    [couponCode] => 
+    [responseCode] => 2
+    [tax] => stdClass Object
+        (
+            [title] => ພາສີ
+            [value] => ₭ 20,00
+            [unformatedValue] => 20
+        )
+
+    [showThreshold] => 
+    [crossSellList] => Array
+        (
+        )
+
+    [subtotal] => stdClass Object
+        (
+            [title] => ລາຄາສຸດທິ
+            [value] => ₭ 265.000,00
+            [unformatedValue] => 265000
+        )
+
+    [discount] => stdClass Object
+        (
+            [title] => 
+            [value] => 
+            [unformatedValue] => 0
+        )
+
+    [shipping] => stdClass Object
+        (
+            [title] => ການຈັດສົ່ງ ແລະ ຈັດການ
+            [value] => ₭ 0,00
+            [unformatedValue] => 0
+        )
+
+    [grandtotal] => stdClass Object
+        (
+            [title] => ຜົນລວມທັງສິ້ນ
+            [value] => ₭ 265.000,00
+            [unformatedValue] => 265000
+        )
+
+    [allowMultipleShipping] => 1
+    [isAllowedGuestCheckout] => 1
+    [canGuestCheckoutDownloadable] => 
+    [minimumAmount] => 0
+    [minimumFormattedAmount] => ₭ 0,00
+    [splitCartData] => Array
+        (
+            [0] => Array
+                (
+                    [seller_id] => 1
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                                    [name] => Shirt Polo
+                                    [sku] => 156484321
+                                    [price] => ₭ 50.000,00
+                                    [qty] => 2
+                                    [productId] => 4
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 100.000,00
+                                    [id] => 4
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                                    [name] => Jeans
+                                    [sku] => 346448441
+                                    [price] => ₭ 70.000,00
+                                    [qty] => 2
+                                    [productId] => 3
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 140.000,00
+                                    [id] => 5
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 240000
+                            [formatted_total] => ₭ 240.000,00
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [seller_id] => 2
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                                    [name] => Short M
+                                    [sku] => 124564324
+                                    [price] => ₭ 25.000,00
+                                    [qty] => 1
+                                    [productId] => 2
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 25.000,00
+                                    [id] => 6
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 25000.0000
+                            [formatted_total] => ₭ 25.000,00
+                        )
+
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:30:42] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:30:42] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:30:44] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:30:44] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:30:44] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:30:44] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:30:44] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:30:44] mobikulmpsplitcart.INFO: CartDetails aroundExecute returnArray : stdClass Object
+(
+    [items] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                    [name] => Shirt Polo
+                    [sku] => 156484321
+                    [price] => ₭ 50.000,00
+                    [qty] => 1
+                    [productId] => 4
+                    [typeId] => virtual
+                    [subTotal] => ₭ 50.000,00
+                    [id] => 4
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                    [name] => Jeans
+                    [sku] => 346448441
+                    [price] => ₭ 70.000,00
+                    [qty] => 1
+                    [productId] => 3
+                    [typeId] => virtual
+                    [subTotal] => ₭ 70.000,00
+                    [id] => 5
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                    [name] => Short M
+                    [sku] => 124564324
+                    [price] => ₭ 25.000,00
+                    [qty] => 1
+                    [productId] => 2
+                    [typeId] => virtual
+                    [subTotal] => ₭ 25.000,00
+                    [id] => 6
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+        )
+
+    [authKey] => 52d49bbe34a116a4f6c2a5f2d70f63ff
+    [message] => 
+    [cartCount] => 3
+    [isVirtual] => 1
+    [couponCode] => 
+    [responseCode] => 2
+    [tax] => stdClass Object
+        (
+            [title] => ພາສີ
+            [value] => ₭ 20,00
+            [unformatedValue] => 20
+        )
+
+    [showThreshold] => 
+    [crossSellList] => Array
+        (
+        )
+
+    [subtotal] => stdClass Object
+        (
+            [title] => ລາຄາສຸດທິ
+            [value] => ₭ 145.000,00
+            [unformatedValue] => 145000
+        )
+
+    [discount] => stdClass Object
+        (
+            [title] => 
+            [value] => 
+            [unformatedValue] => 0
+        )
+
+    [shipping] => stdClass Object
+        (
+            [title] => ການຈັດສົ່ງ ແລະ ຈັດການ
+            [value] => ₭ 0,00
+            [unformatedValue] => 0
+        )
+
+    [grandtotal] => stdClass Object
+        (
+            [title] => ຜົນລວມທັງສິ້ນ
+            [value] => ₭ 145.000,00
+            [unformatedValue] => 145000
+        )
+
+    [allowMultipleShipping] => 1
+    [isAllowedGuestCheckout] => 1
+    [canGuestCheckoutDownloadable] => 
+    [minimumAmount] => 0
+    [minimumFormattedAmount] => ₭ 0,00
+    [splitCartData] => Array
+        (
+            [0] => Array
+                (
+                    [seller_id] => 1
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                                    [name] => Shirt Polo
+                                    [sku] => 156484321
+                                    [price] => ₭ 50.000,00
+                                    [qty] => 1
+                                    [productId] => 4
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 50.000,00
+                                    [id] => 4
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                                    [name] => Jeans
+                                    [sku] => 346448441
+                                    [price] => ₭ 70.000,00
+                                    [qty] => 1
+                                    [productId] => 3
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 70.000,00
+                                    [id] => 5
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 120000
+                            [formatted_total] => ₭ 120.000,00
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [seller_id] => 2
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                                    [name] => Short M
+                                    [sku] => 124564324
+                                    [price] => ₭ 25.000,00
+                                    [qty] => 1
+                                    [productId] => 2
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 25.000,00
+                                    [id] => 6
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 25000.0000
+                            [formatted_total] => ₭ 25.000,00
+                        )
+
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:31:04] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:31:04] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:31:04] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:31:04] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:31:04] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:31:05] mobikulmpsplitcart.INFO: CartDetails aroundExecute returnArray : stdClass Object
+(
+    [items] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                    [name] => Shirt Polo
+                    [sku] => 156484321
+                    [price] => ¥ 38,26
+                    [qty] => 1
+                    [productId] => 4
+                    [typeId] => virtual
+                    [subTotal] => ¥ 38,26
+                    [id] => 4
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                    [name] => Jeans
+                    [sku] => 346448441
+                    [price] => ¥ 53,57
+                    [qty] => 1
+                    [productId] => 3
+                    [typeId] => virtual
+                    [subTotal] => ¥ 53,57
+                    [id] => 5
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                    [name] => Short M
+                    [sku] => 124564324
+                    [price] => ¥ 19,13
+                    [qty] => 1
+                    [productId] => 2
+                    [typeId] => virtual
+                    [subTotal] => ¥ 19,13
+                    [id] => 6
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+        )
+
+    [authKey] => 48b29eac9d34b0d5cab5ac203de6b534
+    [message] => 
+    [cartCount] => 3
+    [isVirtual] => 1
+    [couponCode] => 
+    [responseCode] => 2
+    [tax] => stdClass Object
+        (
+            [title] => ພາສີ
+            [value] => ¥ 20,00
+            [unformatedValue] => 20
+        )
+
+    [showThreshold] => 
+    [crossSellList] => Array
+        (
+        )
+
+    [subtotal] => stdClass Object
+        (
+            [title] => ລາຄາສຸດທິ
+            [value] => ¥ 110,96
+            [unformatedValue] => 110.96
+        )
+
+    [discount] => stdClass Object
+        (
+            [title] => 
+            [value] => 
+            [unformatedValue] => 0
+        )
+
+    [shipping] => stdClass Object
+        (
+            [title] => ການຈັດສົ່ງ ແລະ ຈັດການ
+            [value] => ¥ 0,00
+            [unformatedValue] => 0
+        )
+
+    [grandtotal] => stdClass Object
+        (
+            [title] => ຜົນລວມທັງສິ້ນ
+            [value] => ¥ 110,96
+            [unformatedValue] => 110.96
+        )
+
+    [allowMultipleShipping] => 1
+    [isAllowedGuestCheckout] => 1
+    [canGuestCheckoutDownloadable] => 
+    [minimumAmount] => 0
+    [minimumFormattedAmount] => ¥ 0,00
+    [splitCartData] => Array
+        (
+            [0] => Array
+                (
+                    [seller_id] => 1
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                                    [name] => Shirt Polo
+                                    [sku] => 156484321
+                                    [price] => ¥ 38,26
+                                    [qty] => 1
+                                    [productId] => 4
+                                    [typeId] => virtual
+                                    [subTotal] => ¥ 38,26
+                                    [id] => 4
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                                    [name] => Jeans
+                                    [sku] => 346448441
+                                    [price] => ¥ 53,57
+                                    [qty] => 1
+                                    [productId] => 3
+                                    [typeId] => virtual
+                                    [subTotal] => ¥ 53,57
+                                    [id] => 5
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 91.83
+                            [formatted_total] => ¥ 0,07
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [seller_id] => 2
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                                    [name] => Short M
+                                    [sku] => 124564324
+                                    [price] => ¥ 19,13
+                                    [qty] => 1
+                                    [productId] => 2
+                                    [typeId] => virtual
+                                    [subTotal] => ¥ 19,13
+                                    [id] => 6
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 19.1300
+                            [formatted_total] => ¥ 0,01
+                        )
+
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:31:35] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:31:35] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:31:35] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:31:35] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:31:35] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:31:36] mobikulmpsplitcart.INFO: CartDetails aroundExecute returnArray : stdClass Object
+(
+    [items] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                    [name] => Shirt Polo
+                    [sku] => 156484321
+                    [price] => ¥ 38.26
+                    [qty] => 1
+                    [productId] => 4
+                    [typeId] => virtual
+                    [subTotal] => ¥ 38.26
+                    [id] => 4
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                    [name] => Jeans
+                    [sku] => 346448441
+                    [price] => ¥ 53.57
+                    [qty] => 1
+                    [productId] => 3
+                    [typeId] => virtual
+                    [subTotal] => ¥ 53.57
+                    [id] => 5
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                    [name] => Short M
+                    [sku] => 124564324
+                    [price] => ¥ 19.13
+                    [qty] => 1
+                    [productId] => 2
+                    [typeId] => virtual
+                    [subTotal] => ¥ 19.13
+                    [id] => 6
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+        )
+
+    [authKey] => f9dedc4b481f939a7cae89e01ab5f1b2
+    [message] => 
+    [cartCount] => 3
+    [isVirtual] => 1
+    [couponCode] => 
+    [responseCode] => 2
+    [tax] => stdClass Object
+        (
+            [title] => Tax
+            [value] => ¥ 20.00
+            [unformatedValue] => 20
+        )
+
+    [showThreshold] => 
+    [crossSellList] => Array
+        (
+        )
+
+    [subtotal] => stdClass Object
+        (
+            [title] => Subtotal
+            [value] => ¥ 110.96
+            [unformatedValue] => 110.96
+        )
+
+    [discount] => stdClass Object
+        (
+            [title] => 
+            [value] => 
+            [unformatedValue] => 0
+        )
+
+    [shipping] => stdClass Object
+        (
+            [title] => Shipping & Handling
+            [value] => ¥ 0.00
+            [unformatedValue] => 0
+        )
+
+    [grandtotal] => stdClass Object
+        (
+            [title] => Grand Total
+            [value] => ¥ 110.96
+            [unformatedValue] => 110.96
+        )
+
+    [allowMultipleShipping] => 1
+    [isAllowedGuestCheckout] => 1
+    [canGuestCheckoutDownloadable] => 
+    [minimumAmount] => 0
+    [minimumFormattedAmount] => ¥ 0.00
+    [splitCartData] => Array
+        (
+            [0] => Array
+                (
+                    [seller_id] => 1
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                                    [name] => Shirt Polo
+                                    [sku] => 156484321
+                                    [price] => ¥ 38.26
+                                    [qty] => 1
+                                    [productId] => 4
+                                    [typeId] => virtual
+                                    [subTotal] => ¥ 38.26
+                                    [id] => 4
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                                    [name] => Jeans
+                                    [sku] => 346448441
+                                    [price] => ¥ 53.57
+                                    [qty] => 1
+                                    [productId] => 3
+                                    [typeId] => virtual
+                                    [subTotal] => ¥ 53.57
+                                    [id] => 5
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 91.83
+                            [formatted_total] => ¥ 0,07
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [seller_id] => 2
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                                    [name] => Short M
+                                    [sku] => 124564324
+                                    [price] => ¥ 19.13
+                                    [qty] => 1
+                                    [productId] => 2
+                                    [typeId] => virtual
+                                    [subTotal] => ¥ 19.13
+                                    [id] => 6
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 19.1300
+                            [formatted_total] => ¥ 0,01
+                        )
+
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:31:56] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:31:56] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:31:56] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:31:56] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:31:56] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:31:56] mobikulmpsplitcart.INFO: CartDetails aroundExecute returnArray : stdClass Object
+(
+    [items] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                    [name] => Shirt Polo
+                    [sku] => 156484321
+                    [price] => ₭ 50,000.00
+                    [qty] => 1
+                    [productId] => 4
+                    [typeId] => virtual
+                    [subTotal] => ₭ 50,000.00
+                    [id] => 4
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                    [name] => Jeans
+                    [sku] => 346448441
+                    [price] => ₭ 70,000.00
+                    [qty] => 1
+                    [productId] => 3
+                    [typeId] => virtual
+                    [subTotal] => ₭ 70,000.00
+                    [id] => 5
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                    [name] => Short M
+                    [sku] => 124564324
+                    [price] => ₭ 25,000.00
+                    [qty] => 1
+                    [productId] => 2
+                    [typeId] => virtual
+                    [subTotal] => ₭ 25,000.00
+                    [id] => 6
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+        )
+
+    [authKey] => 23c6339e08fe84315d317f7a30c42e4b
+    [message] => 
+    [cartCount] => 3
+    [isVirtual] => 1
+    [couponCode] => 
+    [responseCode] => 2
+    [tax] => stdClass Object
+        (
+            [title] => Tax
+            [value] => ₭ 20.00
+            [unformatedValue] => 20
+        )
+
+    [showThreshold] => 
+    [crossSellList] => Array
+        (
+        )
+
+    [subtotal] => stdClass Object
+        (
+            [title] => Subtotal
+            [value] => ₭ 145,000.00
+            [unformatedValue] => 145000
+        )
+
+    [discount] => stdClass Object
+        (
+            [title] => 
+            [value] => 
+            [unformatedValue] => 0
+        )
+
+    [shipping] => stdClass Object
+        (
+            [title] => Shipping & Handling
+            [value] => ₭ 0.00
+            [unformatedValue] => 0
+        )
+
+    [grandtotal] => stdClass Object
+        (
+            [title] => Grand Total
+            [value] => ₭ 145,000.00
+            [unformatedValue] => 145000
+        )
+
+    [allowMultipleShipping] => 1
+    [isAllowedGuestCheckout] => 1
+    [canGuestCheckoutDownloadable] => 
+    [minimumAmount] => 0
+    [minimumFormattedAmount] => ₭ 0.00
+    [splitCartData] => Array
+        (
+            [0] => Array
+                (
+                    [seller_id] => 1
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                                    [name] => Shirt Polo
+                                    [sku] => 156484321
+                                    [price] => ₭ 50,000.00
+                                    [qty] => 1
+                                    [productId] => 4
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 50,000.00
+                                    [id] => 4
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                                    [name] => Jeans
+                                    [sku] => 346448441
+                                    [price] => ₭ 70,000.00
+                                    [qty] => 1
+                                    [productId] => 3
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 70,000.00
+                                    [id] => 5
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 120000
+                            [formatted_total] => ₭ 120.000,00
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [seller_id] => 2
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                                    [name] => Short M
+                                    [sku] => 124564324
+                                    [price] => ₭ 25,000.00
+                                    [qty] => 1
+                                    [productId] => 2
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 25,000.00
+                                    [id] => 6
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 25000.0000
+                            [formatted_total] => ₭ 25.000,00
+                        )
+
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:32:14] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:32:14] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:32:15] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:32:15] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:32:15] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:32:16] mobikulmpsplitcart.INFO: CartDetails aroundExecute returnArray : stdClass Object
+(
+    [items] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                    [name] => Shirt Polo
+                    [sku] => 156484321
+                    [price] => $ 5.99
+                    [qty] => 1
+                    [productId] => 4
+                    [typeId] => virtual
+                    [subTotal] => $ 5.99
+                    [id] => 4
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                    [name] => Jeans
+                    [sku] => 346448441
+                    [price] => $ 8.38
+                    [qty] => 1
+                    [productId] => 3
+                    [typeId] => virtual
+                    [subTotal] => $ 8.38
+                    [id] => 5
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                    [name] => Short M
+                    [sku] => 124564324
+                    [price] => $ 2.99
+                    [qty] => 1
+                    [productId] => 2
+                    [typeId] => virtual
+                    [subTotal] => $ 2.99
+                    [id] => 6
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+        )
+
+    [authKey] => 6dc855800b1082a4f8ac4420197c5c1e
+    [message] => 
+    [cartCount] => 3
+    [isVirtual] => 1
+    [couponCode] => 
+    [responseCode] => 2
+    [tax] => stdClass Object
+        (
+            [title] => Tax
+            [value] => $ 20.00
+            [unformatedValue] => 20
+        )
+
+    [showThreshold] => 
+    [crossSellList] => Array
+        (
+        )
+
+    [subtotal] => stdClass Object
+        (
+            [title] => Subtotal
+            [value] => $ 17.36
+            [unformatedValue] => 17.36
+        )
+
+    [discount] => stdClass Object
+        (
+            [title] => 
+            [value] => 
+            [unformatedValue] => 0
+        )
+
+    [shipping] => stdClass Object
+        (
+            [title] => Shipping & Handling
+            [value] => $ 0.00
+            [unformatedValue] => 0
+        )
+
+    [grandtotal] => stdClass Object
+        (
+            [title] => Grand Total
+            [value] => $ 17.36
+            [unformatedValue] => 17.36
+        )
+
+    [allowMultipleShipping] => 1
+    [isAllowedGuestCheckout] => 1
+    [canGuestCheckoutDownloadable] => 
+    [minimumAmount] => 0
+    [minimumFormattedAmount] => $ 0.00
+    [splitCartData] => Array
+        (
+            [0] => Array
+                (
+                    [seller_id] => 1
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                                    [name] => Shirt Polo
+                                    [sku] => 156484321
+                                    [price] => $ 5.99
+                                    [qty] => 1
+                                    [productId] => 4
+                                    [typeId] => virtual
+                                    [subTotal] => $ 5.99
+                                    [id] => 4
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                                    [name] => Jeans
+                                    [sku] => 346448441
+                                    [price] => $ 8.38
+                                    [qty] => 1
+                                    [productId] => 3
+                                    [typeId] => virtual
+                                    [subTotal] => $ 8.38
+                                    [id] => 5
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 14.37
+                            [formatted_total] => $ 0,00
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [seller_id] => 2
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                                    [name] => Short M
+                                    [sku] => 124564324
+                                    [price] => $ 2.99
+                                    [qty] => 1
+                                    [productId] => 2
+                                    [typeId] => virtual
+                                    [subTotal] => $ 2.99
+                                    [id] => 6
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 2.9900
+                            [formatted_total] => $ 0,00
+                        )
+
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 07:32:46] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:32:46] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:32:46] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:33:10] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:33:10] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:33:10] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:33:21] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:33:21] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:33:21] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:33:32] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:33:32] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:33:32] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:34:45] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:34:45] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:34:45] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:34:45] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 07:34:45] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 07:34:45] mobikulmpsplitcart.INFO: CartDetails aroundExecute returnArray : stdClass Object
+(
+    [items] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                    [name] => Shirt Polo
+                    [sku] => 156484321
+                    [price] => $ 5,99
+                    [qty] => 1
+                    [productId] => 4
+                    [typeId] => virtual
+                    [subTotal] => $ 5,99
+                    [id] => 4
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                    [name] => Jeans
+                    [sku] => 346448441
+                    [price] => $ 8,38
+                    [qty] => 1
+                    [productId] => 3
+                    [typeId] => virtual
+                    [subTotal] => $ 8,38
+                    [id] => 5
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                    [name] => Short M
+                    [sku] => 124564324
+                    [price] => $ 2,99
+                    [qty] => 1
+                    [productId] => 2
+                    [typeId] => virtual
+                    [subTotal] => $ 2,99
+                    [id] => 6
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+        )
+
+    [authKey] => 6629d676bc7c39090dee284316b45ba4
+    [message] => 
+    [cartCount] => 3
+    [isVirtual] => 1
+    [couponCode] => 
+    [responseCode] => 2
+    [tax] => stdClass Object
+        (
+            [title] => ພາສີ
+            [value] => $ 20,00
+            [unformatedValue] => 20
+        )
+
+    [showThreshold] => 
+    [crossSellList] => Array
+        (
+        )
+
+    [subtotal] => stdClass Object
+        (
+            [title] => ລາຄາສຸດທິ
+            [value] => $ 17,36
+            [unformatedValue] => 17.36
+        )
+
+    [discount] => stdClass Object
+        (
+            [title] => 
+            [value] => 
+            [unformatedValue] => 0
+        )
+
+    [shipping] => stdClass Object
+        (
+            [title] => ການຈັດສົ່ງ ແລະ ຈັດການ
+            [value] => $ 0,00
+            [unformatedValue] => 0
+        )
+
+    [grandtotal] => stdClass Object
+        (
+            [title] => ຜົນລວມທັງສິ້ນ
+            [value] => $ 17,36
+            [unformatedValue] => 17.36
+        )
+
+    [allowMultipleShipping] => 1
+    [isAllowedGuestCheckout] => 1
+    [canGuestCheckoutDownloadable] => 
+    [minimumAmount] => 0
+    [minimumFormattedAmount] => $ 0,00
+    [splitCartData] => Array
+        (
+            [0] => Array
+                (
+                    [seller_id] => 1
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                                    [name] => Shirt Polo
+                                    [sku] => 156484321
+                                    [price] => $ 5,99
+                                    [qty] => 1
+                                    [productId] => 4
+                                    [typeId] => virtual
+                                    [subTotal] => $ 5,99
+                                    [id] => 4
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                                    [name] => Jeans
+                                    [sku] => 346448441
+                                    [price] => $ 8,38
+                                    [qty] => 1
+                                    [productId] => 3
+                                    [typeId] => virtual
+                                    [subTotal] => $ 8,38
+                                    [id] => 5
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 14.37
+                            [formatted_total] => $ 0,00
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [seller_id] => 2
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/1b151cf7663eaaf84098a8da58924159/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                                    [name] => Short M
+                                    [sku] => 124564324
+                                    [price] => $ 2,99
+                                    [qty] => 1
+                                    [productId] => 2
+                                    [typeId] => virtual
+                                    [subTotal] => $ 2,99
+                                    [id] => 6
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 2.9900
+                            [formatted_total] => $ 0,00
+                        )
+
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 08:02:18] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 08:02:18] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 08:02:22] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 08:02:22] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 08:02:26] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 08:02:26] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 08:02:28] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 08:02:28] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 08:02:28] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 08:02:28] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 08:02:28] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 08:02:29] mobikulmpsplitcart.INFO: CartDetails aroundExecute returnArray : stdClass Object
+(
+    [items] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                    [name] => Short M
+                    [sku] => 124564324
+                    [price] => ₭ 25.000,00
+                    [qty] => 1
+                    [productId] => 2
+                    [typeId] => virtual
+                    [subTotal] => ₭ 25.000,00
+                    [id] => 15
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                    [name] => Jeans
+                    [sku] => 346448441
+                    [price] => ₭ 70.000,00
+                    [qty] => 1
+                    [productId] => 3
+                    [typeId] => virtual
+                    [subTotal] => ₭ 70.000,00
+                    [id] => 16
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                    [name] => Shirt Polo
+                    [sku] => 156484321
+                    [price] => ₭ 50.000,00
+                    [qty] => 1
+                    [productId] => 4
+                    [typeId] => virtual
+                    [subTotal] => ₭ 50.000,00
+                    [id] => 17
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+        )
+
+    [authKey] => 4b7877434db0cada5410600d2c635631
+    [message] => 
+    [cartCount] => 3
+    [isVirtual] => 1
+    [couponCode] => 
+    [responseCode] => 2
+    [tax] => stdClass Object
+        (
+            [title] => ພາສີ
+            [value] => ₭ 20,00
+            [unformatedValue] => 20
+        )
+
+    [showThreshold] => 
+    [crossSellList] => Array
+        (
+        )
+
+    [subtotal] => stdClass Object
+        (
+            [title] => ລາຄາສຸດທິ
+            [value] => ₭ 145.000,00
+            [unformatedValue] => 145000
+        )
+
+    [discount] => stdClass Object
+        (
+            [title] => 
+            [value] => 
+            [unformatedValue] => 0
+        )
+
+    [shipping] => stdClass Object
+        (
+            [title] => ການຈັດສົ່ງ ແລະ ຈັດການ
+            [value] => ₭ 0,00
+            [unformatedValue] => 0
+        )
+
+    [grandtotal] => stdClass Object
+        (
+            [title] => ຜົນລວມທັງສິ້ນ
+            [value] => ₭ 145.000,00
+            [unformatedValue] => 145000
+        )
+
+    [allowMultipleShipping] => 1
+    [isAllowedGuestCheckout] => 1
+    [canGuestCheckoutDownloadable] => 
+    [minimumAmount] => 0
+    [minimumFormattedAmount] => ₭ 0,00
+    [splitCartData] => Array
+        (
+            [0] => Array
+                (
+                    [seller_id] => 2
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                                    [name] => Short M
+                                    [sku] => 124564324
+                                    [price] => ₭ 25.000,00
+                                    [qty] => 1
+                                    [productId] => 2
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 25.000,00
+                                    [id] => 15
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 25000.0000
+                            [formatted_total] => ₭ 25.000,00
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [seller_id] => 1
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                                    [name] => Jeans
+                                    [sku] => 346448441
+                                    [price] => ₭ 70.000,00
+                                    [qty] => 1
+                                    [productId] => 3
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 70.000,00
+                                    [id] => 16
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                                    [name] => Shirt Polo
+                                    [sku] => 156484321
+                                    [price] => ₭ 50.000,00
+                                    [qty] => 1
+                                    [productId] => 4
+                                    [typeId] => virtual
+                                    [subTotal] => ₭ 50.000,00
+                                    [id] => 17
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 120000
+                            [formatted_total] => ₭ 120.000,00
+                        )
+
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 08:02:50] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 08:02:50] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 08:02:50] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 08:02:50] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 08:02:50] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 08:02:51] mobikulmpsplitcart.INFO: CartDetails aroundExecute returnArray : stdClass Object
+(
+    [items] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                    [name] => Short M
+                    [sku] => 124564324
+                    [price] => ฿ 19,13
+                    [qty] => 1
+                    [productId] => 2
+                    [typeId] => virtual
+                    [subTotal] => ฿ 19,13
+                    [id] => 15
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                    [name] => Jeans
+                    [sku] => 346448441
+                    [price] => ฿ 53,57
+                    [qty] => 1
+                    [productId] => 3
+                    [typeId] => virtual
+                    [subTotal] => ฿ 53,57
+                    [id] => 16
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                    [name] => Shirt Polo
+                    [sku] => 156484321
+                    [price] => ฿ 38,26
+                    [qty] => 1
+                    [productId] => 4
+                    [typeId] => virtual
+                    [subTotal] => ฿ 38,26
+                    [id] => 17
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+        )
+
+    [authKey] => 9d3030d8cda6b614684443cef7924f59
+    [message] => 
+    [cartCount] => 3
+    [isVirtual] => 1
+    [couponCode] => 
+    [responseCode] => 1
+    [tax] => stdClass Object
+        (
+            [title] => ພາສີ
+            [value] => ฿ 20,00
+            [unformatedValue] => 20
+        )
+
+    [showThreshold] => 
+    [crossSellList] => Array
+        (
+        )
+
+    [subtotal] => stdClass Object
+        (
+            [title] => ລາຄາສຸດທິ
+            [value] => ฿ 110,96
+            [unformatedValue] => 110.96
+        )
+
+    [discount] => stdClass Object
+        (
+            [title] => 
+            [value] => 
+            [unformatedValue] => 0
+        )
+
+    [shipping] => stdClass Object
+        (
+            [title] => ການຈັດສົ່ງ ແລະ ຈັດການ
+            [value] => ฿ 0,00
+            [unformatedValue] => 0
+        )
+
+    [grandtotal] => stdClass Object
+        (
+            [title] => ຜົນລວມທັງສິ້ນ
+            [value] => ฿ 110,96
+            [unformatedValue] => 110.96
+        )
+
+    [allowMultipleShipping] => 1
+    [isAllowedGuestCheckout] => 1
+    [canGuestCheckoutDownloadable] => 
+    [minimumAmount] => 0
+    [minimumFormattedAmount] => ฿ 0,00
+    [splitCartData] => Array
+        (
+            [0] => Array
+                (
+                    [seller_id] => 2
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                                    [name] => Short M
+                                    [sku] => 124564324
+                                    [price] => ฿ 19,13
+                                    [qty] => 1
+                                    [productId] => 2
+                                    [typeId] => virtual
+                                    [subTotal] => ฿ 19,13
+                                    [id] => 15
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 19.1300
+                            [formatted_total] => ฿ 0,01
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [seller_id] => 1
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                                    [name] => Jeans
+                                    [sku] => 346448441
+                                    [price] => ฿ 53,57
+                                    [qty] => 1
+                                    [productId] => 3
+                                    [typeId] => virtual
+                                    [subTotal] => ฿ 53,57
+                                    [id] => 16
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                                    [name] => Shirt Polo
+                                    [sku] => 156484321
+                                    [price] => ฿ 38,26
+                                    [qty] => 1
+                                    [productId] => 4
+                                    [typeId] => virtual
+                                    [subTotal] => ฿ 38,26
+                                    [id] => 17
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 91.83
+                            [formatted_total] => ฿ 0,07
+                        )
+
+                )
+
+        )
+
+)
+ [] []
+[2018-06-07 08:03:18] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 08:03:18] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 08:03:19] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 08:03:19] mobikulmpsplitcart.INFO: getVirtualCart customer logged in [] []
+[2018-06-07 08:03:19] mobikulmpsplitcart.INFO: customer logged in :  [] []
+[2018-06-07 08:03:19] mobikulmpsplitcart.INFO: CartDetails aroundExecute returnArray : stdClass Object
+(
+    [items] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                    [name] => Short M
+                    [sku] => 124564324
+                    [price] => $ 2,99
+                    [qty] => 1
+                    [productId] => 2
+                    [typeId] => virtual
+                    [subTotal] => $ 2,99
+                    [id] => 15
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [1] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                    [name] => Jeans
+                    [sku] => 346448441
+                    [price] => $ 8,38
+                    [qty] => 1
+                    [productId] => 3
+                    [typeId] => virtual
+                    [subTotal] => $ 8,38
+                    [id] => 16
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+            [2] => stdClass Object
+                (
+                    [thresholdQty] => 0
+                    [remainingQty] => 9
+                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                    [name] => Shirt Polo
+                    [sku] => 156484321
+                    [price] => $ 5,99
+                    [qty] => 1
+                    [productId] => 4
+                    [typeId] => virtual
+                    [subTotal] => $ 5,99
+                    [id] => 17
+                    [messages] => stdClass Object
+                        (
+                        )
+
+                )
+
+        )
+
+    [authKey] => 59dd9901d8f6176e090426d5cf1cc82d
+    [message] => 
+    [cartCount] => 3
+    [isVirtual] => 1
+    [couponCode] => 
+    [responseCode] => 1
+    [tax] => stdClass Object
+        (
+            [title] => ພາສີ
+            [value] => $ 20,00
+            [unformatedValue] => 20
+        )
+
+    [showThreshold] => 
+    [crossSellList] => Array
+        (
+        )
+
+    [subtotal] => stdClass Object
+        (
+            [title] => ລາຄາສຸດທິ
+            [value] => $ 17,36
+            [unformatedValue] => 17.36
+        )
+
+    [discount] => stdClass Object
+        (
+            [title] => 
+            [value] => 
+            [unformatedValue] => 0
+        )
+
+    [shipping] => stdClass Object
+        (
+            [title] => ການຈັດສົ່ງ ແລະ ຈັດການ
+            [value] => $ 0,00
+            [unformatedValue] => 0
+        )
+
+    [grandtotal] => stdClass Object
+        (
+            [title] => ຜົນລວມທັງສິ້ນ
+            [value] => $ 17,36
+            [unformatedValue] => 17.36
+        )
+
+    [allowMultipleShipping] => 1
+    [isAllowedGuestCheckout] => 1
+    [canGuestCheckoutDownloadable] => 
+    [minimumAmount] => 0
+    [minimumFormattedAmount] => $ 0,00
+    [splitCartData] => Array
+        (
+            [0] => Array
+                (
+                    [seller_id] => 2
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2qlscoej8pufjy1xbxxagqvxa__726368252.jpg_670x670q80.jpg
+                                    [name] => Short M
+                                    [sku] => 124564324
+                                    [price] => $ 2,99
+                                    [qty] => 1
+                                    [productId] => 2
+                                    [typeId] => virtual
+                                    [subTotal] => $ 2,99
+                                    [id] => 15
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 2.9900
+                            [formatted_total] => $ 0,00
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [seller_id] => 1
+                    [items] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2nzndln6i8kjjsszfxxazvxxa__2972565281.jpg_670x670q80.jpg
+                                    [name] => Jeans
+                                    [sku] => 346448441
+                                    [price] => $ 8,38
+                                    [qty] => 1
+                                    [productId] => 3
+                                    [typeId] => virtual
+                                    [subTotal] => $ 8,38
+                                    [id] => 16
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [thresholdQty] => 0
+                                    [remainingQty] => 9
+                                    [image] => https://www.mekhai.com/pub/media/catalog/product/cache/cb93f438f7c40269d537ae710ffd70c0/t/b/tb2.jnjfeusbunjy1xcxxcyjfxa__2460512583.jpg_670x670q80.jpg
+                                    [name] => Shirt Polo
+                                    [sku] => 156484321
+                                    [price] => $ 5,99
+                                    [qty] => 1
+                                    [productId] => 4
+                                    [typeId] => virtual
+                                    [subTotal] => $ 5,99
+                                    [id] => 17
+                                    [messages] => stdClass Object
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [totals] => Array
+                        (
+                            [total] => 14.37
+                            [formatted_total] => $ 0,00
+                        )
+
+                )
+
+        )
+
+)
+ [] []

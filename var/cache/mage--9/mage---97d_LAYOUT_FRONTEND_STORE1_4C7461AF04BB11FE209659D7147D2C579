@@ -1,0 +1,1055 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1528356489;s:6:"expire";i:9999999999;s:4:"tags";s:115:"97d_DEFAULT,97d_CMS_INDEX_INDEX,97d_CMS_PAGE_VIEW,97d_CMS_INDEX_INDEX_ID_HOME,97d_LAYOUT_GENERAL_CACHE_TAG,97d_MAGE";}
+<!--
+    <referenceContainer name="right">
+        <referenceBlock name="catalog.compare.sidebar" remove="true" />
+    </referenceContainer>--><body>
+   <referenceContainer name="header.panel">
+      <block class="Magento\Directory\Block\Currency" name="currency" before="store_language" template="Magento_Directory::currency.phtml"/>
+   </referenceContainer>
+</body>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <css src="mage/calendar.css"/>
+   <script src="requirejs/require.js"/>
+</head>
+<body>
+   <referenceContainer name="after.body.start">
+      <block class="Magento\Framework\View\Element\Template" name="head.polyfill" as="polyfill" template="Magento_Theme::js/polyfill.phtml" before="-"/>
+      <block class="Magento\Framework\View\Element\Js\Components" name="head.components" as="components" template="Magento_Theme::js/components.phtml" before="-"/>
+   </referenceContainer>
+</body>
+<head>
+   <css src="css/styles-m.css"/>
+   <css src="css/styles-l.css" media="screen and (min-width: 768px)"/>
+   <css src="css/print.css" media="print"/>
+   <meta name="format-detection" content="telephone=no"/>
+</head>
+<head>
+   <meta name="x_ua_compatible" content="IE=edge"/>
+   <css src="css/styles-m.css"/>
+   <css src="css/styles-l.css" media="screen and (min-width: 768px)"/>
+   <css src="css/print.css" media="print"/>
+   <css src="css/ytextend.css"/>
+   <css src="css/yttheme.css"/>
+   <css src="css/css-fix.css"/>
+</head>
+<update handle="default_head_blocks"/>
+<body>
+   <block name="require.js" class="Magento\Framework\View\Element\Template" template="Magento_Theme::page/js/require_js.phtml"/>
+   <referenceContainer name="after.body.start">
+      <block class="Magento\RequireJs\Block\Html\Head\Config" name="requirejs-config"/>
+      <block class="Magento\Translation\Block\Html\Head\Config" name="translate-config"/>
+      <block class="Magento\Translation\Block\Js" name="translate" template="Magento_Translation::translate.phtml"/>
+      <block class="Magento\Framework\View\Element\Js\Cookie" name="js_cookies" template="Magento_Theme::js/cookie.phtml"/>
+      <block class="Magento\Theme\Block\Html\Notices" name="global_notices" template="Magento_Theme::html/notices.phtml"/>
+   </referenceContainer>
+   <referenceBlock name="top.links">
+      <block class="Magento\Theme\Block\Html\Header" name="header" as="header" before="-">
+         <arguments>
+            <argument name="show_part" xsi:type="string">welcome</argument>
+         </arguments>
+      </block>
+   </referenceBlock>
+   <referenceContainer name="main.content">
+      <block class="Magento\Framework\View\Element\Template" name="skip_to_content.target" before="-" template="Magento_Theme::html/skiptarget.phtml">
+         <arguments>
+            <argument name="target_id" xsi:type="string">contentarea</argument>
+         </arguments>
+      </block>
+   </referenceContainer>
+   <referenceContainer name="header.container">
+      <container name="header.panel.wrapper" htmlClass="panel wrapper" htmlTag="div" before="-">
+         <container name="header.panel" label="Page Header Panel" htmlTag="div" htmlClass="panel header">
+            <block class="Magento\Framework\View\Element\Template" name="skip_to_content" template="Magento_Theme::html/skip.phtml">
+               <arguments>
+                  <argument name="target" xsi:type="string">contentarea</argument>
+                  <argument name="label" translate="true" xsi:type="string">Skip to Content</argument>
+               </arguments>
+            </block>
+            <block class="Magento\Store\Block\Switcher" name="store_language" as="store_language" template="Magento_Store::switch/languages.phtml"/>
+            <block class="Magento\Customer\Block\Account\Navigation" name="top.links">
+               <arguments>
+                  <argument name="css_class" xsi:type="string">header links</argument>
+               </arguments>
+            </block>
+         </container>
+      </container>
+      <container name="header-wrapper" label="Page Header" as="header-wrapper" htmlTag="div" htmlClass="header content">
+         <block class="Magento\Theme\Block\Html\Header\Logo" name="logo">
+            <arguments>
+               <argument name="logo_img_width" xsi:type="number">189</argument>
+               <argument name="logo_img_height" xsi:type="number">64</argument>
+            </arguments>
+         </block>
+      </container>
+   </referenceContainer>
+   <referenceContainer name="page.top">
+      <block class="Magento\Framework\View\Element\Template" name="navigation.sections" before="-" template="Magento_Theme::html/sections.phtml">
+         <arguments>
+            <argument name="group_name" xsi:type="string">navigation-sections</argument>
+            <argument name="group_css" xsi:type="string">nav-sections</argument>
+         </arguments>
+         <block class="Magento\Framework\View\Element\Template" name="store.menu" group="navigation-sections" template="Magento_Theme::html/container.phtml">
+            <arguments>
+               <argument name="title" translate="true" xsi:type="string">Menu</argument>
+            </arguments>
+            <block class="Magento\Theme\Block\Html\Topmenu" name="catalog.topnav" template="Magento_Theme::html/topmenu.phtml" ttl="3600" before="-"/>
+         </block>
+         <block class="Magento\Framework\View\Element\Text" name="store.links" group="navigation-sections">
+            <arguments>
+               <argument name="title" translate="true" xsi:type="string">Account</argument>
+               <argument name="use_force" xsi:type="boolean">true</argument>
+               <argument name="text" xsi:type="string">&lt;!-- Account links --&gt;</argument>
+            </arguments>
+         </block>
+         <block class="Magento\Framework\View\Element\Template" name="store.settings" group="navigation-sections" template="Magento_Theme::html/container.phtml">
+            <arguments>
+               <argument name="title" translate="true" xsi:type="string">Settings</argument>
+            </arguments>
+            <block class="Magento\Store\Block\Switcher" name="store.settings.language" template="Magento_Store::switch/languages.phtml">
+               <arguments>
+                  <argument name="id_modifier" xsi:type="string">nav</argument>
+               </arguments>
+            </block>
+            <block class="Magento\Directory\Block\Currency" name="store.settings.currency" template="Magento_Directory::currency.phtml">
+               <arguments>
+                  <argument name="id_modifier" xsi:type="string">nav</argument>
+               </arguments>
+            </block>
+         </block>
+      </block>
+      <container name="top.container" as="topContainer" label="After Page Header Top" htmlTag="div" htmlClass="top-container"/>
+      <block class="Magento\Theme\Block\Html\Breadcrumbs" name="breadcrumbs" as="breadcrumbs"/>
+   </referenceContainer>
+   <referenceContainer name="columns.top">
+      <block class="Magento\Theme\Block\Html\Title" name="page.main.title" template="Magento_Theme::html/title.phtml"/>
+      <container name="page.messages" htmlTag="div" htmlClass="page messages">
+         <block class="Magento\Framework\View\Element\Template" name="ajax.message.placeholder" template="Magento_Theme::html/messages.phtml"/>
+         <block class="Magento\Framework\View\Element\Messages" name="messages" as="messages" template="Magento_Theme::messages.phtml"/>
+      </container>
+   </referenceContainer>
+   <referenceContainer name="main">
+      <container name="content.top" label="Main Content Top"/>
+      <container name="content" label="Main Content Area"/>
+      <container name="content.aside" label="Main Content Aside"/>
+      <container name="content.bottom" label="Main Content Bottom"/>
+   </referenceContainer>
+   <referenceContainer name="page.bottom.container">
+      <container name="page.bottom" label="Before Page Footer" htmlTag="div" htmlClass="content"/>
+   </referenceContainer>
+   <referenceContainer name="footer-container">
+      <container name="footer" as="footer" label="Page Footer" htmlTag="div" htmlClass="footer content">
+         <block class="Magento\Store\Block\Switcher" name="store_switcher" as="store_switcher" template="Magento_Store::switch/stores.phtml"/>
+         <block class="Magento\Framework\View\Element\Html\Links" name="footer_links">
+            <arguments>
+               <argument name="css_class" xsi:type="string">footer links</argument>
+            </arguments>
+         </block>
+         <block class="Magento\Theme\Block\Html\Footer" name="copyright" template="Magento_Theme::html/copyright.phtml"/>
+         <block class="Magento\Framework\View\Element\Template" name="report.bugs" template="Magento_Theme::html/bugreport.phtml"/>
+      </container>
+   </referenceContainer>
+   <referenceContainer name="before.body.end">
+      <block class="Magento\Theme\Block\Html\Footer" name="absolute_footer" template="Magento_Theme::html/absolute_footer.phtml"/>
+   </referenceContainer>
+   <referenceContainer name="content">
+      <block class="Magento\Framework\View\Element\FormKey" name="formkey"/>
+   </referenceContainer>
+</body>
+<body>
+   <referenceBlock name="top.links">
+      <block class="Magento\Customer\Block\Account\Link" name="my-account-link">
+         <arguments>
+            <argument name="label" translate="true" xsi:type="string">My Account</argument>
+            <argument name="sortOrder" xsi:type="number">110</argument>
+         </arguments>
+      </block>
+      <block class="Magento\Customer\Block\Account\RegisterLink" name="register-link">
+         <arguments>
+            <argument name="label" translate="true" xsi:type="string">Create an Account</argument>
+         </arguments>
+      </block>
+      <block class="Magento\Customer\Block\Account\AuthorizationLink" name="authorization-link" template="Magento_Customer::account/link/authorization.phtml"/>
+   </referenceBlock>
+   <referenceContainer name="content">
+      <block class="Magento\Customer\Block\Account\AuthenticationPopup" name="authentication-popup" as="authentication-popup" template="Magento_Customer::account/authentication-popup.phtml">
+         <arguments>
+            <argument name="jsLayout" xsi:type="array">
+               <item name="components" xsi:type="array">
+                  <item name="authenticationPopup" xsi:type="array">
+                     <item name="component" xsi:type="string">Magento_Customer/js/view/authentication-popup</item>
+                     <item name="children" xsi:type="array">
+                        <item name="messages" xsi:type="array">
+                           <item name="component" xsi:type="string">Magento_Ui/js/view/messages</item>
+                           <item name="displayArea" xsi:type="string">messages</item>
+                        </item>
+                     </item>
+                  </item>
+               </item>
+            </argument>
+         </arguments>
+      </block>
+      <block name="customer.section.config" class="Magento\Customer\Block\SectionConfig" template="Magento_Customer::js/section-config.phtml"/>
+      <block name="customer.customer.data" class="Magento\Customer\Block\CustomerData" template="Magento_Customer::js/customer-data.phtml"/>
+      <block name="customer.data.invalidation.rules" class="Magento\Customer\Block\CustomerScopeData" template="Magento_Customer::js/customer-data/invalidation-rules.phtml"/>
+   </referenceContainer>
+</body>
+<body>
+   <referenceContainer name="footer">
+      <container name="cms_footer_links_container" label="CMS Footer Links" htmlTag="div" htmlClass="links" before="footer_links"/>
+   </referenceContainer>
+   <referenceBlock name="footer_links">
+      <block class="Magento\Framework\View\Element\Html\Link\Current" name="privacy-policy-link">
+         <arguments>
+            <argument name="label" translate="true" xsi:type="string">Privacy and Cookie Policy</argument>
+            <argument name="path" xsi:type="string">privacy-policy-cookie-restriction-mode</argument>
+         </arguments>
+      </block>
+   </referenceBlock>
+</body>
+<body>
+   <block class="Magento\Framework\Pricing\Render" name="product.price.render.default">
+      <arguments>
+         <argument name="price_render_handle" xsi:type="string">catalog_product_prices</argument>
+         <argument name="use_link_for_as_low_as" xsi:type="boolean">true</argument>
+      </arguments>
+   </block>
+</body>
+<body>
+   <referenceContainer name="before.body.end">
+      <block class="Magento\Catalog\Block\FrontendStorageManager" name="frontend-storage-manager" before="-" template="Magento_Catalog::frontend_storage_manager.phtml">
+         <arguments>
+            <argument name="configuration" xsi:type="array">
+               <item name="recently_viewed_product" xsi:type="array">
+                  <item name="requestConfig" xsi:type="array">
+                     <item name="syncUrl" path="catalog/product/frontend_action_synchronize" xsi:type="url"/>
+                  </item>
+               </item>
+               <item name="recently_compared_product" xsi:type="array">
+                  <item name="requestConfig" xsi:type="array">
+                     <item name="syncUrl" path="catalog/product/frontend_action_synchronize" xsi:type="url"/>
+                  </item>
+               </item>
+               <item name="product_data_storage" xsi:type="array">
+                  <item name="updateRequestConfig" xsi:type="array">
+                     <item name="url" path="/products-render-info" xsi:type="serviceUrl"/>
+                  </item>
+               </item>
+            </argument>
+         </arguments>
+      </block>
+   </referenceContainer>
+   <referenceBlock name="top.links">
+      <block class="Magento\Framework\View\Element\Template" name="catalog.compare.link" before="-" template="Magento_Catalog::product/compare/link.phtml">
+         <arguments>
+            <argument name="jsLayout" xsi:type="array">
+               <item name="components" xsi:type="array">
+                  <item name="compareProducts" xsi:type="array">
+                     <item name="component" xsi:type="string">Magento_Catalog/js/view/compare-products</item>
+                  </item>
+               </item>
+            </argument>
+         </arguments>
+      </block>
+   </referenceBlock>
+   <referenceContainer name="sidebar.additional">
+      <block class="Magento\Framework\View\Element\Template" name="catalog.compare.sidebar" template="Magento_Catalog::product/compare/sidebar.phtml">
+         <arguments>
+            <argument name="jsLayout" xsi:type="array">
+               <item name="components" xsi:type="array">
+                  <item name="compareProducts" xsi:type="array">
+                     <item name="component" xsi:type="string">Magento_Catalog/js/view/compare-products</item>
+                  </item>
+               </item>
+            </argument>
+         </arguments>
+      </block>
+   </referenceContainer>
+   <referenceContainer name="after.body.start">
+      <block class="Magento\Framework\View\Element\Js\Components" name="head.components" as="components" template="Magento_Catalog::js/components.phtml"/>
+   </referenceContainer>
+   <block class="Magento\Framework\View\Element\Template" name="head.additional" as="head.additional" template="Magento_Theme::html/container.phtml"/>
+</body>
+<body>
+   <referenceBlock name="head.components">
+      <block class="Magento\Framework\View\Element\Js\Components" name="bundle_checkout_page_head_components" template="Magento_Bundle::js/components.phtml"/>
+   </referenceBlock>
+</body>
+<body>
+   <referenceContainer name="header-wrapper">
+      <block class="Magento\Framework\View\Element\Template" name="top.search" as="topSearch" template="Magento_Search::form.mini.phtml"/>
+   </referenceContainer>
+   <referenceBlock name="footer_links">
+      <block class="Magento\Framework\View\Element\Html\Link\Current" ifconfig="catalog/seo/search_terms" name="search-term-popular-link">
+         <arguments>
+            <argument name="label" translate="true" xsi:type="string">Search Terms</argument>
+            <argument name="path" xsi:type="string">search/term/popular</argument>
+         </arguments>
+      </block>
+   </referenceBlock>
+</body>
+<body/>
+<body>
+   <referenceBlock name="head.components">
+      <block class="Magento\Framework\View\Element\Js\Components" name="sales_page_head_components" template="Magento_Sales::js/components.phtml"/>
+   </referenceBlock>
+   <referenceContainer name="sidebar.additional">
+      <block class="Magento\Sales\Block\Reorder\Sidebar" name="sale.reorder.sidebar" as="reorder" template="Magento_Sales::reorder/sidebar.phtml"/>
+   </referenceContainer>
+   <referenceBlock name="footer_links">
+      <block class="Magento\Sales\Block\Guest\Link" name="sales-guest-form-link">
+         <arguments>
+            <argument name="label" translate="true" xsi:type="string">Orders and Returns</argument>
+            <argument name="path" xsi:type="string">sales/guest/form</argument>
+         </arguments>
+      </block>
+   </referenceBlock>
+</body>
+<body>
+   <referenceBlock name="minicart">
+      <arguments>
+         <argument name="jsLayout" xsi:type="array">
+            <item name="components" xsi:type="array">
+               <item name="minicart_content" xsi:type="array">
+                  <item name="config" xsi:type="array">
+                     <item name="itemRenderer" xsi:type="array">
+                        <item name="default" xsi:type="string">defaultRenderer</item>
+                        <item name="simple" xsi:type="string">defaultRenderer</item>
+                        <item name="virtual" xsi:type="string">defaultRenderer</item>
+                     </item>
+                  </item>
+                  <item name="children" xsi:type="array">
+                     <item name="item.renderer" xsi:type="array">
+                        <item name="component" xsi:type="string">uiComponent</item>
+                        <item name="config" xsi:type="array">
+                           <item name="displayArea" xsi:type="string">defaultRenderer</item>
+                           <item name="template" xsi:type="string">Magento_Checkout/minicart/item/default</item>
+                        </item>
+                        <item name="children" xsi:type="array">
+                           <item name="item.image" xsi:type="array">
+                              <item name="component" xsi:type="string">Magento_Catalog/js/view/image</item>
+                              <item name="config" xsi:type="array">
+                                 <item name="template" xsi:type="string">Magento_Catalog/product/image</item>
+                                 <item name="displayArea" xsi:type="string">itemImage</item>
+                              </item>
+                           </item>
+                        </item>
+                     </item>
+                  </item>
+               </item>
+            </item>
+         </argument>
+      </arguments>
+   </referenceBlock>
+</body>
+<body>
+   <referenceBlock name="minicart">
+      <block class="Magento\Checkout\Block\Item\Price\Renderer" name="checkout.cart.item.price.sidebar" template="Magento_Checkout::cart/item/price/sidebar.phtml"/>
+      <arguments>
+         <argument name="jsLayout" xsi:type="array">
+            <item name="components" xsi:type="array">
+               <item name="minicart_content" xsi:type="array">
+                  <item name="children" xsi:type="array">
+                     <item name="item.renderer" xsi:type="array">
+                        <item name="children" xsi:type="array">
+                           <item name="checkout.cart.item.price.sidebar" xsi:type="array">
+                              <item name="component" xsi:type="string">uiComponent</item>
+                              <item name="config" xsi:type="array">
+                                 <item name="template" xsi:type="string">Magento_Checkout/minicart/item/price</item>
+                                 <item name="displayArea" xsi:type="string">priceSidebar</item>
+                              </item>
+                           </item>
+                        </item>
+                     </item>
+                  </item>
+               </item>
+            </item>
+         </argument>
+      </arguments>
+   </referenceBlock>
+</body>
+<body>
+   <referenceBlock name="minicart">
+      <arguments>
+         <argument name="jsLayout" xsi:type="array">
+            <item name="components" xsi:type="array">
+               <item name="minicart_content" xsi:type="array">
+                  <item name="children" xsi:type="array">
+                     <item name="subtotal.container" xsi:type="array">
+                        <item name="children" xsi:type="array">
+                           <item name="subtotal" xsi:type="array">
+                              <item name="children" xsi:type="array">
+                                 <item name="subtotal.totals" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                       <item name="subtotal.totals.msrp" xsi:type="array">
+                                          <item name="component" xsi:type="string">Magento_Msrp/js/view/checkout/minicart/subtotal/totals</item>
+                                          <item name="config" xsi:type="array">
+                                             <item name="displayArea" xsi:type="string">minicart-subtotal-hidden</item>
+                                             <item name="template" xsi:type="string">Magento_Msrp/checkout/minicart/subtotal/totals</item>
+                                          </item>
+                                       </item>
+                                    </item>
+                                 </item>
+                              </item>
+                           </item>
+                        </item>
+                     </item>
+                  </item>
+               </item>
+            </item>
+         </argument>
+      </arguments>
+   </referenceBlock>
+</body>
+<body>
+   <referenceBlock name="minicart">
+      <arguments>
+         <argument name="jsLayout" xsi:type="array">
+            <item name="components" xsi:type="array">
+               <item name="minicart_content" xsi:type="array">
+                  <item name="children" xsi:type="array">
+                     <item name="subtotal.container" xsi:type="array">
+                        <item name="children" xsi:type="array">
+                           <item name="subtotal" xsi:type="array">
+                              <item name="children" xsi:type="array">
+                                 <item name="subtotal.totals" xsi:type="array">
+                                    <item name="component" xsi:type="string">Magento_Checkout/js/view/checkout/minicart/subtotal/totals</item>
+                                    <item name="config" xsi:type="array">
+                                       <item name="template" xsi:type="string">Magento_Checkout/minicart/subtotal/totals</item>
+                                    </item>
+                                 </item>
+                              </item>
+                           </item>
+                        </item>
+                     </item>
+                  </item>
+               </item>
+            </item>
+         </argument>
+      </arguments>
+   </referenceBlock>
+</body>
+<body>
+   <referenceBlock name="minicart">
+      <arguments>
+         <argument name="jsLayout" xsi:type="array">
+            <item name="components" xsi:type="array">
+               <item name="minicart_content" xsi:type="array">
+                  <item name="children" xsi:type="array">
+                     <item name="subtotal.container" xsi:type="array">
+                        <item name="children" xsi:type="array">
+                           <item name="subtotal" xsi:type="array">
+                              <item name="children" xsi:type="array">
+                                 <item name="subtotal.totals" xsi:type="array">
+                                    <item name="component" xsi:type="string">Magento_Tax/js/view/checkout/minicart/subtotal/totals</item>
+                                    <item name="config" xsi:type="array">
+                                       <item name="template" xsi:type="string">Magento_Tax/checkout/minicart/subtotal/totals</item>
+                                    </item>
+                                 </item>
+                              </item>
+                           </item>
+                        </item>
+                     </item>
+                  </item>
+               </item>
+            </item>
+         </argument>
+      </arguments>
+   </referenceBlock>
+</body>
+<update handle="checkout_cart_sidebar_item_renderers"/>
+<update handle="checkout_cart_sidebar_item_price_renderers"/>
+<update handle="checkout_cart_sidebar_total_renderers"/>
+<body>
+   <referenceBlock name="head.components">
+      <block class="Magento\Framework\View\Element\Js\Components" name="checkout_page_head_components" template="Magento_Checkout::js/components.phtml"/>
+   </referenceBlock>
+   <referenceContainer name="header-wrapper">
+      <block class="Magento\Checkout\Block\Cart\Sidebar" name="minicart" as="minicart" after="logo" template="Magento_Checkout::cart/minicart.phtml">
+         <arguments>
+            <argument name="jsLayout" xsi:type="array">
+               <item name="types" xsi:type="array"/>
+               <item name="components" xsi:type="array">
+                  <item name="minicart_content" xsi:type="array">
+                     <item name="component" xsi:type="string">Magento_Checkout/js/view/minicart</item>
+                     <item name="config" xsi:type="array">
+                        <item name="template" xsi:type="string">Magento_Checkout/minicart/content</item>
+                     </item>
+                     <item name="children" xsi:type="array">
+                        <item name="subtotal.container" xsi:type="array">
+                           <item name="component" xsi:type="string">uiComponent</item>
+                           <item name="config" xsi:type="array">
+                              <item name="displayArea" xsi:type="string">subtotalContainer</item>
+                           </item>
+                           <item name="children" xsi:type="array">
+                              <item name="subtotal" xsi:type="array">
+                                 <item name="component" xsi:type="string">uiComponent</item>
+                                 <item name="config" xsi:type="array">
+                                    <item name="template" xsi:type="string">Magento_Checkout/minicart/subtotal</item>
+                                 </item>
+                              </item>
+                           </item>
+                        </item>
+                        <item name="extra_info" xsi:type="array">
+                           <item name="component" xsi:type="string">uiComponent</item>
+                           <item name="config" xsi:type="array">
+                              <item name="displayArea" xsi:type="string">extraInfo</item>
+                           </item>
+                        </item>
+                        <item name="promotion" xsi:type="array">
+                           <item name="component" xsi:type="string">uiComponent</item>
+                           <item name="config" xsi:type="array">
+                              <item name="displayArea" xsi:type="string">promotion</item>
+                           </item>
+                        </item>
+                     </item>
+                  </item>
+               </item>
+            </argument>
+         </arguments>
+         <container name="minicart.addons" label="Mini-cart promotion block"/>
+      </block>
+   </referenceContainer>
+</body>
+<body>
+   <referenceBlock name="footer_links">
+      <block class="Magento\Framework\View\Element\Html\Link\Current" ifconfig="contact/contact/enabled" name="contact-us-link">
+         <arguments>
+            <argument name="label" translate="true" xsi:type="string">Contact Us</argument>
+            <argument name="path" xsi:type="string">contact</argument>
+         </arguments>
+      </block>
+   </referenceBlock>
+</body>
+<body>
+   <referenceContainer name="after.body.start">
+      <block class="Magento\Cookie\Block\Html\Notices" name="cookie_notices" template="Magento_Cookie::html/notices.phtml"/>
+   </referenceContainer>
+</body>
+<body>
+   <referenceContainer name="after.body.start">
+      <block class="Magento\Paypal\Block\Express\InContext\Component" name="paypal.express-in-context.component" template="Magento_Paypal::express/in-context/component.phtml">
+         <arguments>
+            <argument name="is_button_context" xsi:type="boolean">true</argument>
+         </arguments>
+      </block>
+   </referenceContainer>
+</body>
+<body>
+   <referenceContainer name="content">
+      <block class="Amazon\Core\Block\Config" name="amazon_config" template="Amazon_Core::config.phtml" ifconfig="payment/amazon_payment/active"/>
+   </referenceContainer>
+</body>
+<body>
+   <referenceBlock name="head.components">
+      <block class="Magento\Framework\View\Element\Js\Components" name="newsletter_head_components" template="Magento_Newsletter::js/components.phtml"/>
+   </referenceBlock>
+   <referenceContainer name="footer">
+      <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe" before="-" template="Magento_Newsletter::subscribe.phtml"/>
+   </referenceContainer>
+</body>
+<body>
+   <referenceContainer name="after.body.start">
+      <block class="Magento\GoogleAnalytics\Block\Ga" name="google_analytics" as="google_analytics" template="Magento_GoogleAnalytics::ga.phtml"/>
+   </referenceContainer>
+</body>
+<body>
+   <referenceContainer name="after.body.start">
+      <block class="Magento\Ui\Block\Logger" name="logger" template="Magento_Ui::logger.phtml"/>
+   </referenceContainer>
+</body>
+<body>
+   <referenceBlock name="head.components">
+      <block class="Magento\Framework\View\Element\Js\Components" name="pagecache_page_head_components" template="Magento_PageCache::js/components.phtml"/>
+   </referenceBlock>
+   <referenceContainer name="content">
+      <block class="Magento\PageCache\Block\Javascript" template="Magento_PageCache::javascript.phtml" name="pageCache" as="pageCache"/>
+   </referenceContainer>
+</body>
+<body>
+   <referenceBlock name="head.components">
+      <block class="Magento\Framework\View\Element\Js\Components" name="reports_page_head_components" template="Magento_Reports::js/components.phtml"/>
+   </referenceBlock>
+</body>
+<body>
+   <referenceBlock name="authentication-popup">
+      <arguments>
+         <argument name="jsLayout" xsi:type="array">
+            <item name="components" xsi:type="array">
+               <item name="authenticationPopup" xsi:type="array">
+                  <item name="children" xsi:type="array">
+                     <item name="captcha" xsi:type="array">
+                        <item name="component" xsi:type="string">Magento_Captcha/js/view/checkout/loginCaptcha</item>
+                        <item name="displayArea" xsi:type="string">additional-login-form-fields</item>
+                        <item name="formId" xsi:type="string">user_login</item>
+                        <item name="configSource" xsi:type="string">checkout</item>
+                     </item>
+                  </item>
+               </item>
+            </item>
+         </argument>
+      </arguments>
+   </referenceBlock>
+</body>
+<body>
+   <referenceBlock name="footer_links">
+      <block class="Magento\Framework\View\Element\Html\Link\Current" name="rss-link" ifconfig="rss/config/active">
+         <arguments>
+            <argument name="label" translate="true" xsi:type="string">RSS</argument>
+            <argument name="path" xsi:type="string">rss</argument>
+         </arguments>
+      </block>
+   </referenceBlock>
+   <block class="Magento\Rss\Block\Feeds" name="head_rss" ifconfig="rss/config/active"/>
+</body>
+<body>
+   <referenceBlock name="authentication-popup">
+      <arguments>
+         <argument name="jsLayout" xsi:type="array">
+            <item name="components" xsi:type="array">
+               <item name="authenticationPopup" xsi:type="array">
+                  <item name="children" xsi:type="array">
+                     <item name="amazon-button" xsi:type="array">
+                        <item name="component" xsi:type="string">Amazon_Login/js/view/login-button-wrapper</item>
+                        <item name="sortOrder" xsi:type="string">0</item>
+                        <item name="displayArea" xsi:type="string">additional-login-form-fields</item>
+                        <item name="config" xsi:type="array">
+                           <item name="tooltip" translate="true" xsi:type="string">Securely login into our website using your existing Amazon details.</item>
+                        </item>
+                     </item>
+                  </item>
+               </item>
+            </item>
+         </argument>
+      </arguments>
+   </referenceBlock>
+</body>
+<body>
+   <referenceBlock name="top.search">
+      <block class="Magento\Framework\View\Element\Template" name="advanced-search-link" template="Magento_CatalogSearch::advanced/link.phtml"/>
+   </referenceBlock>
+   <referenceBlock name="footer_links">
+      <block class="Magento\Framework\View\Element\Html\Link\Current" name="catalog-search-advanced-link">
+         <arguments>
+            <argument name="label" translate="true" xsi:type="string">Advanced Search</argument>
+            <argument name="path" xsi:type="string">catalogsearch/advanced</argument>
+            <argument name="attributes" xsi:type="array">
+               <item name="data-action" xsi:type="string">advanced-search</item>
+            </argument>
+         </arguments>
+      </block>
+   </referenceBlock>
+</body>
+<body>
+   <referenceBlock name="head.components">
+      <block class="Magento\Framework\View\Element\Js\Components" name="wishlist_page_head_components" template="Magento_Wishlist::js/components.phtml"/>
+   </referenceBlock>
+   <referenceBlock name="top.links">
+      <block class="Magento\Wishlist\Block\Link" name="wish-list-link" after="my-account-link">
+         <arguments>
+            <argument name="sortOrder" xsi:type="number">60</argument>
+         </arguments>
+      </block>
+   </referenceBlock>
+   <referenceContainer name="sidebar.additional">
+      <block class="Magento\Wishlist\Block\Customer\Sidebar" name="wishlist_sidebar" as="wishlist" template="Magento_Wishlist::sidebar.phtml"/>
+   </referenceContainer>
+</body>
+<body>
+   <referenceContainer name="before.body.end">
+      <block class="Magento\Framework\View\Element\Template" name="emailCapture" template="Dotdigitalgroup_Email::email/email_capture_newsletter.phtml"/>
+   </referenceContainer>
+   <referenceContainer name="after.body.start">
+      <block class="Magento\Framework\View\Element\Template" name="ddg.checkout.tag" template="Dotdigitalgroup_Email::email/tracking_code.phtml"/>
+   </referenceContainer>
+</body>
+<head>
+   <css src="Webkul_Marketplace::css/wk_block.css"/>
+   <css src="Webkul_Marketplace/css/style.css"/>
+   <css src="Webkul_Marketplace/css/product.css"/>
+   <css src="Webkul_Marketplace/css/layout.css"/>
+   <css src="Webkul_Marketplace/css/mekhai.css"/>
+</head>
+<body>
+   <referenceBlock name="top.links">
+      <block class="Magento\Framework\View\Element\Html\Link" name="marketplace-top-link">
+         <arguments>
+            <argument name="label" translate="true" xsi:type="string">Me Store</argument>
+            <argument name="path" xsi:type="string">me-store</argument>
+            <argument name="class" xsi:type="string">marketplace</argument>
+         </arguments>
+      </block>
+      <block class="Webkul\Marketplace\Block\View\Html\HelpAppLink" name="marketplace-help-app-link" cacheable="false">
+         <arguments>
+            <argument name="label" translate="true" xsi:type="string">help_app</argument>
+            <argument name="path" xsi:type="string">help_app</argument>
+         </arguments>
+      </block>
+   </referenceBlock>
+   <referenceBlock name="footer_links">
+      <block class="Magento\Framework\View\Element\Html\Link" name="marketplace-link">
+         <arguments>
+            <argument name="label" translate="true" xsi:type="string">Sell</argument>
+            <argument name="path" xsi:type="string">marketplace</argument>
+         </arguments>
+      </block>
+      <block class="Webkul\Marketplace\Block\View\Html\Link" name="marketplace-vendor-login-link" cacheable="false">
+         <arguments>
+            <argument name="label" translate="true" xsi:type="string">Vendor Login</argument>
+            <argument name="path" xsi:type="string">marketplace/account/dashboard</argument>
+         </arguments>
+      </block>
+   </referenceBlock>
+   <referenceContainer name="seller.main.content">
+      <block class="Magento\Framework\View\Element\Template" name="skip_to_content.target" before="-" template="Magento_Theme::html/skiptarget.phtml">
+         <arguments>
+            <argument name="target_id" xsi:type="string">contentarea</argument>
+         </arguments>
+      </block>
+   </referenceContainer>
+   <referenceContainer name="seller.columns.top">
+      <block class="Magento\Theme\Block\Html\Title" name="seller.page.main.title" template="html/title.phtml"/>
+      <container name="seller.page.messages" htmlTag="div" htmlClass="page messages">
+         <block class="Magento\Framework\View\Element\Template" name="seller.ajax.message.placeholder" template="Magento_Theme::html/messages.phtml"/>
+         <block class="Magento\Framework\View\Element\Messages" name="seller.messages" as="seller_messages" template="Magento_Theme::messages.phtml"/>
+      </container>
+   </referenceContainer>
+   <referenceContainer name="seller.main">
+      <container name="seller.content.top" label="Main Content Top"/>
+      <container name="seller.content" label="Main Content Area"/>
+      <container name="seller.content.aside" label="Main Content Aside"/>
+      <container name="seller.content.bottom" label="Main Content Bottom"/>
+   </referenceContainer>
+   <referenceContainer name="seller.page.bottom.container">
+      <container name="seller.page.bottom" label="Before Page Footer" htmlTag="div" htmlClass="content"/>
+   </referenceContainer>
+   <referenceContainer name="seller.content">
+      <block class="Magento\Framework\View\Element\FormKey" name="seller.formkey"/>
+      <block class="Magento\PageCache\Block\Javascript" template="Magento_PageCache::javascript.phtml" name="seller.pageCache" as="seller.pageCache"/>
+      <block name="seller.customer.section.config" class="Magento\Customer\Block\SectionConfig" template="Magento_Customer::js/section-config.phtml"/>
+      <block name="seller.customer.customer.data" class="Magento\Customer\Block\CustomerData" template="Magento_Customer::js/customer-data.phtml"/>
+   </referenceContainer>
+   <referenceContainer name="seller.header.before.container">
+      <block class="Webkul\Marketplace\Block\Page\Switcher" name="seller.top.header.block" template="Webkul_Marketplace::/layout2/page/switcher.phtml"/>
+   </referenceContainer>
+   <referenceContainer name="seller.top.header.block">
+      <block class="Magento\Store\Block\Switcher" name="seller_store_language" as="seller_store_language" template="Magento_Store::switch/languages.phtml"/>
+      <block class="Magento\Store\Block\Switcher" name="seller_store_switcher" as="seller_store_switcher" template="Magento_Store::switch/stores.phtml"/>
+      <block class="Magento\Directory\Block\Currency" name="seller_store_settings_currency" as="seller_store_settings_currency" template="Magento_Directory::currency.phtml"/>
+   </referenceContainer>
+   <referenceContainer name="seller.header">
+      <block class="Webkul\Marketplace\Block\Page\Header" name="seller.logo" before="-" cacheable="false">
+         <arguments>
+            <argument name="show_part" xsi:type="string">logo</argument>
+         </arguments>
+      </block>
+      <block class="Webkul\Marketplace\Block\Page\Header" name="seller.user" after="-" cacheable="false">
+         <arguments>
+            <argument name="show_part" xsi:type="string">user</argument>
+         </arguments>
+      </block>
+      <block class="Webkul\Marketplace\Block\Page\Notifications" name="seller.notifications" after="-" cacheable="false">
+         <arguments>
+            <argument name="show_part" xsi:type="string">seller.notifications</argument>
+         </arguments>
+      </block>
+      <block class="Webkul\Marketplace\Block\Page\Header" name="seller.home" after="-" cacheable="false">
+         <arguments>
+            <argument name="show_part" xsi:type="string">seller.home</argument>
+         </arguments>
+      </block>
+   </referenceContainer>
+   <referenceContainer name="seller.page.menu">
+      <block class="Webkul\Marketplace\Block\Account\Navigation" name="layout2_seller_account_navigation_main" before="-" template="Webkul_Marketplace::/layout2/account/navigation.phtml" cacheable="false">
+         <block class="Magento\Framework\View\Element\Template" name="layout2_seller_account_navigation" template="Webkul_Marketplace::/layout2/account/navigation/child_menu.phtml" cacheable="false"/>
+         <block class="Webkul\Marketplace\Block\Account\Navigation" name="layout2_seller_account_navigation_settings_menu" template="Webkul_Marketplace::/layout2/account/navigation/settings_menu.phtml" cacheable="false">
+            <block class="Webkul\Marketplace\Block\Account\Navigation\ShippingMenu" name="layout2_seller_account_navigation_shipping_menu" template="Webkul_Marketplace::/layout2/account/navigation/shipping_menu.phtml" cacheable="false"/>
+            <block class="Webkul\Marketplace\Block\Account\Navigation\PaymentMenu" name="layout2_seller_account_navigation_payment_menu" template="Webkul_Marketplace::/layout2/account/navigation/payment_menu.phtml" cacheable="false"/>
+         </block>
+      </block>
+   </referenceContainer>
+   <referenceContainer name="seller.header" htmlClass="wk-mp-page-header wk-mp-row">
+      <container name="seller.header.inner.left" before="-" htmlTag="div" htmlClass="wk-mp-page-header-hgroup col-l-8 col-m-6"/>
+      <container name="seller.header.inner.right" after="seller.header.inner.left" htmlTag="div" htmlClass="wk-mp-page-header-actions col-l-4 col-m-6"/>
+   </referenceContainer>
+   <move element="seller.page.menu" destination="seller.menu.wrapper"/>
+   <move element="seller.logo" before="-" destination="seller.menu.wrapper"/>
+   <move element="seller.page.main.title" before="-" destination="seller.header.inner.left"/>
+   <move element="seller.user" before="-" destination="seller.header.inner.right"/>
+   <move element="seller.notifications" after="seller.user" destination="seller.header.inner.right"/>
+   <move element="seller.home" after="seller.notifications" destination="seller.header.inner.right"/>
+</body>
+<head>
+   <css src="Webkul_MarketplacePreorder::css/style.css"/>
+</head>
+<body>
+   <referenceContainer name="layout2_seller_account_navigation">
+      <block class="Webkul\Marketplace\Block\Account\Navigation" name="preorder_link_menu" before="-" template="Webkul_MarketplacePreorder::layout2/navigation.phtml">
+            </block>
+   </referenceContainer>
+</body>
+<body>
+   <referenceBlock name="layout2_seller_account_navigation">
+      <block class="Webkul\MpFavouriteSeller\Model\Account\Link" name="layout2_seller_followers_list" template="Webkul_MpFavouriteSeller::/layout2/account/navigation.phtml" cacheable="false">
+            </block>
+   </referenceBlock>
+</body>
+<body>
+   <referenceContainer name="layout2_seller_account_navigation">
+      <block class="Webkul\Mpcashondelivery\Block\Mpcashondelivery" name="seller_auction_menu" before="-" template="Webkul_Mpcashondelivery::/layout2/account/navigation.phtml" cacheable="false"/>
+   </referenceContainer>
+</body>
+<body>
+   <referenceContainer name="layout2_seller_account_navigation">
+      <block class="Webkul\Marketplace\Block\Account\Navigation" before="-" name="free_shipping_link_layout2" template="Webkul_Mpfreeshipping::layout2/navigation.phtml" cacheable="false">
+            </block>
+   </referenceContainer>
+</body>
+<head>
+   <css src="Webkul_SellerSubDomain::css/collection.css"/>
+</head>
+<body>
+   <referenceBlock name="content">
+      <block class="Magento\Framework\View\Element\Template" name="minicart-update" template="Webkul_SellerSubDomain::default.phtml"/>
+   </referenceBlock>
+</body>
+<body>
+   <referenceBlock name="logo">
+      <arguments>
+         <argument name="logo_img_width" xsi:type="number">142</argument>
+         <argument name="logo_img_height" xsi:type="number">42</argument>
+      </arguments>
+   </referenceBlock>
+   <referenceBlock name="head.additional">
+      <block class="Sm\Market\Block\Template" name="config.theme.setting" template="Magento_Theme::html/config.phtml"/>
+   </referenceBlock>
+   <referenceContainer name="page.wrapper">
+      <container name="header.panel.wrapper" htmlClass="panel wrapper" htmlTag="div" before="-"/>
+      <block class="Magento\Theme\Block\Html\Header" name="header.content" template="html/header.phtml" before="page.top">
+         <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe.popup" as="form.subscribe.popup" before="-" template="subscribe-popup.phtml" ifconfig="market/advanced/show_newsletter_popup"/>
+         <container name="toplinks-header" label="Header Links" as="toplinks-header" htmlTag="div" htmlClass="toplinks-wrapper"/>
+         <container name="navigation-header" label="Navigation" as="navigation-header" htmlTag="div" htmlClass="navigation-wrapper"/>
+         <container name="navigation-header-megamenu" label="Megamenu" as="navigation-header-megamenu" htmlTag="div" htmlClass="navigation-megamenu-wrapper">
+            <block class="Sm\MegaMenu\Block\MegaMenu\View" name="megamenu.topnav" as="megamenu_topnav" template="Sm_MegaMenu::megamenu.phtml"/>
+         </container>
+         <container name="toplinks-header" label="Header Links" as="toplinks-header" htmlTag="div" htmlClass="toplinks-wrapper">
+            <block class="Magento\Framework\View\Element\Html\Links" name="top.links">
+               <arguments>
+                  <argument name="css_class" xsi:type="string">header links</argument>
+               </arguments>
+            </block>
+         </container>
+         <block class="Magento\Theme\Block\Html\Topmenu" name="horizontal-css" template="html/horizontal-css.phtml" ttl="3600" before="-"/>
+         <container name="navigation.mobile">
+            <block class="Magento\Theme\Block\Html\Topmenu" name="nav.mobile" template="html/nav-mobile.phtml"/>
+         </container>
+         <container name="compare-header-link" label="Compare Header" as="compare-header-link" htmlTag="div" htmlClass="compare-header-wrapper"/>
+         <container name="language-header" label="Language" as="language-header" htmlTag="div" htmlClass="language-wrapper"/>
+         <container name="currency-header" label="Currency" as="currency-header" htmlTag="div" htmlClass="currency-wrapper"/>
+         <container name="logo-header" label="Search" as="logo-header" htmlTag="div" htmlClass="logo-wrapper"/>
+         <container name="search-header" label="Search" as="search-header" htmlTag="div" htmlClass="search-wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="top.search" as="topSearch" template="Magento_Search::form.mini.phtml"/>
+         </container>
+         <container name="search-header-pro" label="Search" as="search-header-pro" htmlTag="div" htmlClass="search-wrapper">
+            <block class="Sm\SearchBox\Block\SearchBox" name="searchbox" as="searchbox" template="Sm_SearchBox::searchbox.form.mini.phtml"/>
+         </container>
+         <container name="cart-header" label="Mini Cart" as="cart-header" htmlTag="div" htmlClass="cart-wrapper"/>
+         <container name="slideshow-header" label="Slideshow Header" as="slideshow-header" htmlTag="div" htmlClass="slideshow-wrapper"/>
+      </block>
+   </referenceContainer>
+   <referenceBlock name="top.links">
+      <referenceBlock name="my-account-link" remove="true"/>
+      <block class="Magento\Framework\View\Element\Html\Link\Current" name="myaccount-link" before="wish-list-link">
+         <arguments>
+            <argument name="template" xsi:type="string">Magento_Theme::html/myaccount-link.phtml</argument>
+         </arguments>
+      </block>
+      <block class="Magento\Framework\View\Element\Html\Link\Current" name="checkout-link" before="authorization-link">
+         <arguments>
+            <argument name="template" xsi:type="string">Magento_Theme::html/checkout-link.phtml</argument>
+         </arguments>
+      </block>
+   </referenceBlock>
+   <referenceBlock name="header" remove="true"/>
+   <referenceContainer name="header.panel" remove="true"/>
+   <referenceBlock name="navigation.sections" remove="true"/>
+   <referenceBlock name="register-link" remove="true"/>
+   <referenceBlock name="sale.reorder.sidebar" remove="true"/>
+   <referenceBlock name="wishlist_sidebar" remove="true"/>
+   <referenceBlock name="checkout-link" remove="true"/>
+   <move element="authorization-link" destination="top.links" before="wish-list-link"/>
+   <move element="catalog.compare.link" destination="compare-header-link"/>
+   <move element="logo" destination="logo-header" before="-"/>
+   <move element="catalog.topnav" destination="navigation-header"/>
+   <move element="store.settings.currency" destination="currency-header"/>
+   <move element="store.settings.language" destination="language-header"/>
+   <move element="minicart" destination="cart-header"/>
+   <referenceContainer name="sidebar.additional">
+      <block class="Magento\Cms\Block\Block" name="product-sidebar">
+         <arguments>
+            <argument name="block_id" xsi:type="string">product-sidebar</argument>
+         </arguments>
+      </block>
+   </referenceContainer>
+   <referenceContainer name="footer-container">
+      <container name="footer" as="footer" label="Page Footer" htmlTag="div" htmlClass="footer footer-wrapper">
+         <block class="Magento\Theme\Block\Html\Footer" name="footer.content" template="html/footer.phtml">
+            <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe.footer" as="form.subscribe.footer" before="-" template="subscribe-footer.phtml"/>
+         </block>
+      </container>
+   </referenceContainer>
+</body>
+<body>
+   <move element="minicart" destination="cart-header"/>
+</body>
+<head>
+   <css src="Magefan_Blog::css/blog-custom.css"/>
+</head>
+<body>
+   <referenceBlock name="footer_links">
+      <block class="Magefan\Blog\Block\Link" name="footer_blog_link">
+         <arguments>
+            <argument name="label" translate="true" xsi:type="string">Blog</argument>
+         </arguments>
+      </block>
+   </referenceBlock>
+</body>
+<head>
+		
+	</head>
+<body>
+   <referenceContainer name="before.body.end">
+      <block class="Sm\CartQuickPro\Block\CartQuickPro" name="quicview.footer" template="Sm_CartQuickPro::quickview.phtml"/>
+      <block class="Sm\CartQuickPro\Block\CartQuickPro" name="ajaxcart.footer" template="Sm_CartQuickPro::default.phtml"/>
+   </referenceContainer>
+</body>
+<head>
+   <title>Sm Categories</title>
+</head>
+<body/>
+<head>
+		
+	</head>
+<update handle="default_head_blocks"/>
+<head>
+	</head>
+<body>
+	</body>
+<head>
+		
+	</head>
+<body>
+   <referenceContainer name="before.body.end">
+      <block cacheable="false" class="Sm\RecentlyViewed\Block\RecentlyViewed" name="recentlyviewed.footer" as="recentlyviewed_footer" template="Sm_RecentlyViewed::default.phtml" ifconfig="recentlyviewed/general/is_enabled"/>
+   </referenceContainer>
+</body>
+<head>
+	</head>
+<body>
+	</body>
+<head>
+		
+	</head>
+<body>
+   <referenceContainer name="before.body.end">
+      <block class="Sm\ShopBy\Block\ShopBy" name="shopby.footer" template="Sm_ShopBy::loader.phtml"/>
+   </referenceContainer>
+</body>
+<head>
+   <css src="Sm_SocialLogin::css/magnific-popup.css"/>
+</head>
+<body>
+   <referenceBlock name="head.components">
+      <block class="Magento\Framework\View\Element\Js\Components" name="captcha_page_head_components" ifconfig="sociallogin/general/is_enabled" template="Magento_Captcha::js/components.phtml"/>
+   </referenceBlock>
+   <referenceBlock name="header_customer_form_login" remove="true"/>
+   <referenceContainer name="content">
+      <block class="Sm\SocialLogin\Block\Popup" name="sm-social-login-popup" as="popup.modal" template="popup.phtml">
+         <block class="Magento\Customer\Block\Form\Login" name="sm-social-login-popup-authentication" as="popup.authentication" template="Sm_SocialLogin::popup/form/authentication.phtml">
+            <block class="Sm\SocialLogin\Block\Popup\Social" name="sm-social-login-popup-authentication-social" as="popup.authentication.social" template="popup/form/authentication/social.phtml"/>
+            <block class="Magento\Captcha\Block\Captcha" name="social-login-captcha" as="login.captcha" after="-">
+               <action method="setFormId">
+                  <argument name="formId" xsi:type="string">user_login</argument>
+               </action>
+               <action method="setImgWidth">
+                  <argument name="width" xsi:type="string">220</argument>
+               </action>
+               <action method="setImgHeight">
+                  <argument name="width" xsi:type="string">40</argument>
+               </action>
+            </block>
+         </block>
+         <block class="Magento\Customer\Block\Form\Register" name="sm-social-login-popup-create" as="popup.create" template="Sm_SocialLogin::popup/form/create.phtml">
+            <block class="Magento\Captcha\Block\Captcha" name="social-create-captcha" as="create.captcha" after="-">
+               <action method="setFormId">
+                  <argument name="formId" xsi:type="string">user_create</argument>
+               </action>
+               <action method="setImgWidth">
+                  <argument name="width" xsi:type="string">220</argument>
+               </action>
+               <action method="setImgHeight">
+                  <argument name="width" xsi:type="string">40</argument>
+               </action>
+            </block>
+         </block>
+         <block class="Magento\Framework\View\Element\Template" name="sm-social-login-popup-forgot" as="popup.forgot" template="Sm_SocialLogin::popup/form/forgot.phtml">
+            <block class="Magento\Captcha\Block\Captcha" name="social-forgot-password-captcha" as="forgot.captcha" after="-">
+               <action method="setFormId">
+                  <argument name="formId" xsi:type="string">user_forgotpassword</argument>
+               </action>
+               <action method="setImgWidth">
+                  <argument name="width" xsi:type="string">220</argument>
+               </action>
+               <action method="setImgHeight">
+                  <argument name="width" xsi:type="string">40</argument>
+               </action>
+            </block>
+         </block>
+      </block>
+   </referenceContainer>
+   <referenceBlock name="authentication-popup">
+      <arguments>
+         <argument name="jsLayout" xsi:type="array">
+            <item name="components" xsi:type="array">
+               <item name="authenticationPopup" xsi:type="array">
+                  <item name="children" xsi:type="array">
+                     <item name="social-buttons" xsi:type="array">
+                        <item name="component" xsi:type="string">Sm_SocialLogin/js/view/social-buttons</item>
+                        <item name="displayArea" xsi:type="string">before</item>
+                     </item>
+                  </item>
+               </item>
+            </item>
+         </argument>
+      </arguments>
+   </referenceBlock>
+</body>
+<body>
+   <referenceContainer name="sidebar.additional">
+      <block class="Magento\Paypal\Block\Logo" name="paypal.partner.right.logo" template="Magento_Paypal::partner/logo.phtml"/>
+      <block class="Magento\Paypal\Block\Bml\Banners" name="bml.right.logo" template="Magento_Paypal::bml.phtml">
+         <arguments>
+            <argument name="section" xsi:type="string">homepage</argument>
+            <argument name="position" xsi:type="number">1</argument>
+         </arguments>
+      </block>
+   </referenceContainer>
+   <referenceContainer name="top.container">
+      <block class="Magento\Paypal\Block\Bml\Banners" name="bml.center.logo" template="Magento_Paypal::bml.phtml">
+         <arguments>
+            <argument name="section" xsi:type="string">homepage</argument>
+            <argument name="position" xsi:type="number">0</argument>
+         </arguments>
+      </block>
+   </referenceContainer>
+</body>
+<body>
+   <referenceContainer name="content">
+      <block class="Magento\Cms\Block\Page" name="cms_page"/>
+   </referenceContainer>
+</body>
+<body>
+   <referenceContainer name="after.body.start">
+      <block class="Magento\GoogleOptimizer\Block\Code\Page" before="-" name="googleoptimizer.experiment.script"/>
+   </referenceContainer>
+</body>
