@@ -1,0 +1,68 @@
+/**
+ * Webkul Software.
+ *
+ * @category  Webkul
+ * @package   Webkul_Mobikul
+ * @author    Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+
+.wk-category{
+    max-height: 200px;
+    overflow: auto;
+    clear: both;
+    display: block;
+}
+#wk-category-label{
+    background: #B8E8B7;
+    border: 1px solid #008000;
+    border-radius: 7px;
+    padding: 0 4px;
+    display: inline-block;
+}
+.wk-cat-container{
+    position: relative;
+}
+.wk-plus{
+    background: url("../images/elbow-plus.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 18px;
+    width: 15px;
+    float:left;
+    cursor:pointer;
+}
+.wk-plusend{    background: url("../images/elbow-end-plus.gif") no-repeat scroll 0 0 transparent;    display: block;    height: 18px;    width: 15px;    float:left;    cursor:pointer;}
+.wk-minus,
+.wk-minusend{
+    background: url("../images/elbow-end-minus.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 18px;
+    width: 15px;
+    float:left;
+    cursor:pointer;
+}
+.wk-no{
+    background: url("../images/elbow-end.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 18px;
+    width: 15px;
+    float:left;
+}
+.wk-foldersign{
+    background: url("../images/leaf.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 15px;
+    margin-left: 5px;
+    margin-top: 3px;
+    width: 16px;
+}
+.wk-node-loader{
+    background: url("../images/loading.gif") no-repeat scroll 0 0 #FFFFFF;
+    display: block;
+    height: 17px;
+    left: 15px;
+    position: absolute;
+    width: 17px;
+}

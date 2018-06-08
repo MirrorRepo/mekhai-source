@@ -1,0 +1,37 @@
+<?php 
+/**
+ * Webkul Software
+ *
+ * @category Webkul
+ * @package Webkul_Mpcashondelivery
+ * @author Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license https://store.webkul.com/license.html
+ */
+$codHelper = $block->getMpCodHelper();
+$getPaymentEnable = $codHelper->getCodEnable();
+if($getPaymentEnable){
+	$productId = $this->getRequest()->getParam('id');
+	$productColl = $block->getProduct()->load($productId);
+	$allowedType = ['simple','configurable','bundle'];
+	$productType = '';
+	if($productColl->getTypeId()){
+		$productType = $productColl->getTypeId();
+	}else{
+		$params = $this->getRequest()->getParams();
+		$productType = $params['type'];
+	}
+    if(in_array($productType,$allowedType)){
+	$codAvailable=$productColl->getCodAvailable();
+?>
+	<div class="field">
+		<label class="label"><?php /* @escapeNotVerified */echo __('Cash On Delivery') ?>:</label>
+			<div class="input-box">
+				<select name="product[cod_available]">
+					<option value="0" <?php if($codAvailable == 0){ /* @escapeNotVerified */echo "selected='selected'";}?>><?php /* @escapeNotVerified */echo __('No') ?></option>
+					<option value="1" <?php if($codAvailable == 1){ /* @escapeNotVerified */echo "selected='selected'";}?>><?php /* @escapeNotVerified */echo __('Yes') ?></option>
+				</select>
+			</div>
+	</div>
+<?php }
+}?>

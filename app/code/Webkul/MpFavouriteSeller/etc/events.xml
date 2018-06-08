@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category   Webkul
+ * @package    Webkul_MpFavouriteSeller
+ * @author     Webkul Software Private Limited
+ * @copyright  Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license    https://store.webkul.com/license.html
+ */  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="mp_approve_product">
+        <observer name="webkul_mpfavouriteseller_mp_approve_product_observer" instance="Webkul\MpFavouriteSeller\Observer\FavMpApproveProductObserver" />
+    </event>
+</config>

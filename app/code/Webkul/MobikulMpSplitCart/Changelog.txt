@@ -1,0 +1,9 @@
+Legend
+
++ Features
+- Bugs
+
+-------------------------------- Version 2.0.0 --------------------------------------
+
+	+ Buyer can add multiple seller’s products to their cart.
+	+ Cart Splits according to seller/admin products.

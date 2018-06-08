@@ -1,0 +1,182 @@
+<?php
+    /**
+    * Webkul Software.
+    *
+    * @category  Webkul
+    * @package   Webkul_Mobikul
+    * @author    Webkul
+    * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+    * @license   https://store.webkul.com/license.html
+    */
+
+    namespace Webkul\Mobikul\Controller\Catalog;
+    use Magento\Store\Model\App\Emulation;
+    use Magento\Framework\App\Action\Context;
+    use Webkul\Mobikul\Helper\Data as HelperData;
+    use Magento\Framework\Controller\ResultFactory;
+    use Webkul\Mobikul\Helper\Catalog as HelperCatalog;
+
+    class RatingDetails extends \Webkul\Mobikul\Controller\ApiController  {
+
+        protected $_toolbar;
+        protected $_priceFormat;
+        protected $_productLoader;
+        protected $_helperCatalog;
+
+        public function __construct(
+            Context $context,
+            Emulation $emulate,
+            HelperData $helper,
+            HelperCatalog $helperCatalog,
+            \Magento\Catalog\Model\ProductFactory $productLoader,
+            \Magento\Catalog\Block\Product\ProductList\Toolbar $toolbar
+        ) {
+            $this->_toolbar       = $toolbar;
+            $this->_productLoader = $productLoader;
+            $this->_helperCatalog = $helperCatalog;
+            parent::__construct($helper, $context);
+            $this->_priceFormat   = $this->_objectManager->create("\Magento\Framework\Pricing\Helper\Data");
+        }
+
+        public function execute()   {
+            $returnArray                         = [];
+            $returnArray["name"]                 = "";
+            $returnArray["typeId"]               = "";
+            $returnArray["authKey"]              = "";
+            $returnArray["success"]              = false;
+            $returnArray["message"]              = "";
+            $returnArray["minPrice"]             = 0.0;
+            $returnArray["maxPrice"]             = 0.0;
+            $returnArray["thumbNail"]            = "";
+            $returnArray["finalPrice"]           = 0.0;
+            $returnArray["reviewList"]           = [];
+            $returnArray["ratingData"]           = [];
+            $returnArray["responseCode"]         = 0;
+            $returnArray["specialPrice"]         = 0.0;
+            $returnArray["formatedMinPrice"]     = "";
+            $returnArray["formatedMaxPrice"]     = "";
+            $returnArray["formatedFinalPrice"]   = "";
+            $returnArray["formatedSpecialPrice"] = "";
+            try {
+                $wholeData       = $this->getRequest()->getPostValue();
+                $this->_headers  = $this->getRequest()->getHeaders();
+                $this->_helper->log(__CLASS__, "logClass", $wholeData);
+                $this->_helper->log($wholeData, "logParams", $wholeData);
+                $this->_helper->log($this->_headers, "logHeaders", $wholeData);
+                if ($wholeData) {
+                    $authKey     = $this->getRequest()->getHeader("authKey");
+                    $apiKey      = $this->getRequest()->getHeader("apiKey");
+                    $apiPassword = $this->getRequest()->getHeader("apiPassword");
+                    $authData    = $this->_helper->isAuthorized($authKey, $apiKey, $apiPassword);
+                    if ($authData["responseCode"] == 1 || $authData["responseCode"] == 2) {
+                        $returnArray["authKey"]      = $authData["authKey"];
+                        $returnArray["responseCode"] = $authData["responseCode"];
+                        $storeId      = $this->_helper->validate($wholeData, "storeId")   ? $wholeData["storeId"]   : 0;
+                        $productId    = $this->_helper->validate($wholeData, "productId") ? $wholeData["productId"] : 0;
+                        $environment  = $this->_emulate->startEnvironmentEmulation($storeId);
+// setting currency /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                        $store        = $this->_objectManager->create("\Magento\Store\Model\Store");
+                        $baseCurrency = $store->getBaseCurrencyCode();
+                        $currency     = $this->_helper->validate($wholeData, "currency") ? $wholeData["currency"] : $baseCurrency;
+                        $store->setCurrentCurrencyCode($currency);
+                        $isIncludeTaxInPrice = false;
+                        if($this->_helper->isIncludeTaxInPrice() == 2)
+                            $isIncludeTaxInPrice = true;
+// Getting Produc Rating Details ////////////////////////////////////////////////////////////////////////////////////////////////
+                        $product = $this->_productLoader->create()->load($productId);
+                        $returnArray["name"] = $product->getName();
+                        $returnArray["thumbNail"] = $this->_objectManager
+                            ->create("\Magento\Catalog\Helper\Image")
+                            ->init($product, "product_page_image_large")
+                            ->keepFrame(true)
+                            ->resize(150)
+                            ->getUrl();
+                        if($isIncludeTaxInPrice) {
+                            $returnArray["formatedFinalPrice"] = $this->_helperCatalog->stripTags($this->_priceFormat->currency($this->_catalogHelper->getTaxPrice($product->getFinalPrice())));
+                            $returnArray["finalPrice"] = $this->_catalogHelper->getTaxPrice($product->getFinalPrice());
+                            $returnArray["formatedMinPrice"] = $this->_helperCatalog->stripTags($this->_priceFormat->currency($this->_catalogHelper->getTaxPrice($product->getMinPrice())));
+                            $returnArray["minPrice"] = $this->_catalogHelper->getTaxPrice($product->getMinPrice());
+                            $returnArray["formatedMaxPrice"] = $this->_helperCatalog->stripTags($this->_priceFormat->currency($this->_catalogHelper->getTaxPrice($product->getMaxPrice())));
+                            $returnArray["maxPrice"] = $this->_catalogHelper->getTaxPrice($product->getMaxPrice());
+                            $returnArray["formatedSpecialPrice"] = $this->_helperCatalog->stripTags($this->_priceFormat->currency($this->_catalogHelper->getTaxPrice($product->getSpecialPrice())));
+                            $returnArray["specialPrice"] = $this->_catalogHelper->getTaxPrice($product->getSpecialPrice());
+                        }
+                        else{
+                            $returnArray["formatedFinalPrice"] = $this->_helperCatalog->stripTags($this->_priceFormat->currency($product->getFinalPrice()));
+                            $returnArray["finalPrice"] = $product->getFinalPrice();
+                            $returnArray["formatedMinPrice"] = $this->_helperCatalog->stripTags($this->_priceFormat->currency($product->getMinPrice()));
+                            $returnArray["minPrice"] = $product->getMinPrice();
+                            $returnArray["formatedMaxPrice"] = $this->_helperCatalog->stripTags($this->_priceFormat->currency($product->getMaxPrice()));
+                            $returnArray["maxPrice"] = $product->getMaxPrice();
+                            $returnArray["formatedSpecialPrice"] = $this->_helperCatalog->stripTags($this->_priceFormat->currency($product->getSpecialPrice()));
+                            $returnArray["specialPrice"] = $product->getSpecialPrice();
+                        }
+// Collecting Average Rating ////////////////////////////////////////////////////////////////////////////////////////////////////
+                        $reviewCollection = $this->_objectManager->create("\Magento\Review\Model\ResourceModel\Review\Collection")
+                            ->addStoreFilter($storeId)
+                            ->addEntityFilter("product", $productId)
+                            ->addStatusFilter(1)
+                            ->setDateOrder()
+                            ->addRateVotes();
+                        $reviewList = [];
+                        foreach($reviewCollection as $review) {
+                            $oneReview = []; $ratings = [];
+                            $oneReview["title"]   = $this->_helperCatalog->stripTags($review->getTitle());
+                            $oneReview["details"] = $this->_helperCatalog->stripTags($review->getDetail());
+                            $votes                = $review->getRatingVotes();
+                            if (count($votes)) {
+                                foreach ($votes as $vote) {
+                                    $oneVote = [];
+                                    $oneVote["label"] = $this->_helperCatalog->stripTags($vote->getRatingCode());
+                                    $oneVote["value"] = number_format($vote->getValue(), 2, ".", "");
+                                    $ratings[]        = $oneVote;
+                                }
+                            }
+                            $oneReview["ratings"]  = $ratings;
+                            $oneReview["reviewBy"] = __("Review by ").$this->_helperCatalog->stripTags($review->getNickname());
+                            $oneReview["reviewOn"] = __("(Posted on ").$this->_objectManager->create("\Magento\Framework\Stdlib\DateTime\Timezone")->formatDate($review->getCreatedAt(), \IntlDateFormatter::LONG).")";
+                            $reviewList[] = $oneReview;
+                        }
+                        $returnArray["reviewList"] = $reviewList;
+// Calculating Average Rating ///////////////////////////////////////////////////////////////////////////////////////////////////
+                        $ratingCollection = $this->_objectManager->create("\Magento\Review\Model\ResourceModel\Rating\Collection")
+                            ->addEntityFilter("product")
+                            ->setPositionOrder()
+                            ->setStoreFilter($storeId)
+                            ->addRatingPerStoreName($storeId)
+                            ->load();
+                        $ratingCollection->addEntitySummaryToItem($productId, $storeId);
+                        $ratingData = [];
+                        foreach($ratingCollection as $rating) {
+                            if($rating->getSummary()) {
+                                $eachRating                = array();
+                                $eachRating["ratingCode"]  = $this->_helperCatalog->stripTags($rating->getRatingCode());
+                                $eachRating["ratingValue"] = number_format((5 * $rating->getSummary()) / 100, 2, ".", "");
+                                $ratingData[]              = $eachRating;
+                            }
+                        }
+                        $returnArray["ratingData"] = $ratingData;
+                        $this->_emulate->stopEnvironmentEmulation($environment);
+                        $returnArray["success"]    = true;
+                        $this->_helper->log($returnArray, "logResponse", $wholeData);
+                        return $this->getJsonResponse($returnArray);
+                    } else {
+                        $returnArray["responseCode"] = $authData["responseCode"];
+                        $returnArray["message"]      = $authData["message"];
+                        $this->_helper->log($returnArray, "logResponse", $wholeData);
+                        return $this->getJsonResponse($returnArray);
+                    }
+                } else {
+                    $returnArray["responseCode"] = 0;
+                    $returnArray["message"]      = __("Invalid Request");
+                    $this->_helper->log($returnArray, "logResponse", $wholeData);
+                    return $this->getJsonResponse($returnArray);
+                }
+            } catch (\Exception $e) {
+                $returnArray["message"] = __($e->getMessage());
+                $this->_helper->printLog($returnArray, 1);
+                return $this->getJsonResponse($returnArray);
+            }
+        }
+
+    }

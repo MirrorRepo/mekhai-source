@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Webkul Software.
+ *
+ * @category  Webkul
+ * @package   Webkul_Mobikul
+ * @author    Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <mobikul>
+            <configuration>
+                <apiusername><![CDATA[mobikul]]></apiusername>
+                <apikey><![CDATA[mobikul123]]></apikey>
+                <pagesize><![CDATA[10]]></pagesize>
+                <featuredproduct><![CDATA[1]]></featuredproduct>
+                <enable_mobile_login><![CDATA[0]]></enable_mobile_login>
+            </configuration>
+            <searchsuggestion>
+                <displaytag><![CDATA[1]]></displaytag>
+                <tagcount>5</tagcount>
+                <displayproduct><![CDATA[1]]></displayproduct>
+                <productcount>5</productcount>
+            </searchsuggestion>
+        </mobikul>
+    </default>
+</config>

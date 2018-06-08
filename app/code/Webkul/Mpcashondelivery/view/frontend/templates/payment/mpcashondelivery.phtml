@@ -1,0 +1,18 @@
+<?php
+/**
+ * Webkul Software
+ *
+ * @category Webkul
+ * @package Webkul_Mpcashondelivery
+ * @author Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license https://store.webkul.com/license.html
+ */
+$instructions = $block->getInstructions();
+?>
+<?php if ($instructions): ?>
+    <?php $methodCode = $block->escapeHtml($block->getMethodCode());?>
+    <div class="items <?php /* @escapeNotVerified */echo $methodCode ?> instructions agreement checkout-agreement-item-content" id="payment_form_<?php /* @escapeNotVerified */echo $methodCode ?>" style="display: none;">
+        <?php /* @escapeNotVerified */echo nl2br($block->escapeHtml($instructions)) ?>
+    </div>
+<?php endif; ?>

@@ -1,0 +1,184 @@
+Order History,Order History
+Order Id,Order Id
+Date,Date
+Order Status,Order Status
+Search by Order Id,Search by Order Id
+Date From,Date From
+Date To,Date To
+Submit,Submit
+No Order Available,No Order Available
+Order #,Order #
+Date,Date
+Ship To,Ship To
+Order Total,Order Total
+Order Status,Order Status
+Collected COD,Collected COD
+Commission Paid To Admin,Commission Paid To Admin
+Collected,Collected
+Canceled,Canceled
+Refunded,Refunded
+Pending,Pending
+Paid,Paid
+Canceled,Canceled
+View Order,View Order
+Payment method is currently disabled.,Payment method is currently disabled.
+To BECOME SELLER PLEASE CONTACT TO ADMIN.,To BECOME SELLER PLEASE CONTACT TO ADMIN.
+Manage Cash On Delivery,Manage Cash On Delivery
+My Cash On Delivery Orders,My Cash On Delivery Orders
+Save Information,Save Information
+Add New Cash On Delivery Rate,Add New Cash On Delivery Rate
+Add New COD Rate,Add New COD Rate
+Destination Country,Destination Country
+Destination State/Region,Destination State/Region
+Zip/Post Code From,Zip/Post Code From
+Zip/Post Code To,Zip/Post Code To
+Rate Type,Rate Type
+Fixed,Fixed
+Percentage,Percentage
+Fixed Rate,Fixed Rate
+Percentage(%) Rate,Percentage(%) Rate
+Weight From,Weight From
+Enter Percentage(%) Rate,Enter Percentage(%) Rate
+Weight To,Weight To
+Enter Weight Range(high),Enter Weight Range(high)
+Enter Weight Range(low),Enter Weight Range(low)
+Manage Cash On Delivery Rate,Manage Cash On Delivery Rate
+Delete Rates,Delete Rates
+Action,Action
+No Rates Available,No Rates Available
+ Are you sure you want to edit this rate?, Are you sure you want to edit this rate?
+ No Checkbox is checked , No Checkbox is checked 
+ Are you sure you want to delete these rate(s)? , Are you sure you want to delete these rate(s)? 
+ Are you sure you want to delete this rate? , Are you sure you want to delete this rate? 
+Cash On Delivery,Cash On Delivery
+Yes,Yes
+NO,NO
+Update COD Rate,Update COD Rate
+Update Cash On Delivery Rate,Update Cash On Delivery Rate
+YOU ARE NOT AUTHORIZE TO UPDATE THIS RATE.,YOU ARE NOT AUTHORIZE TO UPDATE THIS RATE.
+Check Cash On Delivery Availability at,Check Cash On Delivery Availability at
+Enter your Pincode,Enter your Pincode
+This is a required field.,This is a required field.
+Check,Check
+Change,Change
+Please wait,Please wait
+CASH ON DELIVERY NOT AVAILABLE,CASH ON DELIVERY NOT AVAILABLE
+CASH ON DELIVERY,CASH ON DELIVERY
+Now your order total is ,Now your order total is 
+Total commission from this seller,Total commission from this seller
+Admin Commission Information,Admin Commission Information
+Add Comment,Add Comment
+Notify Seller For Commission Payment,Notify Seller For Commission Payment
+Add a Comment,Add a Comment
+Notify Seller,Notify Seller
+Reset,Reset
+Orders Placed Using Seller Cash On Delivery Payment Method,Orders Placed Using Seller Cash On Delivery Payment Method
+Save Cash on Delivery Rates,Save Cash on Delivery Rates
+Save and Continue Edit,Save and Continue Edit
+Edit rates '%1',Edit rates '%1'
+Delete Rate,Delete Rate
+Cash On Delivery Rates,Cash On Delivery Rates
+General Information,General Information
+CSV File,CSV File
+Upload CSV,Upload CSV
+Cash On delivery Rates Data,Cash On delivery Rates Data
+Cash On Delivery Rates Information,Cash On Delivery Rates Information
+Cash On Delivery Rates Detail,Cash On Delivery Rates Detail
+Add Cash On Delivery Rates,Add Cash On Delivery Rates
+Already Paid,Already Paid
+Collect COD Status,Collect COD Status
+Manage Cash On Delivery Products,Manage Cash On Delivery Products
+Product Name,Product Name
+COD Status,COD Status
+Are you sure you want to update status of these product(s)?,Are you sure you want to update status of these product(s)?
+Are you sure you wan\'t to delete rates?,Are you sure you wan\'t to delete rates?
+Update COD Status,Update COD Status
+ID,ID
+Seller Id,Seller Id
+Is Range,Is Range
+Zip Code,Zip Code
+Price Type,Price Type
+Fixed Price,Fixed Price
+Percentage Price,Percentage Price
+Are you sure you want to delete ?,Are you sure you want to delete ?
+Range,Range
+Fixed,Fixed
+Notification has been successfully sent to seller.,Notification has been successfully sent to seller.
+Payment has been successfully done for the admin.,Payment has been successfully done for the admin.
+We can\'t pay the admin right now.,We can\'t pay the admin right now.
+My COD Order History,My COD Order History
+Cash On Delivery rates are successfully deleted!-,Cash On Delivery rates are successfully deleted!-
+You are not authorized to delete this cash on delivery rate.,You are not authorized to delete this cash on delivery rate.
+Update Marketplace Cash On Delivery Rates,Update Marketplace Cash On Delivery Rates
+Manage Marketplace Cash On Delivery Rates,Manage Marketplace Cash On Delivery Rates
+Please select Cash on Delivery Rates ids to delete.,Please select Cash on Delivery Rates ids to delete.
+You are not authorized to delete id(s) %1,You are not authorized to delete id(s) %1
+Total of %1 record(s) were successfully deleted,Total of %1 record(s) were successfully deleted
+Destination Country has to be completed,Destination Country has to be completed
+Destination State/Region has to be completed,Destination State/Region has to be completed
+Zip/Post Code From has to be completed,Zip/Post Code From has to be completed
+Zip/Post Code To has to be completed,Zip/Post Code To has to be completed
+No Products are Available,No Products are Available
+,
+Zipcode field can not be empty,Zipcode field can not be empty
+Price Type has to be seleted,Price Type has to be seleted
+Price should contain only decimal numbers,Price should contain only decimal numbers
+Percentage(%) Rate should contain only decimal numbers,Percentage(%) Rate should contain only decimal numbers
+Weight From should contain only decimal numbers,Weight From should contain only decimal numbers
+Weight To should contain only decimal numbers,Weight To should contain only decimal numbers
+Following rows are not valid rows : %1,Following rows are not valid rows : %1
+Cash On delivery rates are saved.,Cash On delivery rates are saved.
+Please upload Csv file,Please upload Csv file
+Country code should be a string %1,Country code should be a string %1
+Invalid country code %1,Invalid country code %1
+Is range can not be empty %1,Is range can not be empty %1
+Invalid value for field is_range %1,Invalid value for field is_range %1
+Zipcode field can not be empty %1,Zipcode field can not be empty %1
+Destination Zip from can not be empty %1,Destination Zip from can not be empty %1
+Destination Zip from should be a numeric value %1,Destination Zip from should be a numeric value %1
+Destination Zip to can not be empty %1,Destination Zip to can not be empty %1
+Destination Zip to should be a numeric value %1,Destination Zip to should be a numeric value %1
+Weight From can not be empty,Weight From can not be empty
+Please select Product ids to update.,Please select Product ids to update.
+Total of %1 record(s) were successfully updated,Total of %1 record(s) were successfully updated
+You will be charged an extra fee of %1,You will be charged an extra fee of %1
+Marketplace Cash On Delivery,Marketplace Cash On Delivery
+Manage Cash On Delivery Rates,Manage Cash On Delivery Rates
+Manage Cash On Delivery Orders,Manage Cash On Delivery Orders
+NA,NA
+Not yet calculated,Not yet calculated
+Loading,Loading
+COD available at,COD available at
+COD is not available at,COD is not available at
+Update Cash On Delivery Price Rate,Update Cash On Delivery Price Rate
+Enter Destination State/Region-you can also set as * to allow all,Enter Destination State/Region-you can also set as * to allow all
+Zip code type,Zip code type
+Specific,Specific
+Enter Zip/Post Code Range(low)-you can also set as * to allow all,Enter Zip/Post Code Range(low)-you can also set as * to allow all
+Enter Zip/Post Code Range(high) - you can also set as * to allow all,Enter Zip/Post Code Range(high) - you can also set as * to allow all
+Upload Cash On Delivery Rates in Bulk,Upload Cash On Delivery Rates in Bulk
+Upload Rates,Upload Rates
+Download sample file,Download sample file
+Specified,Specified
+Are you sure you want to edit this price rate?,Are you sure you want to edit this price rate?
+Are you sure you want to delete these price rate(s)?,Are you sure you want to delete these price rate(s)?
+Marketplace Cash on Delivery Rates Manager,Marketplace Cash on Delivery Rates Manager
+Edit,Edit
+Delete,Delete
+Notify,Notify
+Seller Cash On Delivery Report,Seller Cash On Delivery Report
+Admin Comission Report,Admin Comission Report
+No Orders Found!,No Orders Found!
+COD is not available due to less weight.,COD is not available due to less weight.
+COD is not available due to excess weight.,COD is not available due to excess weight.
+Manage Marketplace Cash On Delivery Products,Manage Marketplace Cash On Delivery Products
+Something went wrong, Please try again.
+Price rule updated successfully.,Price rule updated successfully.
+You are not authorized to edit it.,You are not authorized to edit it.
+Price rule saved successfully.,Price rule saved successfully.
+Zipcode field must be specific.,Zipcode field must be specific.
+Not a valid File, please match with sample file.
+Percentage price can not be empty,Percentage price can not be empty
+Weight To can not be empty,Weight To can not be empty
+Not a valid value for weight to field,Not a valid value for weight to field
+Mpcashondelivery,Mpcashondelivery

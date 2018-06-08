@@ -1,0 +1,34 @@
+<?php
+/**
+ * Webkul Software.
+ *
+ * @category  Webkul
+ * @package   Webkul_MpFavouriteSeller
+ * @author    Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+
+// @codingStandardsIgnoreFile
+$_helper = $this->helper('Webkul\Marketplace\Helper\Data');
+$isPartner= $_helper->isSeller();
+$magentoCurrentUrl = $block->getCurrentUrl();
+$allow_pro_type=$_helper->getAllowedProductType();
+$isSellerGroup = $_helper->isSellerGroupModuleInstalled();
+?>
+<nav data-mage-init='{"Webkul_Marketplace/js/sellerNavigation": {}}' class="wk-mp-menu wk-mp-main">
+    <ul id="wk-mp-nav">
+        <?php 
+        if($isPartner){ ?>
+            <?php if(($isSellerGroup && $_helper->isAllowedAction('mpfavouriteseller/shopfollower/index')) || !$isSellerGroup) { ?>
+                <li class="wk-mp-item-customer level-0 <?php echo strpos($magentoCurrentUrl,'mpfavouriteseller/shopfollower/index')? "current active":"";?>" id="wk-mp-menu-dashboard" >
+                    <a href="<?php echo $block->getUrl('mpfavouriteseller/shopfollower/index', ['_secure' => $this->getRequest()->isSecure()]); ?>" class="<?php echo strpos($magentoCurrentUrl,'mpfavouriteseller/shopfollower/index')? "active":"";?>">
+                        <span><?php echo __('Shop Followers') ?></span>
+                    </a>
+                </li>
+            <?php 
+            } ?>
+
+    <?php } ?>
+    </ul>
+</nav>

@@ -1,0 +1,135 @@
+<?php
+/*------------------------------------------------------------------------
+# SM Recently Viewed - Version 1.0.0
+# Copyright (c) 2017 YouTech Company. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: YouTech Company
+# Websites: http://www.magentech.com
+-------------------------------------------------------------------------*/
+
+use Magento\Framework\App\Action\Action;
+$_productCollection = $block->getLoadedProductCollection();
+$_helper = $this->helper('Magento\Catalog\Helper\Output');
+$tag_id = $this->_tagId();
+$position_right = $this->_getConfig('position') == 'right' ? true : false
+?>
+<?php if ($_productCollection->count()): ?>
+<div id="<?php echo $tag_id; ?>" class="sm-recently-viewed viewed-<?php echo $this->_getConfig('position'); ?>">
+	<div class="smrv-block-content-wrap">
+		<div class="smrv-handle">
+			<?php if ($position_right ) { ?>
+				<div class="smrv-icon"><i class="fa fa-eye" aria-hidden="true"></i></div>
+				<div class="smrv-text"><?php echo __($this->_getConfig('title_module'));?></div>
+			<?php } else { ?>
+				<div class="smrv-text"><?php echo __($this->_getConfig('title_module'));?></div>
+				<div class="smrv-icon"><i class="fa fa-eye" aria-hidden="true"></i></div>
+			<?php } ?>
+		</div>
+		
+		<div class="smrv-block-content-inner">
+			<?php
+			$viewMode = 'grid';
+			$image = 'product_recently_viewed';
+			$pos = $block->getPositioned();
+			?>
+			<div  class="swiper-container products-wrapper <?= /* @escapeNotVerified */ $viewMode ?> products-<?= /* @escapeNotVerified */ $viewMode ?>">
+				<?php $iterator = 1; ?>
+				<ol class="swiper-wrapper products grid items product-items slider">
+					<?php foreach ($_productCollection as $_product): ?>
+						<?= /* @escapeNotVerified */ ($iterator++ == 1) ? '<li class="swiper-slide item product product-item ">' : '</li><li class="swiper-slide item product product-item ">' ?>
+						<div class="product-item-info" data-container="product-grid">
+							<?php
+							$productImage = $block->getImage($_product, $image);
+							?>
+							<?php // Product Image ?>
+							<a href="<?= /* @escapeNotVerified */ $_product->getProductUrl() ?>" class="product photo product-item-photo" tabindex="-1">
+								<?= $productImage->toHtml() ?>
+							</a>
+						</div>
+						<?= ($iterator == count($_productCollection)+1) ? '</li>' : '' ?>
+					<?php endforeach; ?>
+				</ol>
+			</div>
+			<a href="#" class="smrv-clear" ><?php echo __('Delete All'); ?></a>
+			<script type="text/javascript">
+				require([
+					'jquery',
+					'swiperSlider'
+				], function ($ , Swiper) {
+					;(function (el){
+						var $element = $(el) , 
+							_content = $('.smrv-block-content-wrap', $element),
+							_smrv_clear = $('.smrv-clear', $element),
+							_ajax_url = "<?php echo $block->getBaseUrl().'recentlyviewed/viewed/clear'; ?>";
+							
+							var swiper = new Swiper('.swiper-container', {
+								direction: '<?php echo $position_right  ? "vertical" : "horizontal"; ?>',
+								slidesPerView: <?php echo $position_right  ? 4 : 20; ?>,
+								spaceBetween: 8,
+								slidesPerGroup: 1,
+								loop: false,
+								loopFillGroupWithBlank: true,
+								pagination: {
+									clickable: true,
+								},
+								 breakpoints: {
+									1024: {
+									  slidesPerView: <?php echo $position_right  ? 4 : 10; ?>,
+									},
+									768: {
+									  slidesPerView:  <?php echo $position_right  ? 4 : 10; ?>,
+									},
+									640: {
+									  slidesPerView: <?php echo $position_right  ? 4 : 7; ?>,
+									},
+									320: {
+									  slidesPerView:  <?php echo $position_right  ? 4 : 3; ?>,
+									}
+								  }
+							});  
+							$(window).on('resize', function(){
+								swiper.update();
+							});
+							$(document).on('click', function (e) {
+								var _target = $(e.target) , 
+								_parent = _target.parents('#<?php echo $tag_id ?> .smrv-block-content-wrap');
+								if (_parent.length){
+									if (_parent.hasClass('smrv-over') || $('body').hasClass('smrv-overlay') ) {
+										_parent.removeClass('smrv-over');
+										$('body').removeClass('smrv-overlay');
+									}else{
+										$('body').addClass('smrv-overlay');
+										_parent.addClass('smrv-over');
+									}
+								}else{
+									if (_content.hasClass('smrv-over') || $('body').hasClass('smrv-overlay') ) {
+										$('body').removeClass('smrv-overlay');
+										_content.removeClass('smrv-over');
+									}
+								}
+								return true;
+							});
+							_smrv_clear.on('click.clear_viewed', function(e){
+								e.preventDefault();
+								_smrv_clear.hide();
+								$.ajax({
+									type: 'POST',
+									url: _ajax_url,
+									data: {
+										is_ajax_recently_viewed: 1,
+									},
+									success: function (data) {
+										if (data.success){
+											$element.remove();
+										}
+									},
+									dataType: 'json'
+								});
+							});	
+					})('#<?php echo $tag_id ?>');
+				});
+			</script>
+		</div>
+	</div>	
+</div>
+<?php endif; ?>

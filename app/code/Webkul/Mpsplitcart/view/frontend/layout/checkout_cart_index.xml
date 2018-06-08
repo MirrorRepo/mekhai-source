@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Webkul Software
+ *
+ * @category  Webkul
+ * @package   Webkul_Mpsplitcart
+ * @author    Webkul
+ * @copyright Copyright (c) 2010-2016 Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+ -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance dc" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+       	<css src="Webkul_Mpsplitcart::css/style.css"/>
+	</head>
+    <referenceContainer name="cart.summary" remove="true"/>
+    <referenceBlock name="checkout.cart.coupon" remove="true"/>
+    <referenceContainer name="content">
+        <block class="Webkul\Mpsplitcart\Block\Index" name="checkout.cart.form">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Webkul_Mpsplitcart::mpsplitcart.phtml</argument>
+            </action>
+        </block>
+    </referenceContainer>
+</page>

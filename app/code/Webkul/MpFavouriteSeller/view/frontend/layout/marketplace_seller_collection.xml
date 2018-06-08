@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category   Webkul
+ * @package    Webkul_MpFavouriteSeller
+ * @author     Webkul Software Private Limited
+ * @copyright  Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license    https://store.webkul.com/license.html
+ */  -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+        <css src="Webkul_MpFavouriteSeller::css/mpfavouriteseller.css"/>
+    </head>
+    <body>
+        <referenceContainer name="marketplace_sellercollectionleft">
+            <block class="Webkul\MpFavouriteSeller\Block\AddFavouriteSeller" name="marketplace_seller_collection_addfavouriteseller" template="addfavouriteseller.phtml" cacheable="false" after="-"/>
+        </referenceContainer>
+    </body>
+</page>

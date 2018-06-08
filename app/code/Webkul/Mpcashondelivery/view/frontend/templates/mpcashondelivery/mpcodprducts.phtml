@@ -1,0 +1,155 @@
+<?php
+/**
+ * Webkul Software
+ *
+ * @category Webkul
+ * @package Webkul_Mpcashondelivery
+ * @author Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license https://store.webkul.com/license.html
+ */
+$_helper = $block->getMpHelper();
+$isPartner= $_helper->isSeller();
+?>
+<?php if($isPartner==1){ 
+		$codHelper = $block->getMpCodHelper();
+		$getPaymentEnable = $codHelper->getCodEnable();
+		if($getPaymentEnable){ ?>
+		<?php 
+		$mpcashondeliverycollection=$block->getMpProductCollection();
+	?>
+	<div class="wk_mp_design" style="padding-top:20px;">
+		<div class="block block-account">	
+			<div class="block-title">	
+				<strong><span><h3><?php /* @escapeNotVerified */echo __('Manage Cash On Delivery Products') ?></h3></span></strong>
+			</div>
+		</div>
+		<div class="fieldset wk_mp_fieldset">
+			<div class="grid">
+				<div class="hor-scroll">
+					<?php if(count($mpcashondeliverycollection)>0){ ?>
+						<form action="<?php /* @escapeNotVerified */echo $block->getUrl('mpcashondelivery/products/massupdate') ?>" method="post" id="form_mpcashondelivery_massupdate" name="form_mpcashondelivery_massupdate">
+							<?php /* @escapeNotVerified */echo $block->getBlockHtml('formkey')?>
+							<select name='massstatus' class="required-entry mpcodmassstatus">
+								<option value=""><?php /* @escapeNotVerified */echo __('Action')?></option>
+								<option value="1"><?php /* @escapeNotVerified */echo __('Enable')?></option>
+								<option value="0"><?php /* @escapeNotVerified */echo __('Disable')?></option>
+							</select>
+							<button class="button mass_status_update_btn" title="<?php /* @escapeNotVerified */echo __('Submit') ?>" type="submit" id="mass_status_update">
+								<span><span><?php /* @escapeNotVerified */echo __('Submit') ?></span></span>
+							</button>
+							<table cellspacing="0" class="border wk-mp-list-table">
+								<thead>
+									<tr class="wk_content wk_mp_tr_heading" id='wk-mp-tr-heading'>
+										<th class="wk_check_first_td">
+							    			<span>
+												<input type="checkbox" name="mpselecctall" value="all" id="mpselecctall"/>
+											</span>
+							    		</th>
+										<th>
+											<span class="label name"><?php /* @escapeNotVerified */echo __('Product Name');?></span>
+										</th>
+										<th>
+											<span class="label qty"><?php /* @escapeNotVerified */echo __('COD Status');?></span>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<?php foreach($mpcashondeliverycollection as $mpcashondelivery): ?>
+										<?php $productId = $mpcashondelivery->getEntityId();
+										if($productId){
+											$productData = $block->getProductData($productId);
+											?>
+											<tr class="wk_content wk_row_list wk-row-view">
+												<td class="wk_check_first_td">
+									    			<span>
+														<input type="checkbox" name="mpcashondelivery[]" class="mpcheckbox" value="<?php /* @escapeNotVerified */echo $productId; ?>"/>
+													</span>
+									    		</td>
+												<td>
+													<span class="label">
+														<?php /* @escapeNotVerified */echo $productData['product_name']?>
+													</span>	
+												</td>
+												<td>
+													<?php
+													if($productData['cod_status']==1){ ?>
+														<span class="label"><?php /* @escapeNotVerified */echo __('Enabled')?></span>
+													<?php } else {?>
+														<span class="label"><?php /* @escapeNotVerified */echo __('Disabled')?></span>
+													<?php }
+													?>
+												</td>
+											</tr>
+										<?php }?>
+									<?php endforeach ?>
+								</tbody>
+							</table>
+						</form>
+					<?php
+					}else{ ?>
+						<div class="wk_emptymsg">
+							<?php /* @escapeNotVerified */echo __('No Products are Available') ?>
+						</div>
+						<?php
+					} ?>
+				</div>
+				<div class="order-products-toolbar toolbar bottom">
+				<?php /* @escapeNotVerified */echo $block->getPagerHtml(); ?>
+				</div>
+			</div>
+		</div>
+		<div class="buttons-set">
+			<p class="back-link">
+				<a href="javascript:;" onclick="javascript: window.history.back();" class="left">« Back</a>
+			</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+	require([
+	        "jquery",
+	        "mage/mage"
+	    ], function($wk_jq){
+	    	var form_mpcashondelivery_massupdate = $wk_jq('#form_mpcashondelivery_massupdate');
+	    	
+	        form_mpcashondelivery_massupdate.mage('validation', {});
+			
+			$wk_jq('#mass_status_update').click(function(e){
+				var flag =0;
+				$wk_jq('.mpcheckbox').each(function(){
+					if (this.checked == true){
+						flag = 1;
+					}
+				});
+				if (flag == 0){
+					alert("<?php /* @escapeNotVerified */echo __(' No Checkbox is checked ') ?>");
+					return false;
+				}
+				else{
+					var dicisionapp=confirm('<?php /* @escapeNotVerified */echo __("Are you sure you want to update status of these product(s)?")?>');
+					if(dicisionapp==true){
+						$wk_jq('#form_mpcashondelivery_massupdate').submit();
+					}else{
+						return false;
+					}
+				}
+			});
+			$wk_jq('#mpselecctall').click(function(event) {
+		        if(this.checked) {
+		            $wk_jq('.mpcheckbox').each(function() {
+		                this.checked = true;      
+		            });
+		        }else{
+		            $wk_jq('.mpcheckbox').each(function() {
+		                this.checked = false;           
+		            });         
+		        }
+		    });			
+		});
+</script>
+<?php }else{
+		/* @escapeNotVerified */echo "<h2 class='wk_new_msg'>".__("Payment method is currently disabled.")."</h2>";
+	}
+}else{
+	/* @escapeNotVerified */echo "<h2 class='wk_new_msg'>".__("To BECOME SELLER PLEASE CONTACT TO ADMIN.")."</h2>";
+}?>

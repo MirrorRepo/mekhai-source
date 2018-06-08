@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Webkul Software
+ *
+ * @category  Webkul
+ * @package   Webkul_MobikulMpSplitCart
+ * @author    Webkul
+ * @copyright Copyright (c) Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Webkul\MobikulMpSplitCart\Logger\Handler">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+    <type name="Webkul\MobikulMpSplitCart\Logger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">mobikulmpsplitcart</argument>
+            <argument name="handlers" xsi:type="array">
+                <item name="system" xsi:type="object">Webkul\MobikulMpSplitCart\Logger\Handler</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Webkul\Mobikul\Controller\Checkout\AddToCart">
+        <plugin name="MobikulAddToCartAroundPlugin" type="Webkul\MobikulMpSplitCart\Plugin\Controller\Checkout\AddToCart" sortOrder="1"/>
+    </type>
+    <type name="Webkul\Mobikul\Controller\Checkout\UpdateCart">
+        <plugin name="MobikulUpdateCartAroundPlugin" type="Webkul\MobikulMpSplitCart\Plugin\Controller\Checkout\UpdateCart" sortOrder="1"/>
+    </type>
+    <type name="Webkul\Mobikul\Controller\Checkout\RemoveCartItem">
+        <plugin name="MobikulRemoveCartItemAroundPlugin" type="Webkul\MobikulMpSplitCart\Plugin\Controller\Checkout\RemoveCartItem" sortOrder="1"/>
+    </type>
+    <type name="Webkul\Mobikul\Controller\Checkout\CartDetails">
+        <plugin name="MobikulCartDetailsAroundPlugin" type="Webkul\MobikulMpSplitCart\Plugin\Controller\Checkout\CartDetails" sortOrder="1"/>
+    </type>
+    <type name="Webkul\Mobikul\Controller\Checkout\BillingShippingInfo">
+        <plugin name="MobikulBillingShippingInfoBeforePlugin" type="Webkul\MobikulMpSplitCart\Plugin\Controller\Checkout\BillingShippingInfo" sortOrder="1"/>
+    </type>
+    <type name="Webkul\Mobikul\Controller\Checkout\SaveOrder">
+        <plugin name="MobikulSaveOrderAfterPlugin" type="Webkul\MobikulMpSplitCart\Plugin\Controller\Checkout\SaveOrder" sortOrder="1"/>
+    </type>
+    <preference for="Webkul\Mpsplitcart\Helper\Data" type="Webkul\MobikulMpSplitCart\Helper\MpSplitcartHelper"/>
+</config>

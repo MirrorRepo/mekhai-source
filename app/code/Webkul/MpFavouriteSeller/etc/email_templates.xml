@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category   Webkul
+ * @package    Webkul_MpFavouriteSeller
+ * @author     Webkul Software Private Limited
+ * @copyright  Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license    https://store.webkul.com/license.html
+ */  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="mpfavouriteseller_email_new_product_notify_follower_template" label="notify followers Regarding Product" file="new_product_notify_follower.html" type="html" module="Webkul_MpFavouriteSeller" area="frontend"/>
+
+    <template id="mpfavouriteseller_email_email_follower_template" label="Email to followers for any activity on store" file="email_follower.html" type="html" module="Webkul_MpFavouriteSeller" area="frontend"/>
+
+    <template id="mpfavouriteseller_email_followed_mail_to_seller_template" label="Email to seller when customer click on follow" file="followed_mail_to_seller.html" type="html" module="Webkul_MpFavouriteSeller" area="frontend"/>
+
+    <template id="mpfavouriteseller_email_followed_mail_to_customer_template" label="Email to customer when customer click on follow" file="followed_mail_to_customer.html" type="html" module="Webkul_MpFavouriteSeller" area="frontend"/>
+</config>

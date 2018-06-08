@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+		<!-- <css src="Sm_RecentlyViewed::css/swiper.min.css" />
+		<css src="Sm_RecentlyViewed::css/recentlyviewed.css" /> -->
+	</head>
+	<body>
+		<referenceContainer name="before.body.end">
+			<block cacheable="false" class="Sm\RecentlyViewed\Block\RecentlyViewed" name="recentlyviewed.footer" as="recentlyviewed_footer" template="Sm_RecentlyViewed::default.phtml"  ifconfig="recentlyviewed/general/is_enabled"/>
+		</referenceContainer>
+	</body>
+</page>

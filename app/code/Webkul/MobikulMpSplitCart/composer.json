@@ -1,0 +1,21 @@
+{
+    "name": "webkul/module-mobikul-mp-split-cart",
+    "description": "Webkul Magento2 Mobikul Marketplace Split Cart Module",
+    "require": {
+        "webkul/module-marketplace": "2.1.*",
+        "webkul/module-marketplace-split-cart": "2.0.*"
+    },
+    "type": "magento2-module",
+    "version": "2.0.0",
+    "license": [
+        "proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Webkul\\MobikulMpSplitCart\\": ""
+        }
+    }
+}

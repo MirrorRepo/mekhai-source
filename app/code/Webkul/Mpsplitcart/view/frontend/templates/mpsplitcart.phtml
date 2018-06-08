@@ -1,0 +1,348 @@
+<?php
+/**
+ * Webkul Software
+ *
+ * @category  Webkul
+ * @package   Webkul_Mpsplitcart
+ * @author    Webkul
+ * @copyright Copyright (c) 2010-2016 Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+
+/**  @var $block \Webkul\Mpsplitcart\Block\Index */
+?>
+<?php $mergedCells = ($this->helper('Magento\Tax\Helper\Data')->displayCartBothPrices() ? 2 : 1); ?>
+<?php echo $block->getChildHtml('form_before') ?>
+
+<?php
+if ($block->getMpsplitcartEnable()) {
+    $sellerData = $block->getSellerData();
+    foreach ($sellerData as $sellerId => $proIdsArray) {
+?>
+    <form action="<?php /* @noEscape */ echo $block->getUrl('checkout/cart/updatePost') ?>"
+            method="post"
+            id="form-validate"
+            data-mage-init='{"validation":{}}'
+            class="form form-cart">
+        <?php echo $block->getBlockHtml('formkey'); ?>
+        <div class="wk-mpsplit-wrapper">
+            <div class="cart table-wrapper<?php echo $mergedCells == 2 ? ' detailed' : ''; ?>">
+                <table id="shopping-cart-table"
+                       class="cart items data table"
+                       data-mage-init='{"shoppingCart":{"emptyCartButton": "action.clear",
+                       "updateCartActionContainer": "#update_cart_action_container"}}'>
+                    <caption role="heading" aria-level="2" class="table-caption">
+                        <?php /* @noEscape */ echo __('Shopping Cart Items') ?>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th class="col item" scope="col">
+                                <span>
+                                    <?php /* @noEscape */ echo __('Item') ?>
+                                </span>
+                            </th>
+                            <th class="col price" scope="col">
+                                <span>
+                                    <?php /* @noEscape */ echo __('Price') ?>
+                                </span>
+                            </th>
+                            <th class="col qty" scope="col">
+                                <span>
+                                    <?php /* @noEscape */ echo __('Qty') ?>
+                                </span>
+                            </th>
+                            <th class="col subtotal" scope="col">
+                                <span>
+                                    <?php /* @noEscape */ echo __('Subtotal') ?>
+                                </span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <?php foreach ($block->getItems() as $_item) : ?>
+                        <?php if (array_key_exists($_item->getId(), $proIdsArray)) : ?>
+                            <?php echo $block->getItemHtml($_item) ?>
+                        <?php endif; ?>
+                    <?php endforeach ?>
+                </table>
+            </div>
+            <div class="cart main actions">
+                <?php if ($block->getContinueShoppingUrl()) : ?>
+                    <a class="action continue"
+                       href="<?php echo $block->escapeUrl($block->getContinueShoppingUrl()) ?>"
+                       title="<?php echo $block->escapeHtml(__('Continue Shopping')); ?>">
+                        <span>
+                            <?php /* @noEscape */ echo __('Continue Shopping') ?>
+                        </span>
+                    </a>
+                <?php endif; ?>
+                <button type="submit"
+                        name="update_cart_action"
+                        data-cart-empty=""
+                        value="empty_cart"
+                        title="<?php echo $block->escapeHtml(__('Clear Shopping Cart')); ?>"
+                        class="action clear" id="empty_cart_button">
+                    <span>
+                        <?php /* @noEscape */ echo __('Clear Shopping Cart'); ?>
+                    </span>
+                </button>
+                <button type="submit"
+                        name="update_cart_action"
+                        data-cart-item-update=""
+                        value="update_qty"
+                        title="<?php echo $block->escapeHtml(__('Update Shopping Cart')); ?>"
+                        class="action update">
+                    <span>
+                        <?php /* @noEscape */ echo __('Update Shopping Cart'); ?>
+                    </span>
+                </button>
+                <input type="hidden"
+                        value=""
+                        id="update_cart_action_container"
+                        data-cart-item-update=""/>
+            </div>
+        </div>
+        <!-- <div class="cart-summary"> -->
+            <!-- <input type="hidden"
+                        name="wk-mp-seller-id[]"
+                        class="wk-mp-seller-id"
+                        value="<?php //echo $sellerId; ?>"> -->
+            <?php //echo $block->getChildHtml(); ?>
+        <!-- </div> -->
+    </form>
+
+    <form action="<?php /* @noEscape */ echo $block->getUrl('mpsplitcart/cartover/proceedtocheckout') ?>"
+                method="post"
+                id="checkout-validate"
+                data-mage-init='{"validation":{}}'
+                class="form form-checkout">
+                <?php echo $block->getBlockHtml('formkey'); ?>
+            <div class="cart-summary">
+                <input type="hidden"
+                        name="wk-mp-seller-id[]"
+                        class="wk-mp-seller-id"
+                        value="<?php /* @noEscape */ echo $sellerId; ?>">
+                <div data-bind="scope:'giftOptionsCart'" id="gift-options-cart"></div>
+                <div class="cart-summary1">
+                    <strong class="summary title">Summary</strong>
+                    <div data-bind="scope:'block-totals'"
+                            class="cart-totals"
+                            id="cart-totals">
+                        <div data-bind="blockLoader: isLoading" class="table-wrapper">
+                            <table class="data table totals">
+                                <caption class="table-caption">Total</caption>
+                                <tbody>
+                                    <tr class="totals sub">
+                                        <th scope="row" colspan="1" class="mark">
+                                            Subtotal
+                                        </th>
+                                        <td data-th="Subtotal" class="amount">
+                                            <span class="price">
+                                                <?php /* @noEscape */ echo $proIdsArray['formatted_total']; ?>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <!-- <tr class="totals shipping excl">
+                                        <th class="mark" colspan="1" scope="row">
+                                            Shipping
+                                        </th>
+                                        <td class="amount">
+                                            <span class="price"></span>
+                                        </td>
+                                    </tr> -->
+                                    <tr class="grand totals">
+                                        <th scope="row" colspan="1" class="mark">
+                                            <strong data-bind="text: title">
+                                                Order Total
+                                            </strong>
+                                        </th>
+                                        <td data-th="Order Total" class="amount">
+                                            <strong>
+                                                <span class="price">
+                                                    <?php /* @noEscape */ echo $proIdsArray['formatted_total']; ?>
+                                                </span>
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <ul class="checkout methods items checkout-methods-items">
+                        <li class="item">
+                            <button class="action primary checkout mp-btn-checkout"
+                                    title="Go to Checkout"
+                                    data-role="proceed-to-checkout"
+                                    type="submit"
+                                    value='<?php /* @noEscape */ echo $sellerId ?>'
+                                    name="mpslitcart-checkout">
+                                <span>Go to Checkout</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </form>
+<?php
+    }
+} else {
+    $total = $block->getCartTotal(); ?>
+    <form action="<?php /* @noEscape */ echo $block->getUrl('checkout/cart/updatePost') ?>"
+              method="post"
+              id="form-validate"
+              data-mage-init='{"validation":{}}'
+              class="form form-cart">
+        <?php echo $block->getBlockHtml('formkey'); ?>
+        <div class="wk-mpsplit-wrapper">
+            <div class="cart table-wrapper<?php echo $mergedCells == 2 ? ' detailed' : ''; ?>">
+                <table id="shopping-cart-table"
+                       class="cart items data table"
+                       data-mage-init='{"shoppingCart":{"emptyCartButton": "action.clear",
+                       "updateCartActionContainer": "#update_cart_action_container"}}'>
+                    <caption role="heading" aria-level="2" class="table-caption">
+                        <?php /* @noEscape */ echo __('Shopping Cart Items') ?>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th class="col item" scope="col">
+                                <span><?php /* @noEscape */ echo __('Item') ?></span>
+                            </th>
+                            <th class="col price" scope="col">
+                                <span><?php /* @noEscape */ echo __('Price') ?></span>
+                            </th>
+                            <th class="col qty" scope="col">
+                                <span><?php /* @noEscape */ echo __('Qty') ?></span>
+                            </th>
+                            <th class="col subtotal" scope="col">
+                                <span>
+                                    <?php /* @noEscape */ echo __('Subtotal') ?>
+                                </span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <?php foreach ($block->getItems() as $_item) : ?>
+                        <?php echo $block->getItemHtml($_item) ?>
+                    <?php endforeach ?>
+                </table>
+            </div>
+            <div class="cart main actions">
+                <?php if ($block->getContinueShoppingUrl()) : ?>
+                    <a class="action continue"
+                       href="<?php echo $block->escapeUrl($block->getContinueShoppingUrl()) ?>"
+                       title="<?php echo $block->escapeHtml(__('Continue Shopping')); ?>">
+                        <span>
+                            <?php /* @noEscape */ echo __('Continue Shopping') ?>
+                        </span>
+                    </a>
+                <?php endif; ?>
+                <button type="submit"
+                        name="update_cart_action"
+                        data-cart-empty=""
+                        value="empty_cart"
+                        title="<?php echo $block->escapeHtml(__('Clear Shopping Cart')); ?>"
+                        class="action clear" id="empty_cart_button">
+                    <span>
+                        <?php /* @noEscape */ echo __('Clear Shopping Cart'); ?>
+                    </span>
+                </button>
+                <button type="submit"
+                        name="update_cart_action"
+                        data-cart-item-update=""
+                        value="update_qty"
+                        title="<?php echo $block->escapeHtml(__('Update Shopping Cart')); ?>"
+                        class="action update">
+                    <span>
+                        <?php /* @noEscape */ echo __('Update Shopping Cart'); ?>
+                    </span>
+                </button>
+                <input type="hidden"
+                        value=""
+                        id="update_cart_action_container"
+                        data-cart-item-update=""/>
+            </div>
+        </div>
+    </form>
+    <form action="<?php /* @noEscape */ echo $block->getUrl('mpsplitcart/cartover/proceedtocheckout') ?>"
+            method="post"
+            id="checkout-validate"
+            data-mage-init='{"validation":{}}'
+            class="form form-checkout">
+            <?php echo $block->getBlockHtml('formkey'); ?>
+        <div class="cart-summary">
+            <div data-bind="scope:'giftOptionsCart'" id="gift-options-cart">
+            </div>
+            <div class="cart-summary1">
+                <strong class="summary title">Summary</strong>
+                <div data-bind="scope:'block-totals'"
+                        class="cart-totals"
+                        id="cart-totals">
+                    <div data-bind="blockLoader: isLoading" class="table-wrapper">
+                        <table class="data table totals">
+                            <caption class="table-caption">Total</caption>
+                            <tbody>
+                                <tr class="totals sub">
+                                    <th scope="row" colspan="1" class="mark">
+                                        Subtotal
+                                    </th>
+                                    <td data-th="Subtotal" class="amount">
+                                        <span class="price">
+                                            <?php /* @noEscape */ echo $total ?>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <!-- <tr class="totals shipping excl">
+                                    <th class="mark" colspan="1" scope="row">
+                                        Shipping
+                                    </th>
+                                    <td class="amount">
+                                        <span class="price"></span>
+                                    </td>
+                                </tr> -->
+                                <tr class="grand totals">
+                                    <th scope="row" colspan="1" class="mark">
+                                        <strong data-bind="text: title">
+                                            Order Total
+                                        </strong>
+                                    </th>
+                                    <td data-th="Order Total" class="amount">
+                                        <strong>
+                                            <span class="price">
+                                                <?php /* @noEscape */ echo $total ?>
+                                            </span>
+                                        </strong>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <ul class="checkout methods items checkout-methods-items">
+                    <li class="item">
+                        <button class="action primary checkout mp-btn-checkout"
+                                title="Go to Checkout"
+                                data-role="proceed-to-checkout"
+                                type="submit"
+                                value='1'
+                                name="mpslitcart-disbale">
+                            <span>Go to Checkout</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </form>
+<?php
+} ?>
+
+<?php echo $block->getChildHtml('shopping.cart.table.after'); ?>
+<?php $shippingBlock = $this->getLayout()->createBlock(
+    'Magento\Checkout\Block\Cart\Shipping'
+); ?>
+<script>
+    window.checkoutConfig = <?php /* @escapeNotVerified */ echo \Zend_Json::encode($shippingBlock->getCheckoutConfig()); ?>;
+</script>
+<?php $giftOptionsBlock = $this->getLayout()->createBlock(
+    'Magento\GiftMessage\Block\Cart\GiftOptions'
+); ?>
+<script>
+    window.giftOptionsConfig = <?php /* @escapeNotVerified */ echo $giftOptionsBlock->getGiftOptionsConfigJson(); ?>;
+</script>

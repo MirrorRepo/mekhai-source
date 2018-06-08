@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- /**
+ * Webkul Software
+ *
+ * @category Webkul
+ * @package Webkul_Mpcashondelivery
+ * @author Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license https://store.webkul.com/license.html
+ */ -->
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="marketplace_products_columns">
+        <column name="codstatus" class="Webkul\Mpcashondelivery\Ui\Component\Listing\Column\CodproductAction">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="sortable" xsi:type="boolean">false</item>
+                    <item name="label" xsi:type="string" translate="true">Cod Status</item>
+                    <item name="sortOrder" xsi:type="number">5</item>
+                </item>
+            </argument>
+        </column>
+    </columns>
+    <container name="listing_top">
+        <massaction name="listing_massaction">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="component" xsi:type="string">Magento_Ui/js/grid/tree-massactions</item>
+                </item>
+            </argument>
+            <action name="updatecodstatus">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="type" xsi:type="string">updatecodstatus</item>
+                        <item name="label" xsi:type="string" translate="true">Update COD Status</item>
+                    </item>
+                </argument>
+                <argument name="actions" xsi:type="configurableObject">
+                    <argument name="class" xsi:type="string">Webkul\Mpcashondelivery\Ui\Component\MassAction\Status\Options</argument>
+                    <argument name="data" xsi:type="array">
+                        <item name="urlPath" xsi:type="string">mpcashondelivery/products/massupdate</item>
+                        <item name="paramName" xsi:type="string">codstatus</item>
+                        <item name="confirm" xsi:type="array">
+                            <item name="title" xsi:type="string" translate="true">Update COD Status</item>
+                            <item name="message" xsi:type="string" translate="true">Are you sure to update cod status of these products?</item>
+                        </item>
+                    </argument>
+                </argument>
+            </action>
+        </massaction>
+    </container>
+</listing>

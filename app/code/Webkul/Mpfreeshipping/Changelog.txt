@@ -1,0 +1,21 @@
+Legend
+
++ Features
+
+-------------------------------- Version 2.0.3 --------------------------------------
+	+ Compatible with Magento2.2.x and Marketplace 2.1.x
+
+-------------------------------- Version 2.0.2 --------------------------------------
+
+	+ Admin can set minimum order ammount.
+	+ Admin can allow sellers to add minimum order Amount.
+
+-------------------------------- Version 2.0.1 --------------------------------------
+
+	+ Compatible with Magento 2.1.* version.
+
+-------------------------------- Version 2.0.0 --------------------------------------
+
+	+ Seller can provide the free shipping method for their products.
+	+ Seller can add Invoice & Packing slip address, VAT, TAX information.
+	+ Ability to download Invoice and Shipping Slip easily.

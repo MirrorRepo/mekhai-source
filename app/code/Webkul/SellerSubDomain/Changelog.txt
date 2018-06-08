@@ -1,0 +1,16 @@
+Legend
+
++ Features
+- Bugs
+
+-------------------------------- Version 2.0.1 --------------------------------------
+    + Admin can enable or disable custom vendor domain setting 
+    + Admin can set custom url for each vendor
+
+-------------------------------- Version 2.0.0 --------------------------------------
+
+    + the vendors can have their own subdomain.
+    + easy to read and identify URLs for vendor’s subdomain.
+    + allows admin to add prefix with seller's subdomain
+    + customer can access to seller page via seller's subdomain
+    + customer can do any action(add product to cart, process checkout, ...) on seller's subdomain

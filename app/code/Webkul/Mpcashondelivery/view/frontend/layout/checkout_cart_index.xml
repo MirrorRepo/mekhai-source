@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!-- /**
+ * Webkul Software
+ *
+ * @category Webkul
+ * @package Webkul_Mpcashondelivery
+ * @author Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license https://store.webkul.com/license.html
+ */ -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="additional.product.info">
+            <block class="Webkul\Mpcashondelivery\Block\Mpcashondelivery" name="marketplace_cod_deliveryoption" template="Webkul_Mpcashondelivery::mpcashondelivery/checkout/cart/item/default.phtml" cacheable="false"/>
+        </referenceContainer>
+        <referenceBlock name="checkout.cart.totals">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="block-totals" xsi:type="array">
+                            <item name="children" xsi:type="array">
+                                <item name="mpcashondelivery" xsi:type="array">
+                                    <item name="component"  xsi:type="string">Webkul_Mpcashondelivery/js/view/checkout/cart/totals/mpcashondelivery</item>
+                                    <item name="sortOrder" xsi:type="string">20</item>
+                                    <item name="config" xsi:type="array">
+                                         <item name="template" xsi:type="string">Webkul_Mpcashondelivery/checkout/cart/totals/mpcashondelivery</item>
+                                        <item name="title" xsi:type="string" translate="true">Cash On Delivery</item>
+                                    </item>
+                                </item>
+
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

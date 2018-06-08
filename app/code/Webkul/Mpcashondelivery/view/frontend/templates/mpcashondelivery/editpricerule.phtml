@@ -1,0 +1,174 @@
+<?php
+/**
+ * Webkul Software
+ *
+ * @category Webkul
+ * @package Webkul_Mpcashondelivery
+ * @author Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license https://store.webkul.com/license.html
+ */
+$_helper = $block->getMpHelper();
+$orderHelper = $block->getMpCodHelper();
+$isPartner= $_helper->isSeller();
+$getPaymentEnable = $orderHelper->getCodEnable();
+	if($isPartner==1){ 
+		if($getPaymentEnable){
+			$priceruleId = $this->getRequest()->getParam('id');
+            $rightseller=$orderHelper->isRightSeller($priceruleId);
+            if($rightseller==1){
+            	$priceruleData = $block->getpriceruleData($priceruleId);
+			?>
+			<form action="<?php /* @escapeNotVerified */echo $block->getUrl('mpcashondelivery/pricerules/save') ?>" method="post" enctype="multipart/form-data" id="form_mpcashondelivery_add" name="form_mpcashondelivery_add">
+				<input type="hidden" name="id" value="<?php /* @escapeNotVerified */echo $priceruleId;?>"/>
+			    <?php /* @escapeNotVerified */echo $block->getBlockHtml('formkey')?>
+			    <?php /* @escapeNotVerified */echo $block->getBlockHtml('seller.formkey')?>
+				<fieldset class="fieldset">
+					<legend class="legend">
+						<span><?php /* @escapeNotVerified */ echo __("Update Cash On Delivery Price Rate"); ?></span>
+						<button class="button wk-mp-btn" type="submit" id="mpcashondelivery_add_rates" title="<?php /* @escapeNotVerified */echo __('Update COD Rate')?>">
+							<span><span><?php echo __("Update COD Rate"); ?></span></span>
+						</button>
+					</legend>
+					<div class="field required">
+						<label for="dest_country_id" class="label">
+							<span><?php /* @escapeNotVerified */ echo __("Destination Country"); ?></span>
+						</label>
+						<div class="control">
+							<select name="dest_country_id" id="dest_country_id" class="required-entry">
+								<?php 
+									$countryList = $block->getCountryOptionArray();
+									foreach($countryList as $countries) {?>
+										<option value="<?php /* @escapeNotVerified */echo $countries['value'] ?>" <?php if($countries['value']==$priceruleData->getDestCountryId()){ /* @escapeNotVerified */echo "selected='selected'";}?> ><?php /* @escapeNotVerified */echo $countries['label']?></option>
+									<?php 
+									} ?>
+							</select>
+						</div>
+					</div>
+					<div class="field required">
+						<label for="dest_region_id" class="label">
+							<span><?php /* @escapeNotVerified */ echo __("Destination State/Region"); ?></span>
+						</label>
+						<div class="control">
+							<input type="text" id="dest_region_id" name="dest_region_id" title="<?php /* @escapeNotVerified */echo __('Destination State/Region') ?>" class="required-entry input-text" placeholder="<?php /* @escapeNotVerified */echo __('Enter Destination State/Region-you can also set as * to allow all') ?>" value='<?php /* @escapeNotVerified */echo $priceruleData->getDestRegionId()?>'/>
+						</div>
+					</div>
+					<div class="field required">
+						<label for="is_range" class="label">
+							<span><?php /* @escapeNotVerified */ echo __("Zip code type"); ?></span>
+						</label>
+						<div class="control">
+							<select name="is_range" id="is_range" class="required-entry">
+									<option value="0" <?php /* @escapeNotVerified */echo ($priceruleData->getIsRange()==0)?'selected="selected"':''?>><?php /* @escapeNotVerified */echo __('Is range')?></option>
+									<option value="1" <?php /* @escapeNotVerified */echo ($priceruleData->getIsRange()==1)?'selected="selected"':''?>><?php /* @escapeNotVerified */echo __('Specific')?></option>
+							</select>
+						</div>
+					</div>
+					<div class="field required">
+						<label for="dest_zip_from" class="label">
+							<span><?php /* @escapeNotVerified */ echo __("Zip/Post Code From"); ?></span>
+						</label>
+						<div class="control">
+							<input type="text" id="dest_zip_from" name="dest_zip_from" title="<?php /* @escapeNotVerified */echo __('Zip/Post Code From') ?>" class="required-entry input-text" placeholder="<?php /* @escapeNotVerified */echo __('Enter Zip/Post Code Range(low)-you can also set as * to allow all') ?>" value='<?php /* @escapeNotVerified */echo $priceruleData->getDestZipFrom();?>'/>
+						</div>
+					</div>
+					<div class="field required">
+						<label for="dest_zip_to" class="label">
+							<span><?php /* @escapeNotVerified */ echo __("Zip/Post Code To"); ?></span>
+						</label>
+						<input 
+							type="text" id="dest_zip_to" name="dest_zip_to" title="<?php /* @escapeNotVerified */echo __('Zip/Post Code To') ?>" class="required-entry input-text" placeholder="<?php /* @escapeNotVerified */echo __('Enter Zip/Post Code Range(high) - you can also set as * to allow all') ?>" value='<?php /* @escapeNotVerified */echo $priceruleData->getDestZipTo();?>'/>
+					</div>
+					<div class="field required">
+						<label for="zipcode" class="label">
+							<span><?php /* @escapeNotVerified */ echo __("Zip code"); ?></span>
+						</label>
+						<div class="control">
+							<input type="text" id="zipcode" name="zipcode" title="<?php /* @escapeNotVerified */echo __('Zip code') ?>" class="required-entry input-text" placeholder="<?php /* @escapeNotVerified */echo __('Enter Zip Code') ?>" value='<?php /* @escapeNotVerified */echo $priceruleData->getZipcode();?>'/>
+						</div>
+					</div>
+					<div class="field required">
+						<label for="price_type" class="label">
+							<span><?php /* @escapeNotVerified */ echo __("Rate Type"); ?></span>
+						</label>
+						<div class="control">
+							<select name="price_type" id="price_type" class="required-entry">
+								<option value="0" <?php /* @escapeNotVerified */echo ($priceruleData->getPriceType()==0)?'selected="selected"':''?>><?php /* @escapeNotVerified */echo __('Fixed')?></option>
+								<option value="1" <?php /* @escapeNotVerified */echo ($priceruleData->getPriceType()==1)?'selected="selected"':''?> ><?php /* @escapeNotVerified */echo __('Percentage')?></option>
+							</select>
+						</div>
+					</div>
+					<div class="field required">
+						<label for="fixed_price" class="label">
+							<span><?php /* @escapeNotVerified */ echo __("Fixed Rate"); ?></span>
+						</label>
+						<div class="control">
+							<input type="text" id="fixed_price" name="fixed_price" title="<?php /* @escapeNotVerified */echo __('Fixed Rate') ?>" class="required-entry input-text" placeholder="<?php /* @escapeNotVerified */echo __('Enter Fixed Rate') ?>" value='<?php /* @escapeNotVerified */echo $priceruleData->getFixedPrice();?>'/>
+						</div>
+					</div>
+					<div class="field required">
+						<label for="percentage_price" class="label">
+							<span><?php /* @escapeNotVerified */ echo __('Percentage(%) Rate'); ?></span>
+						</label>
+						<div class="control">
+							<input type="text" id="percentage_price" name="percentage_price" title="<?php /* @escapeNotVerified */echo __('Percentage(%) Rate') ?>" class="required-entry input-text" placeholder="<?php /* @escapeNotVerified */echo __('Enter Percentage(%) Rate') ?>" value='<?php /* @escapeNotVerified */echo $priceruleData->getPercentagePrice()?>'/>
+						</div>
+					</div>
+					<div class="field required">
+						<label for="weight_from" class="label">
+							<span><?php /* @escapeNotVerified */ echo __("Weight From"); ?></span>
+						</label>
+						<div class="control">
+							<input type="text" id="weight_from" name="weight_from" title="<?php /* @escapeNotVerified */echo __('Weight From') ?>" class="required-entry input-text" placeholder="<?php /* @escapeNotVerified */echo __('Enter Weight Range(low)') ?>" value='<?php /* @escapeNotVerified */echo $priceruleData->getWeightFrom();?>'/>
+						</div>
+					</div>
+					<div class="field required">
+						<label for="weight_to" class="label">
+							<span><?php /* @escapeNotVerified */ echo __("Weight To"); ?></span>
+						</label>
+						<div class="control">
+							<input type="text" id="weight_to" name="weight_to" title="<?php /* @escapeNotVerified */echo __('Weight To') ?>" class="required-entry input-text" placeholder="<?php /* @escapeNotVerified */echo __('Enter Weight Range(high)') ?>" value='<?php /* @escapeNotVerified */echo $priceruleData->getWeightTo()?>'/>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+			<?php }else{
+				/* @escapeNotVerified */echo "<h2 class='wk_new_msg'>".__("YOU ARE NOT AUTHORIZE TO UPDATE THIS RATE.")."</h2>";
+			}
+		}else{
+			/* @escapeNotVerified */echo "<h2 class='wk_new_msg'>".__("Payment method is currently disabled")."</h2>";
+		}?>
+<?php }else{
+	/* @escapeNotVerified */echo "<h2 class='wk_new_msg'>".__("To BECOME SELLER PLEASE CONTACT TO ADMIN.")."</h2>";
+}?>
+<script type="text/javascript">
+	require([
+	        "jquery",
+	        "mage/mage"
+	    ], function($wk_jq){
+	    	var isRange = <?php /* @escapeNotVerified */echo $priceruleData->getIsRange();?>;
+	    	if(isRange==0){
+	    		hideSpecific();
+	    	}else{
+	    		showSpecific();
+	    	}
+			$wk_jq('#is_range').on('change',function(){
+				var is_range = $wk_jq(this).val();
+				if(is_range==1){
+					showSpecific();
+				}else{
+					hideSpecific();
+				}
+			});
+			function showSpecific(){
+				$wk_jq("#zipcode").parent().parent().show();
+				$wk_jq("#dest_zip_from").parent().parent().hide();
+				$wk_jq("#dest_zip_to").parent().parent().hide();
+			}
+			function hideSpecific(){
+				$wk_jq("#zipcode").parent().parent().hide();
+				$wk_jq("#dest_zip_from").parent().parent().show();
+				$wk_jq("#dest_zip_to").parent().parent().show();
+			}
+		});
+</script>

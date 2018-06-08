@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Webkul_Mobikul::css/style.css"/>
+        <link src="Webkul_Mobikul::js/bootstrap/categoryimages-post-action.js"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Webkul\Mobikul\Block\Adminhtml\Edit\Categoryimages\Category" name="categoryimages_js" template="categoryimages/js.phtml"/>
+            <uiComponent name="mobikul_categoryimages_form"/>
+        </referenceContainer>
+    </body>
+</page>

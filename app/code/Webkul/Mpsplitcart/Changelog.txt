@@ -1,0 +1,20 @@
+Legend
+
++ Features
+- Bugs
+
+-------------------------------- Version 2.0.2 --------------------------------------
+
+	+ Fully compatible with magento version 2.1.*
+	+ Minor bugs fixed.
+
+-------------------------------- Version 2.0.1 --------------------------------------
+
+	+ Updated composer.json file.
+	- Bugs fixed
+
+-------------------------------- Version 2.0.0 --------------------------------------
+
+	+ Buyer can add multiple seller’s products to their cart.
+	+ Admin can enable / disable the Marketplace Split Cart option.
+	+ Easy to manage from Admin.

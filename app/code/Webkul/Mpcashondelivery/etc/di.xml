@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!-- /**
+ * Webkul Software
+ *
+ * @category Webkul
+ * @package Webkul_Mpcashondelivery
+ * @author Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license https://store.webkul.com/license.html
+ */ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="marketplace_cod_pricerules_data_source" xsi:type="string">Webkul\Mpcashondelivery\Model\ResourceModel\Pricerules\Grid\Collection</item>
+                <item name="marketplace_cod_orders_data_source" xsi:type="string">Webkul\Mpcashondelivery\Model\ResourceModel\Codorders\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Webkul\Mpcashondelivery\Model\ResourceModel\Pricerules\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">marketplace_mpcashondelivery</argument>
+            <argument name="eventPrefix" xsi:type="string">marketplace_corpricerule_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">codpricerule_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Webkul\Mpcashondelivery\Model\ResourceModel\Pricerules</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Webkul\Mpcashondelivery\Model\ResourceModel\Codorders\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">marketplace_mpcashondelivery_order</argument>
+            <argument name="eventPrefix" xsi:type="string">marketplace_cororder_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">codorder_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Webkul\Mpcashondelivery\Model\ResourceModel\Codorders</argument>
+        </arguments>
+    </virtualType>
+</config>

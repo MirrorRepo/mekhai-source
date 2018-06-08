@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Webkul Software.
+ *
+ * @category  Webkul
+ * @package   Webkul_Mobikul
+ * @author    Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Webkul_Mobikul::mobikul" title="Mobikul" sortOrder="10">
+                    <resource id="Webkul_Mobikul::menu" title="Menu" sortOrder="10">
+                        <resource id="Webkul_Mobikul::bannerimage" title="Manage Banner Images" sortOrder="1"/>
+                        <resource id="Webkul_Mobikul::notification" title="Manage Notifications" sortOrder="2"/>
+                        <resource id="Webkul_Mobikul::featuredcategories" title="Manage Featured Categories" sortOrder="3"/>
+                        <resource id="Webkul_Mobikul::categoryimages" title="Manage Category Banners and Icons" sortOrder="4"/>
+                    </resource>
+                </resource>
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Webkul_Mobikul::config_mobikul" title="Mobikul Configuration Section" sortOrder="50"/>
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

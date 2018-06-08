@@ -1,0 +1,205 @@
+<?php  
+/**
+ * Webkul Software.
+ *
+ * @category  Webkul
+ * @package   Webkul_Marketplace
+ * @author    Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+
+// @codingStandardsIgnoreFile
+
+$helper = $this->helper('Webkul\Marketplace\Helper\Data');
+$marketplacelabel1  =	$block->escapeHtml($helper->getMarketplacelabel1()); 
+$marketplacelabel2  =	$block->escapeHtml($helper->getMarketplacelabel2()); 
+$marketplacelabel3  =	$block->escapeHtml($helper->getMarketplacelabel3()); 
+$marketplacelabel4  =	$block->escapeHtml($helper->getMarketplacelabel4()); 
+$banner_display 	= 	$helper->getDisplayBanner();
+$banner_image 		= 	$helper->getBannerImage();
+$banner_content 	= 	$helper->getBannerContent();
+$icons_display 		= 	$helper->getDisplayIcon();
+$icon_image1 		= 	$helper->getIconImage1();
+$icon_image1_label 	= 	$block->escapeHtml($helper->getIconImageLabel1());
+$icon_image2 		= 	$helper->getIconImage2();
+$icon_image2_label 	= 	$block->escapeHtml($helper->getIconImageLabel2());
+$icon_image3 		= 	$helper->getIconImage3();
+$icon_image3_label 	= 	$block->escapeHtml($helper->getIconImageLabel3());
+$icon_image4 		= 	$helper->getIconImage4();
+$icon_image4_label 	= 	$block->escapeHtml($helper->getIconImageLabel4());
+$marketplacebutton 	= 	$helper->getMarketplacebutton();
+$marketplaceprofile = 	$helper->getMarketplaceprofile();
+
+/*order collection*/
+$bestSellersData = $block->getBestSaleSellers();
+$seller_arr = $bestSellersData['0'];
+$sellerProfileArr = $bestSellersData['1'];
+$sellerCountArr = $bestSellersData['2'];
+?>
+
+<div class="middle-content mekhai-mkp">
+	
+	<div class="slider">
+		<div class="slider-row"></div>
+	</div>
+
+    <nav class="centrar navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuServicio">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>	
+            <p class="navbar-brand">Menu de Servicios</p>
+          </div>
+      <div id="menuServicio" class="collapse navbar-collapse">
+        <ul data-id ="menu" class="nav nav-tabs">
+          <li class="active"><a href="#datos2" role="tab" data-toggle="tab">Datos Cliente</a></li>
+          <li><a href="#servicios2" role="tab" data-toggle="tab">Servicios a Solicitar</a></li>
+          <li><a href="#contenedor2" role="tab" data-toggle="tab">Datos del contenedor o carga suelta</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+    <form class="centrar espacio-contenido">  
+      <div class="tab-content">
+        <div class="espaciado tab-pane fade in active" id="datos2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit id assumenda veritatis quam suscipit officia! Numquam quam natus ratione, sapiente iure magni debitis consequatur, voluptate suscipit. Ab ex facilis iusto.		
+        </div>
+        <div class="espaciado tab-pane fade" id="servicios2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor reprehenderit facere aspernatur minus velit sunt, quam, atque porro voluptatem recusandae quaerat itaque voluptatibus repellendus, expedita eum cupiditate non dignissimos rem?
+        </div>
+        <div class="espaciado tab-pane fade" id="contenedor2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam molestiae magnam officiis repellat voluptate facere reiciendis temporibus, iure laudantium accusamus debitis, commodi pariatur atque. Iste cumque voluptatem, vitae neque nemo!
+        </div>
+      </div>
+      </form>
+</div>
+<script>
+  jQuery(document).ready(function($){
+      
+      function valWindowSize() {
+        "use strict";
+        var width = $(window).width();
+          if (width < 768) {
+          $('ul[data-id="menu"]').removeClass();
+          $('ul[data-id="menu"]').addClass('nav navbar-nav');
+        } else {
+          $('ul[data-id="menu"]').removeClass();
+          $('ul[data-id="menu"]').addClass('nav nav-tabs');
+        }
+      }
+        //esto aca es lo que valida el tamaño para ver que estilo se le da las tabs
+        $(window).on('resize', function () {
+          valWindowSize();
+        });
+
+  });
+  
+</script>
+<style>
+.navbar-toggle {
+  margin: 10px;
+}
+.page-main,.col1-layout,.container{
+    width: 100%;
+}
+.page-main .container .col-lg-12{
+	padding: 0;
+}
+
+.slider {
+  width: 100%;
+  top: calc(50% - 97.25px);
+  overflow: hidden;
+}
+.slider .slider-row {
+  width: 2956px;
+  height: 194.5px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/111863/ubiquity-summit-web-01.png);
+  background-size: 2956px 194.5px;
+  -webkit-animation: slide 50s linear infinite;
+          animation: slide 50s linear infinite;
+}
+
+@-webkit-keyframes slide {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -2956px;
+  }
+}
+
+@keyframes slide {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -2956px;
+  }
+}
+
+
+.centrar-texto{
+	text-align: center;
+}
+.izq-texto{
+  text-align: left;
+}
+
+.mayus{
+  text-transform:uppercase;
+  font-size:1.5rem;
+}
+
+.espaciado{
+	padding: .5rem;
+}
+
+.espacio-contenido{
+	padding-left: 2rem;
+	padding-right: 1rem;
+}
+
+@media only screen and (max-width: 970px){
+	h3, h4, span{
+		font-size: 1.2rem !important;
+	}
+	html, body{
+		font-size:.9rem;
+	}
+ 	.centrar{
+	margin: 0 auto;
+	max-width: 770px;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	h3, h4, span{
+		font-size: 1.0rem !important;
+	}
+	html, body{
+		font-size:.9rem;
+	}
+	.espacio-contenido{
+	padding-left: .5rem;
+	padding-right: .5rem;
+	}
+  #menuServicio li{
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px){
+	.navbar-header{
+		display: none;
+	}
+	.navbar-default{
+		border: 0px;
+	}
+}
+</style>

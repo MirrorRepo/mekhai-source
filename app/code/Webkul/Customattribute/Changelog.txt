@@ -1,0 +1,13 @@
+Legend
+
++ Features
+- Bugs
+
+-------------------------------- Version 2.0.1 --------------------------------------
+
+	+ Compatible with Magento 2.1.* version. 
+
+-------------------------------- Version 2.0.0 --------------------------------------
+
+	+ Allow to add product with custom attribute (created from admin panel) at seller dashboard
+	+ show/hide selected attributes on the front end for adding product at seller end by admin.

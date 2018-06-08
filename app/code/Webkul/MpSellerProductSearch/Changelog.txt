@@ -1,0 +1,17 @@
+Legend
+
++ Features
+- Bugs
+
+-------------------------------- Version 2.0.1 --------------------------------------
+	
+	+ Compatible with version 2.1.*.
+
+-------------------------------- Version 2.0.0 --------------------------------------
+	
+	+ Buyer can search product according to the seller.
+	+ Buyer can search the product on seller’s collection page.
+	+ Buyer can search all the products of the particular seller.
+
+
+

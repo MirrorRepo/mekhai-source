@@ -1,0 +1,36 @@
+Legend
+
++ Features
+- Bugs
+
+-------------------------------- Version 2.0.2 --------------------------------------
+
+	+ Updated composer.json as per magento 2.2.x version.
+	+ Updated according to magento 2.2.x and marketplace 2.1.x version
+
+-------------------------------- Version 2.0.1 --------------------------------------
+
+	+ Updated composer.json File
+  
+-------------------------------- Version 2.0.0 --------------------------------------
+
+	+ Fully Admin Management.
+	+ Allow admin to activate this payment option
+	+ Allow admin to add Cash On Delivery description and label to display on frontend.
+	+ Allow admin to add his own COD rates for his product.
+	+ Allow seller to add his own COD rates.
+	+ Allow seller/admin to enable COD on products from product edit page.
+	+ Available Fixed or Percentage types of rate for calculating COD charges.
+	+ Apply COD charges on based per product and weight.
+	+ Order will be managed by seller.
+	+ Allow Seller to create invoice,shipment,creditmemo for his portion of the order.
+	+ Pay admin commission after collecting payment from buyer by seller.
+	+ Allow admin to see seller Cash On Delivery report on admin panel.
+	+ Allow seller to print pdf for invoice, shipment and creditmemo.
+	+ Allow seller to send order email, invoice email to buyer from his dashboard.
+	+ Allow seller to send tracking information to buyer from his dashboard.
+	+ Allow admin to manage their COD orders.
+	+ Allow admin to create invoice, shipment, credit memo for his portion of the order.
+	+ Allow admin to cancel his portion of the order
+	+ Seller can Mass enable or disable product's cod status
+	+ Admin can Mass enable or disable product's cod status

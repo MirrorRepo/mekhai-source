@@ -1,0 +1,33 @@
+
+Legend
+
++ Features
+- Bugs
+------------------------------ Version 2.0.4 --------------------------------------
+
+	+ Compatible with magento 2.2.*
+
+------------------------------ Version 2.0.3 --------------------------------------
+
+	+ Admin can configure email templates
+
+------------------------------ Version 2.0.2 --------------------------------------
+
+	+ bug fixed related to v2.0.1
+	+ Seller get mail when any customer follow him.
+	+ Customer get confirmation mail when he/she follow a seller.
+
+------------------------------ Version 2.0.1 --------------------------------------
+
+	+ Compatible with version 2.1.*
+
+-------------------------------- Version 2.0.0 --------------------------------------
+	
+	+ Buyer can add their favourite Seller shop.
+	+ Buyer can receive notification message, about new products.
+	+ Buyer can see all the update and the latest product added by the seller.
+	+ Seller can see and delete their shop followers.
+	+ Seller can send an Email to their followers.
+
+
+

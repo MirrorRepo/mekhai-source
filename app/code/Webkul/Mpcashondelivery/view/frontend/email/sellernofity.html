@@ -1,0 +1,58 @@
+<!--@subject Commission Pay Notification to Admin From Seller {{var customer.name}}  @-->
+<!--@vars {
+"var this.getUrl($store, 'customer/account/')":"Customer Account URL",
+"var customer.email":"Customer Email",
+"var customer.name":"Customer Name"
+} @-->
+
+{{template config_path="design/email/header_template"}}
+
+<table>
+    <tr class="email-intro">
+        <td>
+            <p class="greeting">{{trans "Hello %customername, " customername=$myvar1}}</p>
+            <p>
+                {{trans "As you have collected Payment for order(s)(described below), so please pay my amount(including commission)"}}
+             </p><p>
+                {{var myvar4|raw}}
+            </p>
+        </td>
+    </tr>
+    <tr>
+    	<td>
+        	<p>{{trans 'You can check order information'}}</p>
+        </td>
+    </tr>
+    <tr>
+    	<td>
+        	<h2>{{trans "Order Information:"}}</h2>
+        </td>
+    </tr>
+    <tr class="email-information">
+        <td>
+            <table class="email-items">
+                <thead>
+                    <tr>
+                        <th class="item-info">Order Id #</th>
+                        <th class="item-info">Product Name</th>
+                        <th class="item-qty">Qty</th>
+                        <th class="item-price">Price</th>
+                        <th class="item-price">Total Tax amount</th>
+                        <th class="item-price">Total Seller amount</th>
+                        <th class="item-price">Total Admin Commission</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{var myvar3|raw}}
+                    <tr>
+                        <td class="item-info">{{trans "Admin Total Amount to Pay"}}</td>
+                        <td class="item-info">{{var myvar5|raw}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>{{trans "This is notification mail to pay admin commission to admin."}}</p>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer_template"}}

@@ -1,0 +1,22 @@
+<!--
+/**
+ * MpEbaymagentoconnect import category script
+ *
+ * @category    Webkul
+ * @package     Webkul_MpEbaymagentoconnect
+ * @author      Webkul Software Private Limited
+ *
+ */
+-->
+<div class="pp-buttons-container">
+    <button id="<?php echo $block->getId() ?>" onclick="return false;">
+        <span><span><span><?php echo $block->escapeHtml($block->getButtonLabel()); ?></span></span></span>
+    </button>
+</div>
+<script type="text/x-magento-init">
+    {
+        "body": {
+            "Webkul_Smtp/js/testmailsend": {"mailsendurl":"<?php echo $block->getAjaxCheckUrl() ?>"}
+        }
+    }
+</script>

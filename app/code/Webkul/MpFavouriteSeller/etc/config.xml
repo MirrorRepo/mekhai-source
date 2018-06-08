@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category   Webkul
+ * @package    Webkul_MpFavouriteSeller
+ * @author     Webkul Software Private Limited
+ * @copyright  Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license    https://store.webkul.com/license.html
+ */  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <mpfavouriteseller>
+            <email>
+                <email_follower_template>mpfavouriteseller_email_email_follower_template</email_follower_template>
+                <followed_mail_to_seller_template>mpfavouriteseller_email_followed_mail_to_seller_template</followed_mail_to_seller_template>
+                <followed_mail_to_customer_template>mpfavouriteseller_email_followed_mail_to_customer_template</followed_mail_to_customer_template>
+                <new_product_notify_follower_template>mpfavouriteseller_email_new_product_notify_follower_template</new_product_notify_follower_template>
+            </email>
+        </mpfavouriteseller>
+    </default>
+</config>

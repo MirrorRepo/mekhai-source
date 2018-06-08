@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- /**
+ * Webkul Software
+ *
+ * @category Webkul
+ * @package Webkul_Mpcashondelivery
+ * @author Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license https://store.webkul.com/license.html
+ */ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="marketplace_cod_payadmin_email_template" label="Pay Admin Commission Notification" file="payadminemail.html" type="html" module="Webkul_Mpcashondelivery" area="frontend"/>
+    <template id="marketplace_cod_notifyseller_email_template" label="Notify Seller from admin" file="sellernofity.html" type="html" module="Webkul_Mpcashondelivery" area="frontend"/>
+</config>

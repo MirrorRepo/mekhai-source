@@ -1,0 +1,9 @@
+Legend
+
++ Features
+
+-------------------------------- Version 2.0.1 --------------------------------------
+	+ compatible with Magento 2.1.*
+
+-------------------------------- Version 2.0.0 --------------------------------------
+	+ Vendor can create custom options at the time of product create.

@@ -1,0 +1,62 @@
+<?php 
+/**
+ * Webkul Software
+ *
+ * @category Webkul
+ * @package Webkul_Mpcashondelivery
+ * @author Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license https://store.webkul.com/license.html
+ */
+
+$_helper = $block->getMpHelper();
+$codHelper = $block->getMpCodHelper();
+$isPartner= $_helper->isSeller();
+$magentoCurrentUrl = $block->getCurrentUrl();
+$getPaymentEnable = $codHelper->getCodEnable();
+$isSellerGroup = $_helper->isSellerGroupModuleInstalled();
+?>
+<?php
+    if($getPaymentEnable && $isPartner){ ?>
+    <li class="level-0 <?php echo strpos($magentoCurrentUrl,'mpcashondelivery')? "current active":"";?>">
+        <a href="#" onclick="return false;" class="">
+            <span><?php echo __('Marketplace Cash On Delivery')?></span>
+        </a>
+        <div class="wk-mp-submenu">
+            <strong class="wk-mp-submenu-title"><?php echo __('Marketplace Cash On Delivery')?></strong>
+            <a href="#" class="action-close _close" data-role="wk-mp-close-submenu"></a>
+            <ul>
+                <li data-ui-id="menu-webkul-marketplace-menu" class="item-menu  parent  level-1">
+                    <strong class="wk-mp-submenu-group-title">
+                        <span><?php echo __('Menu')?></span>
+                    </strong>
+                    <div class="wk-mp-submenu">
+                        <ul>
+                            <?php if(($isSellerGroup && $_helper->isAllowedAction('mpcashondelivery/pricerules/index')) || !$isSellerGroup) { ?>
+                                <li class="level-2">
+                                    <a href="<?php echo $block->getUrl('mpcashondelivery/pricerules/index', ['_secure' => $this->getRequest()->isSecure()]); ?>">
+                                        <span><?php echo __('Manage Cash On Delivery Rates') ?></span>
+                                    </a>
+                                </li>
+                            <?php } ?>
+                            <?php if(($isSellerGroup && $_helper->isAllowedAction('mpcashondelivery/order/index')) || !$isSellerGroup) { ?>
+                                <li class="level-2">
+                                    <a href="<?php echo $block->getUrl('mpcashondelivery/order/index', ['_secure' => $this->getRequest()->isSecure()]); ?>">
+                                        <span><?php echo __('Manage Cash On Delivery Orders') ?></span>
+                                    </a>
+                                </li>
+                            <?php } ?>
+                            <?php if(($isSellerGroup && $_helper->isAllowedAction('mpcashondelivery/products/index')) || !$isSellerGroup) { ?>
+                                <li class="level-2">
+                                    <a href="<?php echo $block->getUrl('mpcashondelivery/products/index', ['_secure' => $this->getRequest()->isSecure()]); ?>">
+                                        <span><?php echo __('Manage Cash On Delivery Products') ?></span>
+                                    </a>
+                                </li>
+                            <?php } ?>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </li>
+<?php }?>

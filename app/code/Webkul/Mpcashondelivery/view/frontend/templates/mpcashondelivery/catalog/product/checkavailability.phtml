@@ -1,0 +1,122 @@
+<?php
+/**
+ * Webkul Software
+ *
+ * @category Webkul
+ * @package Webkul_Mpcashondelivery
+ * @author Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license https://store.webkul.com/license.html
+ */
+    $helper = $block->getHelper();
+    $_product=$block->getProduct();
+    $availability = $_product->getCodAvailable();
+    $allowedType = ['simple','configurable','bundle'];
+    $productType = $_product->getTypeId();
+    if(in_array($productType,$allowedType) && $availability){
+        $cod_charges = $helper->getAppliedPriceRules();
+        $getPaymentEnable = $helper->getCodEnable();
+        if($getPaymentEnable){
+            $_product = $block->getProduct(); ?>
+            <div class="mpcod_check_wrap">
+                <div class="mpcod_check_container">
+                    <div class="mpcod_check_box">
+                        <div class="mpcod_check_container_div1">
+                            <div class="mpcod_check_container_div1_title mpcod_check">
+                                <span class="wk-storeloc-icon wk-icon"></span>
+                                <span><?php /* @escapeNotVerified */echo __('Check Cash On Delivery Availability at') ?></span>
+                            </div>
+                            <div class="mpcod_check_container_div1_content mpcod_check">
+                                <div style="float: left;">
+                                    <input type="hidden" id="mp_cod_product_id" name="mp_cod_product_id" value="<?php /* @escapeNotVerified */echo $_product['entity_id']?>">
+                                    <input type="text" placeholder="<?php /* @escapeNotVerified */echo __('Enter your Pincode') ?>" autocomplete="off" value="" class="input-text" name="mp_cod_pincode" id="mp_cod_pincode">
+                                    <div class="validation-advice" id="advice-required-entry-mp_cod_pincode" style="display:none;"><?php /* @escapeNotVerified */echo __('This is a required field.') ?></div>
+                                </div>
+                                <button type="button" id="mpcod_check_btn" class="btn button" style="float: left;">
+                                    <span>
+                                        <span>
+                                            <?php /* @escapeNotVerified */echo __('Check') ?>
+                                        </span>
+                                    </span>
+                                </button>
+                                <img src="<?php /* @escapeNotVerified */echo $block->getViewFileUrl('Webkul_Marketplace::images/quest.png');?>" class='mpcod-tooltip' title="<?php /* @escapeNotVerified */echo __('COD may or may not be available for more quantity of product.'); ?>"/>
+                            </div>
+
+                        </div>
+                        <div class="mpcod_check_container_div2">
+                            <div class="mpcod_check_container_div2_result">
+                                <span class="mpcod_check_container_div2_title"></span>
+                                <span class="mpcod_check_container_div2_pincode"></span>
+                                <a class="mpcod_check_container_div2_change" href="javascript:void(0)"><?php /* @escapeNotVerified */echo __('Change') ?></a>
+                                <img src="<?php /* @escapeNotVerified */echo $block->getViewFileUrl('Webkul_Marketplace::images/quest.png');?>"  title="<?php /* @escapeNotVerified */echo __('COD may or may not be available for more quantity of product.'); ?>"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="loading-mask" style="left: -2px; top: 0px; width: 1286px; height: 783px;">
+                <p class="loader" id="loading_mask_loader">
+                    <img src="<?php /* @escapeNotVerified */echo $block->getViewFileUrl('Webkul_Mpcashondelivery::images/ajax-loader-tr.gif');?>" alt="<?php /* @escapeNotVerified */echo __('Loading') ?>..."><br/><?php /* @escapeNotVerified */echo __('Please wait') ?>...
+                </p>
+            </div>
+            <script type="text/javascript">
+                require([
+                        "jquery",
+                        "mage/mage"
+                    ], function($wk_jq){
+                        $wk_jq('document').ready(function(){
+                            $wk_jq('.product-info-main').append($wk_jq('.mpcod_check_wrap'));
+                            $wk_jq('.mpcod_check_wrap').show();
+                        });
+                        $wk_jq('body').append($wk_jq('#loading-mask'));
+
+                        $wk_jq('#mpcod_check_btn').click(function(){
+                            var len=$wk_jq('input#mp_cod_pincode').val();
+                            var pid=$wk_jq('#mp_cod_product_id').val();
+                            var len2=len.length;
+                            if(len2==0){
+                                $wk_jq('#mp_cod_pincode').attr('class','input-text required-entry validation-failed');
+                                $wk_jq('div#advice-required-entry-mp_cod_pincode').show();
+                                return false;
+                            }
+                            else{
+                                $wk_jq('#mp_cod_pincode').attr('class','input-text');
+                                $wk_jq('div#advice-required-entry-mp_cod_pincode').hide();
+                                $wk_jq('#loading-mask').show();
+                                $wk_jq('.wrapper').css('opacity','0.3');
+                                $wk_jq.ajax({
+                                    url: "<?php /* @escapeNotVerified */echo $block->getUrl('mpcashondelivery/availability/check', ['_secure' => $this->getRequest()->isSecure()]);?>",
+                                    type: "POST",
+                                    data: {pincode:len,pid:pid},
+                                    dataType: 'html',
+                                    success:function($data){
+                                        $wk_jq('#loading-mask').hide();
+                                        $wk_jq('input#mp_cod_pincode').val('');
+                                        $wk_jq('.wrapper').css('opacity','1');
+                                        if($data==1){
+                                            $wk_jq('.mpcod_check_container_div2_title').text('<?php /* @escapeNotVerified */echo __("COD available at ")?>');
+                                            $wk_jq('.mpcod_check_container_div2_pincode').text(len);
+                                            $wk_jq('.mpcod_check_container_div2_result').css('color','green');
+                                            $wk_jq('.mpcod_check_container_div1').hide();
+                                            $wk_jq('.mpcod_check_container_div2').show();
+                                        }
+                                        else{
+                                            $wk_jq('.mpcod_check_container_div2_title').text('<?php /* @escapeNotVerified */echo __("COD is not available at ")?>');
+                                            $wk_jq('.mpcod_check_container_div2_pincode').text(len);
+                                            $wk_jq('.mpcod_check_container_div2_result').css('color','red');
+                                            $wk_jq('.mpcod_check_container_div1').hide();
+                                            $wk_jq('.mpcod_check_container_div2').show();
+                                        }
+                                    }
+                                });
+                            }
+                        });
+
+                        $wk_jq('.mpcod_check_container_div2_change').click(function(){
+                            $wk_jq('.mpcod_check_container_div2').hide();
+                            $wk_jq('.mpcod_check_container_div1').show();
+                        });
+                    });
+            </script>
+        <?php }
+    }?>

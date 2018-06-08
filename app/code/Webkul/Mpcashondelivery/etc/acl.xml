@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- /**
+ * Webkul Software
+ *
+ * @category Webkul
+ * @package Webkul_Mpcashondelivery
+ * @author Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license https://store.webkul.com/license.html
+ */ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Webkul_Marketplace::marketplace" title="Marketplace Management" sortOrder="10" >
+                    <resource id="Webkul_Mpcashondelivery::manager" title="Marketplace Cash On Delivery Manager" sortOrder="11">
+                        <resource id="Webkul_Mpcashondelivery::mpcodrates" title="Marketplace Cash on delivery Rates" sortOrder="10"/>
+                        <resource id="Webkul_Mpcashondelivery::mpcodorders" title="Marketplace Cash on delivery Orders" sortOrder="10"/>
+                    </resource>
+                </resource>
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Magento_Payment::payment">
+                                <resource id="Webkul_Mpcashondelivery::config_mpcashondelivery" title="Marketplace Cash on Delivery Configuration section" sortOrder="50" />
+                            </resource>
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

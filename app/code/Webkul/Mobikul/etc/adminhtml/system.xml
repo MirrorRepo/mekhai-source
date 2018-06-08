@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Webkul Software.
+ *
+ * @category  Webkul
+ * @package   Webkul_Mobikul
+ * @author    Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="webkul" translate="label" sortOrder="10">
+            <label>Webkul</label>
+        </tab>
+        <section id="mobikul" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Mobikul</label>
+            <tab>webkul</tab>
+            <resource>Webkul_Mobikul::config_mobikul</resource>
+            <group id="configuration" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Mobikul Basic Configuration</label>
+                <field id="apiusername" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Username</label>
+                </field>
+                <field id="apikey" translate="label" type="obscure" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Password</label>
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                </field>
+                <field id="pagesize" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Collection Page Size</label>
+                </field>
+                <field id="featuredproduct" translate="label" sortOrder="4" type="select" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable random featured product in home page?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="cms" translate="label" sortOrder="5" type="multiselect" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Allowed CMS Pages</label>
+                    <source_model>Webkul\Mobikul\Model\Cmspages</source_model>
+                </field>
+                <!-- <field id="enable_mobile_login" translate="label" sortOrder="6" type="select" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable Mobile Login</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field> -->
+            </group>
+            <group id="notification" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>FCM Push Notification Parameters</label>
+                <field id="apikey" translate="label" sortOrder="1" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>API key</label>
+                </field>
+                <field id="topic" translate="label" sortOrder="2" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Topic</label>
+                    <comment>eg. local</comment>
+                </field>
+            </group>
+            <group id="searchsuggestion" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Mobikul Catalog Search Configuration</label>
+                <field id="displaytag" translate="label" sortOrder="1" type="select" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Dispaly Tags in Search</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="tagcount" translate="label" sortOrder="2" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Number of Tags to display in Search</label>
+                    <depends>
+                        <field id="displaytag">1</field>
+                    </depends>
+                </field>
+                <field id="displayproduct" translate="label" sortOrder="3" type="select" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Dispaly Products in Search</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="productcount" translate="label" sortOrder="4" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Number of Products to display in Search</label>
+                    <depends>
+                        <field id="displayproduct">1</field>
+                    </depends>
+                </field>
+            </group>
+            <!--<group id="theme" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Color Options for Mobikul</label>
+                <field id="code" translate="label" sortOrder="1" type="select" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Theme Code</label>
+                    <source_model>Webkul\Mobikul\Model\System\Source</source_model>
+                </field>
+            </group>-->
+        </section>
+    </system>
+</config>

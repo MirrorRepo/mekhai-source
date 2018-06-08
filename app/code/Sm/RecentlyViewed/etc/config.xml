@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<config_recentlyviewed>
+			<general>
+				<is_enabled>1</is_enabled>
+				<title_module>SM Recently Viewed</title_module>
+				<position>right</position>
+				<limitation>15</limitation>
+			</general>
+		</config_recentlyviewed>
+	</default>
+</config>

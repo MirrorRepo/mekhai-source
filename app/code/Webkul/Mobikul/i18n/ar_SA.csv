@@ -1,0 +1,248 @@
+Back,الى الخلف
+Delete Bannner,حذف Bannner
+Are you sure you want to revoke the customer's tokens?,هل أنت متأكد أنك تريد إزالة رموز العميل؟
+Force Sign-In,قوة الدخول في
+Create Order,إنشاء ترتيب
+Please select,الرجاء تحديد
+Reset,إعادة تعيين
+Reset Password,إعادة تعيين كلمة المرور
+Save and Continue Edit,حفظ ومتابعة تحرير
+Save Banner,حفظ راية
+Banner Infomation,راية Infomation و
+Online,عبر الانترنت
+Unlock,فتح
+Delete Category Image,حذف الفئة صورة
+Save Category Image,حفظ الفئة صورة
+Delete Featured Category,حذف الفئة المميز
+Save Featured Category,حفظ الفئة المميز
+Delete Notification,حذف إعلام
+Push Notification,إعلام دفع
+Save Notification,حفظ إعلام
+Choose an Option...,إختر خيار...
+Banner could not be deleted.,لا يمكن حذف شعار.
+Banner has been deleted.,لقد تم حذف شعار.
+Requested banner doesn't exist,لا وجود لافتة طلب
+Something went wrong while editing the banner.,حدث خطأ ما أثناء تحرير لواء.
+Edit Item with id %1,تحرير عنصر بالمعرف٪ 1
+New Banner,راية جديدة
+Banner Image,راية صورة
+Manage Banner Images,إدارة الصور راية
+A total of %1 record(s) were deleted.,تم حذف ما مجموعه٪ 1 سجل (ق).
+A total of %1 record(s) were disabled.,تم تعطيل ما مجموعه٪ 1 سجل (ق).
+A total of %1 record(s) were enabled.,تم تمكين ما مجموعه٪ 1 سجل (ق).
+You saved the banner.,قمت بحفظه لافتة.
+Something went wrong while saving the banner. %1,حدث خطأ ما أثناء إنقاذ لافتة. ٪ 1
+Please upload banner image.,يرجى تحميل صورة لافتة.
+File can not be saved to the destination folder.,ملف لا يمكن أن يتم حفظها إلى مجلد الوجهة.
+Sort order should be a number.,يجب أن يكون ترتيب عدد.
+Sort order field can not be blank.,مجال ترتيب لا يمكن أن يكون فارغا.
+Requested product doesn't exist,لا وجود المنتج المطلوب
+Requested category doesn't exist,لا وجود فئة المطلوبة
+Banner type or id should be set.,يجب تعيين نوع راية أو الهوية.
+Category image record could not be deleted.,لا يمكن حذف فئة سجل صورة.
+Category image record has been deleted.,تم حذف فئة سجل صورة.
+Requested categoryimages doesn't exist,غير موجود categoryimages طلب
+Something went wrong while editing the category image.,حدث خطأ ما أثناء تحرير الصورة الفئة.
+New Category Image,جديدة الفئة صورة
+Category Image,الفئة صورة
+Manage Category's Banners and Icons,إدارة الفئة لافتات وأيقونات
+You saved the category image.,يمكنك حفظ صورة الفئة.
+Something went wrong while saving the category images. %1,حدث خطأ أثناء حفظ الصور الفئة. ٪ 1
+Please upload category icon image.,يرجى تحميل فئة صورة الرمز.
+Please upload category banner image.,يرجى تحميل فئة راية صورة.
+Category id should be set.,يجب تعيين فئة معرف.
+Featuredcategories could not be deleted.,لا يمكن حذف Featuredcategories.
+Featuredcategories has been deleted.,تم حذف Featuredcategories.
+Requested featuredcategories doesn't exist,غير موجود featuredcategories طلب
+Something went wrong while editing the featuredcategories.,حدث خطأ ما أثناء تحرير featuredcategories.
+New Featuredcategories,Featuredcategories جديدة
+Featuredcategories,Featuredcategories
+Manage Featured Categories,إدارة الفئات مميزة
+You saved the featuredcategories.,قمت بحفظ featuredcategories.
+Something went wrong while saving the featuredcategories. %1,حدث خطأ ما أثناء إنقاذ featuredcategories. ٪ 1
+Please upload featuredcategories image.,يرجى تحميل featuredcategories الصورة.
+Notification could not be deleted.,لا يمكن حذف الإخطار.
+Notification has been deleted.,لقد تم حذف الإخطار.
+Requested notification doesn't exist,لا وجود إخطار طلب
+Something went wrong while editing the notification.,حدث خطأ ما أثناء تحرير الإعلام.
+New Notification,الإعلام الجديد
+Notification,إعلام
+Manage Notifications,إدارة الإخطارات
+You saved the notification.,قمت بحفظه الإخطار.
+Something went wrong while saving the notification. %1,حدث خطأ ما أثناء إنقاذ الإخطار. ٪ 1
+Please upload notification image.,يرجى تحميل صورة الإخطار.
+Notification type or id should be set.,يجب تعيين نوع الإخطار أو الهوية.
+Session id expired !,معرف جلسة انتهت!
+Cannot specify product.,لا يمكن تحديد المنتج.
+An error occurred while adding item to wishlist: %1,حدث خطأ أثناء إضافة عنصر إلى سلة:٪ 1
+An error occurred while adding item to wishlist.,حدث خطأ أثناء إضافة عنصر إلى سلة.
+Invalid Request.,طلب غير صالح.
+In stock,في المخزن
+Out of stock,إنتهى من المخزن
+N/A,N / A
+No,لا
+Review by %1,مراجعة من قبل٪ 1
+(Posted on %1),(تاريخ 1٪)
+sample,عينة
+Buy %1 for %2 each,شراء٪ 1 ل٪ 2 كل
+and,و
+save,حفظ
+The requested quantity is not available,الكمية المطلوبة غير متوفرة
+The requested quantity of ,الكمية المطلوبة من
+ is not available, غير متاح
+Unable to add product to cart.,غير قادر على اضافة المنتج في السله.
+quantity not available.,كمية غير متوفرة.
+%1 was added to your shopping cart.,تمت إضافة٪ 1 إلى سلة التسوق الخاصة بك.
+invalid request,طلب غير صالح
+Coupon code '%1' was applied.,تم تطبيق رمز القسيمة '٪ 1'.
+Coupon code '%1' is not valid.,رمز القسيمة '٪ 1' غير صالح.
+Coupon code was canceled.,تم إلغاء رمز القسيمة.
+Invalid shipping method.,طريقة الشحن غير صالح.
+Customer Address is not valid.,عنوان العميل غير صالح.
+This email already exist.,هذا البريد الإلكتروني موجود بالفعل.
+Invalid Billing data.,بيانات الفواتير غير صالحة.
+Invalid Shipping data.,بيانات النقل البحري غير صالحة.
+You will be redirected to the PayPal website.,سيتم توجيهك إلى موقع باي بال.
+Make Check payable to:,تقديم شيك مستحق الدفع إلى:
+Send Check to:,إرسال تحقق ل:
+Guest Checkout is not Enabled,لم يتم تمكين الضيوف الخروج
+Invalid Request,طلب غير صالح
+The address has been deleted.,تم حذف عنوان.
+The address has been saved.,تم حفظ العنوان.
+Invalid email address.,عنوان البريد الإلكتروني غير صالح.
+Customer exists please login,وجود العملاء تسجيل الدخول رجاءا
+There is already an account with this email address.,وهناك بالفعل حساب مع عنوان البريد الإلكتروني هذا.
+Your Account has been successfully created,تم إنشاء الحساب الخاص بك بنجاح
+Invalid request,طلب غير صالح
+Requested link does not exist.,غير موجود الرابط المطلوب.
+An error occurred while getting the requested content. Please contact the store owner.,حدث خطأ أثناء الحصول على المحتوى المطلوب. الرجاء الاتصال بصاحب الدكان.
+The link has expired.,انتهت صلاحية الرابط.
+The link is not available.,الرابط غير متوفر.
+Invalid current password,كلمة المرور الحالية غير صالحة
+The account information has been saved.,تم حفظ معلومات الحساب.
+If there is an account associated with %1 you will receive an email with a link to reset your password.,إذا كان هناك حساب مرتبط مع٪ 1 سوف تتلقى رسالة بريد إلكتروني مع وصلة لإعادة تعيين كلمة المرور الخاصة بك.
+Please enter your email.,رجاءا أدخل بريدك الإلكتروني.
+You have not set a default billing address.,هل يتم تعيين عنوان الفواتير الافتراضية.
+You have not set a default shipping address.,هل يتم تعيين عنوان الشحن الافتراضي.
+You have no additional address.,لا يوجد لديك عنوان إضافي.
+Hello,مرحبا
+You are currently subscribed to 'General Subscription'.,"أنت مشترك حاليا إلى ""الاشتراك عامة""."
+You are currently not subscribed to any newsletter.,تقوم حاليا بعدم الاشتراك في أي نشرة.
+Sorry This Order Does not Exist!!,آسف هذا الأمر غير موجود !!
+Unlimited,غير محدود
+Invalid Order.,رسالة طلب غير صالح.
+No shipping information available,أي معلومات الشحن المتاحة
+Subtotal,حاصل الجمع
+Shipping & Handling,شحن وتسليم
+Discount (%s),خصم (٪ ق)
+Discount,خصم
+Tax,ضريبة
+Grand Total,المبلغ الإجمالي
+Grand Total to be Charged,إجمالي الكبرى التي ستحمل
+Your Review (submitted on %1),اضافة تعليق (مقدم على٪ 1)
+This account is not confirmed.,لم يتم تأكيد هذا الحساب.
+Invalid login or password.,معلومات الدخول خاطئة او كلمة المرور خاطئة.
+Product(s) Has been Added to cart.,المنتج (ق) قد أضيفت إلى العربة.
+An error occurred while deleting the item from wishlist.,حدث خطأ أثناء حذف هذا البند من مفضلة.
+Item successfully deleted from wishlist.,البند بنجاح حذف من سلة.
+Your review has been accepted for moderation.,وقد تم قبول رأيك عن الاعتدال.
+The subscription has been saved.,تم حفظ الاشتراك.
+The subscription has been removed.,تمت إزالة الاشتراك.
+Can't delete item from wishlist,لا يمكن حذف عنصر من سلة
+Can't save description %1,لا يمكن حفظ وصف٪ 1
+Can't update wishlist,لا يمكن تحديث مفضلة
+Wishlist updated successfully,مفضلة تجديد بنجاح
+Item id is invalid,رقم السلعة غير صالح
+Invalid data.,بيانات غير صالحة.
+Product(s) has successfully moved to cart.,المنتج (ق) انتقلت بنجاح إلى السلة.
+There is some error in processing your request,هناك بعض الخطأ في معالجة طلبك
+Invalid username or password.,خطأ في اسم المستخدم أو كلمة مرور.
+Device Registered Succesfully,جهاز بنجاح مسجل
+Device Already Registered,جهاز مسجل إذا
+Please Provide Token,يرجى توفير رمز
+Please enter a valid email address.,رجاء قم بإدخال بريد الكتروني صحيح.
+"Sorry, but administrator denied subscription for guests.",آسف، ولكن المسؤول نفى الاشتراك للضيوف.
+This email address is already assigned to another user.,يتم تعيين عنوان البريد الإلكتروني هذا بالفعل إلى مستخدم آخر.
+Confirmation request has been sent.,تم إرسال طلب تأكيد.
+Thank you for your subscription.,شكرا لاشتراكك.
+%1 and above,٪ 1 أو أعلى
+%1 - %2,٪ 1 -٪ 2
+Enabled,تمكين
+Disabled,معاق
+Product,المنتج
+Category,الفئة
+Unable to remove banner image with id %1,غير قادر على إزالة صورة لافتة مع معرف٪ 1
+Unable to remove categoryimages record with id %1,غير قادر على إزالة سجل categoryimages بالمعرف٪ 1
+Unable to remove featuredcategories record with id %1,غير قادر على إزالة سجل featuredcategories بالمعرف٪ 1
+Others,الآخرين
+Custom Collection,مجموعة مخصصة
+Unable to remove notification record with id %1,غير قادر على إزالة سجل إخطار بالمعرف٪ 1
+All Store Views,كل مخزن المشاهدات
+Edit,تصحيح
+Assigned Product Ids,معرفات تعيين المنتج
+Total Sale,إجمالي بيع
+Total Seller Sale,إجمالي البائع بيع
+Total Admin Sale,إجمالي بيع المسؤول
+Current Commission %,اللجنة الحالية٪
+Shop name is available.,متاح اسم المحل.
+Shop name is already exists.,اسم المحل هو موجود بالفعل.
+Payment Information,معلومات الدفع
+Payment Information not filled by the Seller yet.,معلومات الدفع لا شغل من قبل البائع حتى الان.
+SKU,SKU
+By Seller,من قبل البائع
+Seller Payment Information,معلومات البائع الدفع
+Seller Name ,البائع اسم
+Seller Email ,بائع البريد الإلكتروني
+Total Amount To Be Pay ,مجموع المبلغ الواجب الدفع
+Add Comment,أضف تعليق
+Pay,دفع
+Are you sure you want to do this?,هل انت متأكد من أنك تريد أن تفعل هذا؟
+There was error during fetching results.,كان هناك خطأ أثناء جلب النتائج.
+Webkul,Webkul
+Mobikul,Mobikul
+Set Parameters for User Authentication,تعيين معلمات لمصادقة المستخدم
+Username,اسم المستخدم
+Password,كلمه السر
+API Session Timeout,مهلة جلسة API
+Android Push Notification Parameters,الروبوت دفع معلمات إعلام
+API key,مفتاح API
+Topic,موضوع
+eg. local,على سبيل المثال. محلي
+iOS Push Notification Parameters,دائرة الرقابة الداخلية بدفع معلمات إعلام
+Enable SandBox Push Notification,تمكين رمل دفع الإخطار
+Banner Information,معلومات راية
+Sort Order,امر ترتيب
+Banner Type,نوع راية
+Product/Category Id,المنتج / رقم تعريف فئة
+Store View,عرض متجر
+Banner Status,الحالة راية
+Add Images,إضافة الصور
+Disable,تعطيل
+Are you sure you wan't to disable selected records?,هل أنت متأكد أنك wan't لتعطيل السجلات المحددة؟
+Enable,تمكين
+Are you sure you wan't to enable selected records?,هل أنت متأكد أنك wan't لتمكين السجلات المحددة؟
+Delete,حذف
+Are you sure you wan't to delete selected records?,هل أنت متأكد أنك wan't لحذف السجلات المحددة؟
+ID,هوية شخصية
+Image,صورة
+Status,الحالة
+Created,خلقت
+Modified,تم التعديل
+Category Image Information,معلومات الفئة صورة
+Categories,الاقسام
+Icon Image,رمز صورة
+Category Id,معرف الفئة
+Category Name,اسم التصنيف
+Featured Category Information,مميزة معلومات الفئة
+ Featured Category Information, مميزة معلومات الفئة
+ Featured Category Status, مميزة الحالة الفئة
+Add Featured Category,إضافة فئة مميزة
+Notification Information,معلومات الإخطار
+Notification Title,عنوان الإشعار
+Notification Content,المحتوى إعلام
+Notification Type,نوع إعلام
+Notification Status,حالة الإخطار
+Add Notification,إضافة إعلام
+Push,إدفع
+Confirm Push Notification,تأكيد إعلام دفع
+Are you sure you want to send push notifications?,هل أنت متأكد أنك تريد إرسال الإشعارات؟

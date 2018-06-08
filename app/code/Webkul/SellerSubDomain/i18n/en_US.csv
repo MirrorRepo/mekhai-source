@@ -1,0 +1,6 @@
+Seller Subdomain Settings,Seller Subdomain Settings
+"If set yes then ""Rewrite Seller's Shop URL"" and ""Allow to automatic create seller public url on seller registration"" settings under ""Marketplace Seller Profile Page"" will not work.","If set yes then ""Rewrite Seller's Shop URL"" and ""Allow to automatic create seller public url on seller registration"" settings under ""Marketplace Seller Profile Page"" will not work."
+Prefix,Prefix
+e.g if set webkul then seller domain will be generate like webkul+shop_url.example.com,e.g if set webkul then seller domain will be generate like webkul+shop_url.example.com
+Display Admin Products On Category Page,Display Admin Products On Category Page
+Please disable seller subdomain to enable seller\'s shop url rewrite.,Please disable seller subdomain to enable seller\'s shop url rewrite.

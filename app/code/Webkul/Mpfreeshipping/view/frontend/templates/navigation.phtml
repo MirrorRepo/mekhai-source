@@ -1,0 +1,32 @@
+<?php
+    /**
+ * Webkul Software.
+ *
+ * @category  Webkul
+ * @package   Webkul_MpDHLShipping
+ * @author    Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+ ?>
+<?php 
+$_helper = $this->helper('Webkul\Marketplace\Helper\Data');
+$helper = $this->helper('Webkul\Mpfreeshipping\Helper\Data');
+$isPartner = $_helper->isSeller();
+$magentoCurrentUrl = $block->getCurrentUrl();
+?>
+<?php 
+    if($isPartner && $helper->getConfigData('active')  && $helper->getConfigData('allow_seller')){ ?>
+        <li class="nav item <?php echo strpos($magentoCurrentUrl,'freeshipping/shipping/view')!== false? "current":"";?>">
+       <?php 
+        if(strpos($magentoCurrentUrl,'freeshipping/shipping/view') !== false){ ?>      
+            <strong><?php echo __('Manage Free Shipping') ?></strong>              
+            <?php
+        } else{ ?>        
+            <a href="<?php echo $block->getUrl('freeshipping/shipping/view'); ?>">
+                <?php echo __('Manage Free Shipping') ?>
+            </a>                    
+        <?php 
+            } ?>                  
+        </li> 
+<?php }?>

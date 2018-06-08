@@ -1,0 +1,419 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Webkul Software.
+ *
+ * @category  Webkul
+ * @package   Webkul_Mobikul
+ * @author    Webkul
+ * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Webkul\Mobikul\Api\Data\BannerimageInterface" type="Webkul\Mobikul\Model\Bannerimage" />
+    <preference for="Webkul\Mobikul\Api\BannerimageRepositoryInterface" type="Webkul\Mobikul\Model\BannerimageRepository" />
+    <preference for="Webkul\Mobikul\Api\Data\NotificationInterface" type="Webkul\Mobikul\Model\Notification" />
+    <preference for="Webkul\Mobikul\Api\NotificationRepositoryInterface" type="Webkul\Mobikul\Model\NotificationRepository" />
+    <preference for="Webkul\Mobikul\Api\Data\FeaturedcategoriesInterface" type="Webkul\Mobikul\Model\Featuredcategories" />
+    <preference for="Webkul\Mobikul\Api\FeaturedcategoriesRepositoryInterface" type="Webkul\Mobikul\Model\FeaturedcategoriesRepository" />
+    <preference for="Webkul\Mobikul\Api\Data\CategoryimagesInterface" type="Webkul\Mobikul\Model\Categoryimages" />
+    <preference for="Webkul\Mobikul\Api\CategoryimagesRepositoryInterface" type="Webkul\Mobikul\Model\CategoryimagesRepository" />
+    <preference for="Magento\Catalog\Model\Layer\ContextInterface" type="Magento\Catalog\Model\Layer\Context" />
+    <preference for="Magento\Catalog\Model\Layer\ItemCollectionProviderInterface" type="Magento\Catalog\Model\Layer\Category\ItemCollectionProvider" />
+    <preference for="Magento\Catalog\Model\Layer\StateKeyInterface" type="Magento\Catalog\Model\Layer\Category\StateKey" />
+    <preference for="Magento\Catalog\Model\Layer\CollectionFilterInterface" type="Magento\Catalog\Model\Layer\Category\CollectionFilter" />
+    <preference for="Magento\Paypal\Model\Express" type="Webkul\Mobikul\Model\Express" />
+    <preference for="Magento\Catalog\Model\ResourceModel\Category\Tree" type="Webkul\Mobikul\Model\ResourceModel\Category\Tree" />
+    <preference for="Magento\Catalog\Model\Layer" type="Webkul\Mobikul\Model\Layer" />
+    <preference for="Magento\Catalog\Model\ResourceModel\Layer\Filter\Price" type="Webkul\Mobikul\Model\ResourceModel\Layer\Filter\Price" />
+    <preference for="Magento\CatalogSearch\Model\ResourceModel\Fulltext\Collection" type="Webkul\Mobikul\Model\ResourceModel\Fulltext\Collection" />
+
+    <type name="Webkul\Mobikul\Model\ApiSession">
+        <arguments>
+            <argument name="storage" xsi:type="object">Webkul\Mobikul\Model\ApiSession\Storage</argument>
+        </arguments>
+    </type>
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="mobikul_bannerimage_list_data_source" xsi:type="string">Webkul\Mobikul\Model\ResourceModel\Bannerimage\Grid\Collection</item>
+                <item name="mobikul_notification_list_data_source" xsi:type="string">Webkul\Mobikul\Model\ResourceModel\Notification\Grid\Collection</item>
+                <item name="mobikul_featuredcategories_list_data_source" xsi:type="string">Webkul\Mobikul\Model\ResourceModel\Featuredcategories\Grid\Collection</item>
+                <item name="mobikul_userimage_list_data_source" xsi:type="string">Webkul\Mobikul\Model\ResourceModel\Userimage\Grid\Collection</item>
+                <item name="mobikul_categoryimages_list_data_source" xsi:type="string">Webkul\Mobikul\Model\ResourceModel\Categoryimages\Grid\Collection</item>
+                <item name="mobikul_devicetoken_list_data_source" xsi:type="string">Webkul\Mobikul\Model\ResourceModel\Devicetoken\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Model\ResourceModel\Bannerimage\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">mobikul_bannerimage</argument>
+            <argument name="eventPrefix" xsi:type="string">mobikul_bannerimage_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">bannerimage_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Webkul\Mobikul\Model\ResourceModel\Bannerimage</argument>
+        </arguments>
+    </type>
+    <type name="Webkul\Mobikul\Model\ResourceModel\Notification\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">mobikul_notification</argument>
+            <argument name="eventPrefix" xsi:type="string">mobikul_notification_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">notification_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Webkul\Mobikul\Model\ResourceModel\Notification</argument>
+        </arguments>
+    </type>
+    <type name="Webkul\Mobikul\Model\ResourceModel\Featuredcategories\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">mobikul_featuredcategories</argument>
+            <argument name="eventPrefix" xsi:type="string">mobikul_featuredcategories_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">featuredcategories_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Webkul\Mobikul\Model\ResourceModel\Featuredcategories</argument>
+        </arguments>
+    </type>
+    <type name="Webkul\Mobikul\Model\ResourceModel\Userimage\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">mobikul_userimage</argument>
+            <argument name="eventPrefix" xsi:type="string">mobikul_userimage_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">userimage_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Webkul\Mobikul\Model\ResourceModel\Userimage</argument>
+        </arguments>
+    </type>
+    <type name="Webkul\Mobikul\Model\ResourceModel\Categoryimages\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">mobikul_categoryimages</argument>
+            <argument name="eventPrefix" xsi:type="string">mobikul_categoryimages_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">categoryimages_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Webkul\Mobikul\Model\ResourceModel\Categoryimages</argument>
+        </arguments>
+    </type>
+    <type name="Webkul\Mobikul\Model\ResourceModel\Devicetoken\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">mobikul_devicetoken</argument>
+            <argument name="eventPrefix" xsi:type="string">mobikul_devicetoken_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">devicetoken_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Webkul\Mobikul\Model\ResourceModel\Devicetoken</argument>
+        </arguments>
+    </type>
+
+    <virtualType name="MobikulGirdFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\FilterPool">
+        <arguments>
+            <argument name="appliers" xsi:type="array">
+                <item name="regular" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\RegularFilter</item>
+                <item name="fulltext" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\FulltextFilter</item>
+            </argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="BannerimageGirdFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Webkul\Mobikul\Model\ResourceModel\Bannerimage\Collection</argument>
+            <argument name="filterPool" xsi:type="object" shared="false">MobikulGirdFilterPool</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="NotificationGirdFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Webkul\Mobikul\Model\ResourceModel\Notification\Collection</argument>
+            <argument name="filterPool" xsi:type="object" shared="false">MobikulGirdFilterPool</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="FeaturedcategoriesGirdFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Webkul\Mobikul\Model\ResourceModel\Featuredcategories\Collection</argument>
+            <argument name="filterPool" xsi:type="object" shared="false">MobikulGirdFilterPool</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="UserimageGirdFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Webkul\Mobikul\Model\ResourceModel\Userimage\Collection</argument>
+            <argument name="filterPool" xsi:type="object" shared="false">MobikulGirdFilterPool</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="CategoryimagesGirdFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Webkul\Mobikul\Model\ResourceModel\Categoryimages\Collection</argument>
+            <argument name="filterPool" xsi:type="object" shared="false">MobikulGirdFilterPool</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="DevicetokenGirdFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Webkul\Mobikul\Model\ResourceModel\Devicetoken\Collection</argument>
+            <argument name="filterPool" xsi:type="object" shared="false">MobikulGirdFilterPool</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Webkul\Mobikul\Controller\Catalog\GetCategoryList">
+        <arguments>
+            <argument name="categoryTree" xsi:type="object">Magento\Catalog\Model\Category\Tree\Proxy</argument>
+            <argument name="attributeRepository" xsi:type="object">Magento\Catalog\Model\Category\AttributeRepository\Proxy</argument>
+            <argument name="productVisibility" xsi:type="object">Magento\Catalog\Model\Product\Visibility\Proxy</argument>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Catalog\GetCatalogSearchResult">
+        <arguments>
+            <argument name="fullText" xsi:type="object">Magento\CatalogSearch\Model\Fulltext\Proxy</argument>
+            <argument name="productVisibility" xsi:type="object">Magento\Catalog\Model\Product\Visibility\Proxy</argument>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Catalog\GetProductDetails">
+        <arguments>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Catalog\AddToWishlist">
+        <arguments>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+            <argument name="dir" xsi:type="object">Magento\Framework\Filesystem\DirectoryList\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Catalog\GetCategoryProductList">
+        <arguments>
+            <argument name="categoryTree" xsi:type="object">Magento\Catalog\Model\Category\Tree\Proxy</argument>
+            <argument name="productVisibility" xsi:type="object">Magento\Catalog\Model\Product\Visibility\Proxy</argument>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+            <argument name="eavConfig" xsi:type="object">Magento\Eav\Model\Config\Proxy</argument>
+            <argument name="filterableAttributes" xsi:type="object">Magento\Catalog\Model\Layer\Category\FilterableAttributeList\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Checkout\AddToCart">
+        <arguments>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+            <argument name="checkoutSession" xsi:type="object">Magento\Checkout\Model\Session\Proxy</argument>
+            <argument name="customerSession" xsi:type="object">Magento\Customer\Model\Session\Proxy</argument>
+            <argument name="stockRegistry" xsi:type="object">Magento\CatalogInventory\Api\StockRegistryInterface\Proxy</argument>
+            <argument name="customerRepository" xsi:type="object">Magento\Customer\Api\CustomerRepositoryInterface\Proxy</argument>
+            <argument name="country" xsi:type="object">Magento\Directory\Model\Country\Proxy</argument>
+            <argument name="transactionBuilder" xsi:type="object">Magento\Sales\Model\Order\Payment\Transaction\BuilderInterface\Proxy</argument>
+            <argument name="invoiceSender" xsi:type="object">Magento\Sales\Model\Order\Email\Sender\InvoiceSender\Proxy</argument>
+            <argument name="storeManager" xsi:type="object">Magento\Store\Model\StoreManagerInterface\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Checkout\ApplyCoupon">
+        <arguments>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+            <argument name="checkoutSession" xsi:type="object">Magento\Checkout\Model\Session\Proxy</argument>
+            <argument name="customerSession" xsi:type="object">Magento\Customer\Model\Session\Proxy</argument>
+            <argument name="stockRegistry" xsi:type="object">Magento\CatalogInventory\Api\StockRegistryInterface\Proxy</argument>
+            <argument name="customerRepository" xsi:type="object">Magento\Customer\Api\CustomerRepositoryInterface\Proxy</argument>
+            <argument name="country" xsi:type="object">Magento\Directory\Model\Country\Proxy</argument>
+            <argument name="transactionBuilder" xsi:type="object">Magento\Sales\Model\Order\Payment\Transaction\BuilderInterface\Proxy</argument>
+            <argument name="invoiceSender" xsi:type="object">Magento\Sales\Model\Order\Email\Sender\InvoiceSender\Proxy</argument>
+            <argument name="storeManager" xsi:type="object">Magento\Store\Model\StoreManagerInterface\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Checkout\ChangeOrderStatus">
+        <arguments>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+            <argument name="checkoutSession" xsi:type="object">Magento\Checkout\Model\Session\Proxy</argument>
+            <argument name="customerSession" xsi:type="object">Magento\Customer\Model\Session\Proxy</argument>
+            <argument name="stockRegistry" xsi:type="object">Magento\CatalogInventory\Api\StockRegistryInterface\Proxy</argument>
+            <argument name="customerRepository" xsi:type="object">Magento\Customer\Api\CustomerRepositoryInterface\Proxy</argument>
+            <argument name="country" xsi:type="object">Magento\Directory\Model\Country\Proxy</argument>
+            <argument name="transactionBuilder" xsi:type="object">Magento\Sales\Model\Order\Payment\Transaction\BuilderInterface\Proxy</argument>
+            <argument name="invoiceSender" xsi:type="object">Magento\Sales\Model\Order\Email\Sender\InvoiceSender\Proxy</argument>
+            <argument name="storeManager" xsi:type="object">Magento\Store\Model\StoreManagerInterface\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Checkout\EmptyCart">
+        <arguments>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+            <argument name="checkoutSession" xsi:type="object">Magento\Checkout\Model\Session\Proxy</argument>
+            <argument name="customerSession" xsi:type="object">Magento\Customer\Model\Session\Proxy</argument>
+            <argument name="stockRegistry" xsi:type="object">Magento\CatalogInventory\Api\StockRegistryInterface\Proxy</argument>
+            <argument name="customerRepository" xsi:type="object">Magento\Customer\Api\CustomerRepositoryInterface\Proxy</argument>
+            <argument name="country" xsi:type="object">Magento\Directory\Model\Country\Proxy</argument>
+            <argument name="transactionBuilder" xsi:type="object">Magento\Sales\Model\Order\Payment\Transaction\BuilderInterface\Proxy</argument>
+            <argument name="invoiceSender" xsi:type="object">Magento\Sales\Model\Order\Email\Sender\InvoiceSender\Proxy</argument>
+            <argument name="storeManager" xsi:type="object">Magento\Store\Model\StoreManagerInterface\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Checkout\GetCartDetails">
+        <arguments>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+            <argument name="checkoutSession" xsi:type="object">Magento\Checkout\Model\Session\Proxy</argument>
+            <argument name="customerSession" xsi:type="object">Magento\Customer\Model\Session\Proxy</argument>
+            <argument name="stockRegistry" xsi:type="object">Magento\CatalogInventory\Api\StockRegistryInterface\Proxy</argument>
+            <argument name="customerRepository" xsi:type="object">Magento\Customer\Api\CustomerRepositoryInterface\Proxy</argument>
+            <argument name="country" xsi:type="object">Magento\Directory\Model\Country\Proxy</argument>
+            <argument name="transactionBuilder" xsi:type="object">Magento\Sales\Model\Order\Payment\Transaction\BuilderInterface\Proxy</argument>
+            <argument name="invoiceSender" xsi:type="object">Magento\Sales\Model\Order\Email\Sender\InvoiceSender\Proxy</argument>
+            <argument name="storeManager" xsi:type="object">Magento\Store\Model\StoreManagerInterface\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Checkout\GetOrderReviewData">
+        <arguments>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+            <argument name="checkoutSession" xsi:type="object">Magento\Checkout\Model\Session\Proxy</argument>
+            <argument name="customerSession" xsi:type="object">Magento\Customer\Model\Session\Proxy</argument>
+            <argument name="stockRegistry" xsi:type="object">Magento\CatalogInventory\Api\StockRegistryInterface\Proxy</argument>
+            <argument name="customerRepository" xsi:type="object">Magento\Customer\Api\CustomerRepositoryInterface\Proxy</argument>
+            <argument name="country" xsi:type="object">Magento\Directory\Model\Country\Proxy</argument>
+            <argument name="transactionBuilder" xsi:type="object">Magento\Sales\Model\Order\Payment\Transaction\BuilderInterface\Proxy</argument>
+            <argument name="invoiceSender" xsi:type="object">Magento\Sales\Model\Order\Email\Sender\InvoiceSender\Proxy</argument>
+            <argument name="storeManager" xsi:type="object">Magento\Store\Model\StoreManagerInterface\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Checkout\GetStepOnenTwoData">
+        <arguments>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+            <argument name="checkoutSession" xsi:type="object">Magento\Checkout\Model\Session\Proxy</argument>
+            <argument name="customerSession" xsi:type="object">Magento\Customer\Model\Session\Proxy</argument>
+            <argument name="stockRegistry" xsi:type="object">Magento\CatalogInventory\Api\StockRegistryInterface\Proxy</argument>
+            <argument name="customerRepository" xsi:type="object">Magento\Customer\Api\CustomerRepositoryInterface\Proxy</argument>
+            <argument name="country" xsi:type="object">Magento\Directory\Model\Country\Proxy</argument>
+            <argument name="transactionBuilder" xsi:type="object">Magento\Sales\Model\Order\Payment\Transaction\BuilderInterface\Proxy</argument>
+            <argument name="invoiceSender" xsi:type="object">Magento\Sales\Model\Order\Email\Sender\InvoiceSender\Proxy</argument>
+            <argument name="storeManager" xsi:type="object">Magento\Store\Model\StoreManagerInterface\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Checkout\GetStepThreenFourData">
+        <arguments>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+            <argument name="checkoutSession" xsi:type="object">Magento\Checkout\Model\Session\Proxy</argument>
+            <argument name="customerSession" xsi:type="object">Magento\Customer\Model\Session\Proxy</argument>
+            <argument name="stockRegistry" xsi:type="object">Magento\CatalogInventory\Api\StockRegistryInterface\Proxy</argument>
+            <argument name="customerRepository" xsi:type="object">Magento\Customer\Api\CustomerRepositoryInterface\Proxy</argument>
+            <argument name="country" xsi:type="object">Magento\Directory\Model\Country\Proxy</argument>
+            <argument name="transactionBuilder" xsi:type="object">Magento\Sales\Model\Order\Payment\Transaction\BuilderInterface\Proxy</argument>
+            <argument name="invoiceSender" xsi:type="object">Magento\Sales\Model\Order\Email\Sender\InvoiceSender\Proxy</argument>
+            <argument name="storeManager" xsi:type="object">Magento\Store\Model\StoreManagerInterface\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Checkout\RemoveCartItem">
+        <arguments>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+            <argument name="checkoutSession" xsi:type="object">Magento\Checkout\Model\Session\Proxy</argument>
+            <argument name="customerSession" xsi:type="object">Magento\Customer\Model\Session\Proxy</argument>
+            <argument name="stockRegistry" xsi:type="object">Magento\CatalogInventory\Api\StockRegistryInterface\Proxy</argument>
+            <argument name="customerRepository" xsi:type="object">Magento\Customer\Api\CustomerRepositoryInterface\Proxy</argument>
+            <argument name="country" xsi:type="object">Magento\Directory\Model\Country\Proxy</argument>
+            <argument name="transactionBuilder" xsi:type="object">Magento\Sales\Model\Order\Payment\Transaction\BuilderInterface\Proxy</argument>
+            <argument name="invoiceSender" xsi:type="object">Magento\Sales\Model\Order\Email\Sender\InvoiceSender\Proxy</argument>
+            <argument name="storeManager" xsi:type="object">Magento\Store\Model\StoreManagerInterface\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Checkout\SaveOrder">
+        <arguments>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+            <argument name="checkoutSession" xsi:type="object">Magento\Checkout\Model\Session\Proxy</argument>
+            <argument name="customerSession" xsi:type="object">Magento\Customer\Model\Session\Proxy</argument>
+            <argument name="stockRegistry" xsi:type="object">Magento\CatalogInventory\Api\StockRegistryInterface\Proxy</argument>
+            <argument name="customerRepository" xsi:type="object">Magento\Customer\Api\CustomerRepositoryInterface\Proxy</argument>
+            <argument name="country" xsi:type="object">Magento\Directory\Model\Country\Proxy</argument>
+            <argument name="transactionBuilder" xsi:type="object">Magento\Sales\Model\Order\Payment\Transaction\BuilderInterface\Proxy</argument>
+            <argument name="invoiceSender" xsi:type="object">Magento\Sales\Model\Order\Email\Sender\InvoiceSender\Proxy</argument>
+            <argument name="storeManager" xsi:type="object">Magento\Store\Model\StoreManagerInterface\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Checkout\UpdateCart">
+        <arguments>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+            <argument name="checkoutSession" xsi:type="object">Magento\Checkout\Model\Session\Proxy</argument>
+            <argument name="customerSession" xsi:type="object">Magento\Customer\Model\Session\Proxy</argument>
+            <argument name="stockRegistry" xsi:type="object">Magento\CatalogInventory\Api\StockRegistryInterface\Proxy</argument>
+            <argument name="customerRepository" xsi:type="object">Magento\Customer\Api\CustomerRepositoryInterface\Proxy</argument>
+            <argument name="country" xsi:type="object">Magento\Directory\Model\Country\Proxy</argument>
+            <argument name="transactionBuilder" xsi:type="object">Magento\Sales\Model\Order\Payment\Transaction\BuilderInterface\Proxy</argument>
+            <argument name="invoiceSender" xsi:type="object">Magento\Sales\Model\Order\Email\Sender\InvoiceSender\Proxy</argument>
+            <argument name="storeManager" xsi:type="object">Magento\Store\Model\StoreManagerInterface\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Checkout\WishlistFromCart">
+        <arguments>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+            <argument name="checkoutSession" xsi:type="object">Magento\Checkout\Model\Session\Proxy</argument>
+            <argument name="customerSession" xsi:type="object">Magento\Customer\Model\Session\Proxy</argument>
+            <argument name="stockRegistry" xsi:type="object">Magento\CatalogInventory\Api\StockRegistryInterface\Proxy</argument>
+            <argument name="customerRepository" xsi:type="object">Magento\Customer\Api\CustomerRepositoryInterface\Proxy</argument>
+            <argument name="country" xsi:type="object">Magento\Directory\Model\Country\Proxy</argument>
+            <argument name="transactionBuilder" xsi:type="object">Magento\Sales\Model\Order\Payment\Transaction\BuilderInterface\Proxy</argument>
+            <argument name="invoiceSender" xsi:type="object">Magento\Sales\Model\Order\Email\Sender\InvoiceSender\Proxy</argument>
+            <argument name="storeManager" xsi:type="object">Magento\Store\Model\StoreManagerInterface\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Customer\AddressDelete">
+        <arguments>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+            <argument name="addressRepository" xsi:type="object">Magento\Customer\Api\AddressRepositoryInterface\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Customer\AddressFormData">
+        <arguments>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+        </arguments>
+    </type>
+
+    <type name="Webkul\Mobikul\Controller\Customer\CreatePost">
+        <arguments>
+            <argument name="helperCatalog" xsi:type="object">Webkul\Mobikul\Helper\Catalog\Proxy</argument>
+            <argument name="helper" xsi:type="object">Webkul\Mobikul\Helper\Data\Proxy</argument>
+            <argument name="emulate" xsi:type="object">Magento\Store\Model\App\Emulation\Proxy</argument>
+            <argument name="accountManagement" xsi:type="object">Magento\Customer\Api\AccountManagementInterface\Proxy</argument>
+            <argument name="customerExtractor" xsi:type="object">Magento\Customer\Model\CustomerExtractor\Proxy</argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\Translate">
+        <plugin name="Webkul_Mobikul::getLocale"
+                type="Webkul\Mobikul\Plugin\Translate"
+                sortOrder="10" />
+    </type>
+</config>
