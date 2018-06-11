@@ -5157,8 +5157,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<native>laoo</native>
 		</otherNumberingSystems>
 		<symbols numberSystem="latn">
-			<decimal>,</decimal>
-			<group>.</group>
+			<decimal>.</decimal>
+			<group>,</group>
 			<list>;</list>
 			<percentSign>%</percentSign>
 			<plusSign>+</plusSign>
@@ -5170,6 +5170,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<nan>ບໍ່ແມ່ນໂຕເລກ</nan>
 		</symbols>
 		<decimalFormats numberSystem="laoo">
+			<decimalFormatLength>
+				<decimalFormat>
+					<pattern>#,##0.###</pattern>
+				</decimalFormat>
+			</decimalFormatLength>
 			<decimalFormatLength type="long">
 				<decimalFormat>
 					<pattern type="1000" count="other">0ພັນ</pattern>
