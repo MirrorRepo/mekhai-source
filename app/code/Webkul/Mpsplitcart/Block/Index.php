@@ -121,7 +121,7 @@ class Index extends \Magento\Checkout\Block\Cart
                     $sellerId = $this->_helper->getSellerId($item->getProductId());
                 }
 
-                $price =  $item->getRowTotal();
+                $price =  $item->getBaseRowTotal();
 
                 $formattedPrice = $this->_priceHelper->currency(
                     $price,
