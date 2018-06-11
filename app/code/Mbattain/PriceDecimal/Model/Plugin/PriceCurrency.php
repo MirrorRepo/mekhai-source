@@ -1,10 +1,4 @@
 <?php
-/**
- *
- * @package Lillik\PriceDecimal\Model\Plugin
- *
- * @author  Lilian Codreanu <lilian.codreanu@gmail.com>
- */
 
 namespace Mbattain\PriceDecimal\Model\Plugin;
 class PriceCurrency
